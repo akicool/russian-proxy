@@ -67,6 +67,7 @@ a {
   line-height: 150%
 }
 .button--green {
-  background-color: var(--green-btn-color);
+  background-color: var(--green-btn-color) !important;
+  color: var(--main-font-color) !important;
   border: none !important;
 }

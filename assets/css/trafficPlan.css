@@ -287,11 +287,13 @@
 .tariff {
     width: 100%;
     padding: 10px 15px;
+    text-align: center;
 }
 .tariff__title {
     text-transform: uppercase;
     color: var(--main-font-color);
     line-height: 150%;
+    text-align: start;
 }
 .tariff__title--margin {
     margin-bottom: 10px;
@@ -453,11 +455,18 @@
     z-index: 1;
     cursor: pointer;
 }
-.checkbox-input:checked ~ .checkbox__circle {
+.checkbox-input:checked ~ .checkbox__circle,
+.checkbox-input.checked ~ .checkbox__circle {
     right: 3px;
     background-color: var(--checkbox-black-color);
     transition: .2s ease-out;
 }
+.checkbox > .checkbox__circle {
+    right: 21px;
+    background-color: var(--white-link-color);
+    transition: .2s ease-out;
+}
+
 .card__data {
     display: flex;
     justify-content: space-between;
@@ -496,4 +505,20 @@
 }
 .card__tariff-btn--margin {
     margin-top: 30px;
+}
+
+.progressBar--margin {
+    margin-top: 20px;
+}
+.progressBar {
+    display: block;
+    width: 100%;  
+    background-color: #C4DAF3;
+}
+.progressBar .inProgress {
+    border-radius: 10px;
+    background-color: var(--main-accent-color);
+    width: 0%;
+    height: 4px;
+    transition: .1s linear;
 }
