@@ -153,6 +153,12 @@
 }
 .nav__social-link {
 }
+.nav__general-block {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease-out;
+}
 .nav__logout {
     display: flex;
     justify-content: center;
@@ -231,6 +237,11 @@
     justify-content: space-between;
     width: 100%;
 }
+.general__hidden {
+    display: flex;
+    justify-content: space-between;
+    width: 63%;
+}
 .general__item {
     position: relative;
     display: flex;
@@ -238,6 +249,9 @@
     align-items: center;
     color: var(--white-link-color);
     cursor: pointer;
+}
+.general__item--pos-none {
+    position: static;
 }
 .general__item img{
     width: 23px;
@@ -286,6 +300,7 @@
 }
 .tariff {
     width: 100%;
+    height: 100%;
     padding: 10px 15px;
     text-align: center;
 }
@@ -297,6 +312,16 @@
 }
 .tariff__title--margin {
     margin-bottom: 10px;
+}
+.tariff__footer-text {
+    text-align: start;
+    color: var(--main-font-color);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 150%; 
+}
+.tariff__footer-text--margin {
+    margin-top: 25px;
 }
 .email-confirm {
     max-width: 400px;
@@ -398,8 +423,8 @@
 .card {
     width: 100%;
     display: flex;
-    justify-content: start;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 10px;
 }
 .card__item {
     max-width: 330px;
@@ -523,6 +548,100 @@
     transition: .1s linear;
 }
 
-@media screen and (max-width:1050px) {
-  
+@media (max-width: 1265px) {
+    .header {
+        gap: 30px;
+    }
+}
+@media (max-width: 1100px) {
+    .header {
+        gap: 30px;
+    }
+    .nav__general-block.active {
+        height: max-content;
+        opacity: 1;
+        visibility: visible;
+        transition: .2s ease-out;
+    }
+    .general__hidden {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    .general__list {
+        justify-content: end;
+        gap: 50px;
+    }
+}
+@media (max-width: 1065px) {
+    .card__item {
+      padding: 10px;
+    }
+}
+@media (max-width:1010px) {
+    .button--transparent {
+        padding: 5px 15px;
+        font-size: 13px;
+    }
+}
+@media (max-width: 1000px) {
+    .tariff {
+        overflow-x: hidden;
+    }
+    .card.width {
+        width: 100%;
+        transition: .2s ease-out;
+    }
+    .card__item.hidden {
+        width: 0;
+        height: 0;
+        padding: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .2s ease-out;
+        position: absolute;
+    }
+    .card__item {
+        opacity: 1;
+        visibility: visible;
+        transition: .2s ease-out;
+    }
+}
+@media (max-width: 990px) {
+    .nav {
+        overflow: hidden;
+        width: 0;
+        padding: 0;
+        transition: .2s ease-out;
+    }
+    .nav.active {
+        overflow: visible;
+        width: 100%;
+        padding: 15px 5px 20px 5px;
+        transition: .2s ease-out;
+    }
+    .nav__item--hidden {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+@media (max-width: 768px) {
+    .nav {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .main.active::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #000;
+        z-index: 1;
+        opacity: .7;
+    }
+    .header {
+        position: absolute;
+    }
 }

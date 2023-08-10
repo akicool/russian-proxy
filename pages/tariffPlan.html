@@ -13,12 +13,32 @@
         <nav class="nav">
             <div class="nav__lists">
                 <ul class="nav__list">
-                    <li class="nav__item padding-none">
+                    <li class="nav__item padding-none nav__item--hidden">
                         <a href="#" class="nav__link">
                             <img src="../assets/images/icons/trafficPlanIcons/logo.svg" alt="logo">
                             <div class="nav__link-text nav__link-title">Прокси от Костина.РФ</div>
                         </a>
                     </li>
+                    <div class="nav__general-block">
+                        <li class="general__item nav__item general__item--pos-none">
+                            <a href="#" class="nav__link">
+                                <img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
+                                <div class="nav__link-text">Канал:  общий</div>
+                            </a>
+                        </li>
+                        <li class="general__item nav__item general__item--pos-none">
+                            <a href="#" class="nav__link">
+                                <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
+                                <div class="nav__link-text">План:  0 дней</div>
+                            </a>
+                        </li>
+                        <li class="general__item nav__item general__item--pos-none">
+                            <a href="#" class="nav__link">
+                                <img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
+                                <div class="nav__link-text">Баланс: 0,00 р.</div>
+                            </a>
+                        </li>
+                    </div>
                     <span class="additional-text">proxy</span>
                     <li class="nav__item">
                         <a href="#" class="nav__link">
@@ -95,18 +115,20 @@
                 </div>
                 <nav class="general">
                     <ul class="general__list">
-                        <li class="general__item">
-                            <img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
-                            Тип канала:  общий
-                        </li>
-                        <li class="general__item">
-                            <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
-                            Тарифный план:  0 дней
-                        </li>
-                        <li class="general__item">
-                            <img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
-                            Баланс: 0,00 р.
-                        </li>
+                        <div class="general__hidden">
+                            <li class="general__item">
+                                <img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
+                                Тип канала:  общий
+                            </li>
+                            <li class="general__item">
+                                <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
+                                Тарифный план:  0 дней
+                            </li>
+                            <li class="general__item">
+                                <img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
+                                Баланс: 0,00 р.
+                            </li>
+                        </div>
                         <button class="button button--transparent">Пополнить</button>
                         <li class="general__item account">
                             <img src="../assets/images/icons/trafficPlanIcons/account-logo.svg" alt="account-logo">
@@ -235,7 +257,7 @@
                             </div>
                             <button class="card__tariff-btn card__tariff-btn--margin button button--transparent">Выбрать тариф</button>
                         </div>
-                        <div class="card__item">
+                        <div class="card__item hidden">
                             <div class="card__btn-wrap">
                                 <button class="card__btn button button--black">Общий канал</button>
                                 <div class="checkbox">
@@ -271,7 +293,7 @@
                             </div>
                             <button class="card__tariff-btn card__tariff-btn--margin button button--transparent">Выбрать тариф</button>
                         </div>
-                        <div class="card__item">
+                        <div class="card__item hidden">
                             <div class="card__btn-wrap">
                                 <button class="card__btn button button--black">Общий канал</button>
                                 <div class="checkbox">
@@ -311,6 +333,9 @@
                     <span data-slick-index="3" class="progressBar progressBar--margin">
                         <div class="inProgress inProgress3" style="width: 0%;"></div>
                     </span>
+                    <div class="tariff__footer-text tariff__footer-text--margin">
+                        © 2023 Прокси от Костина.РФ
+                    </div>
                 </div>
             </main>
         </div>

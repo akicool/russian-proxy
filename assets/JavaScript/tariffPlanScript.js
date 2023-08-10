@@ -6,6 +6,8 @@ const checkbox = document.querySelectorAll('.checkbox')
 const checkboxInput = document.querySelectorAll('.checkbox-input')
 const cardBtn = document.querySelectorAll('.card__btn')
 const cardTariffBtn = document.querySelectorAll('.card__tariff-btn')
+const cardItem = document.querySelectorAll('.card__item')
+const card = document.querySelector('.card')
 
 account.addEventListener('click', () => {
     accountBlock.classList.toggle('active');
@@ -69,10 +71,10 @@ checkbox.forEach((item, index) => {
     
 })
 
-
-
 const progressBar = document.querySelector('.inProgress3');
+let cardCount = 0;
 let intervalId;
+
 function increaseProgress() {
     const currentWidth = parseInt(progressBar.style.width) || 0;
     const newWidth = currentWidth + 1; 
@@ -81,6 +83,28 @@ function increaseProgress() {
         progressBar.style.width = newWidth + '%';
     } else {
         progressBar.style.width = '0%';
+        card.classList.add('width')
+        cardCount++;
+        
+        cardCount > 1 ? 
+        cardCount = 0 : 
+        cardCount
+        
+        if (cardCount == 0) {
+
+            cardItem[0].classList.remove('hidden')
+            cardItem[1].classList.remove('hidden')
+            cardItem[2].classList.add('hidden')
+            cardItem[3].classList.add('hidden')
+        }
+        
+        if (cardCount == 1) {
+            cardItem[0].classList.add('hidden')
+            cardItem[1].classList.add('hidden')
+            cardItem[2].classList.remove('hidden')
+            cardItem[3].classList.remove('hidden')
+        }
+
     }
 }
 
