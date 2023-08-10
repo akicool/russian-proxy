@@ -1,0 +1,13 @@
+.tariff-page{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tariff-plan-block{
+  max-width: 1590px;
+  width: 100%;
+  min-height: 320px;
+  border-radius: 10px;
+  background: #1878F1;
+}

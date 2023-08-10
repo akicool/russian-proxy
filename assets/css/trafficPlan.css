@@ -398,7 +398,7 @@
 .card {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     gap: 20px;
 }
 .card__item {
@@ -521,4 +521,8 @@
     width: 0%;
     height: 4px;
     transition: .1s linear;
+}
+
+@media screen and (max-width:1050px) {
+  
 }

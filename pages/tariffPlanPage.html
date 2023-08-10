@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../assets/css/basic.css">
+    <link rel="stylesheet" href="../assets/css/trafficPlan.css">
+    <link rel="stylesheet" href="../assets/css/tariffPlanPage.css">
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarrif-Plan</title>
+</head>
+<body>
+    <div class="container disp-flex">
+        <nav class="nav">
+            <div class="nav__lists">
+                <ul class="nav__list">
+                    <li class="nav__item padding-none">
+                        <a href="#" class="nav__link">
+                            <img src="../assets/images/icons/trafficPlanIcons/logo.svg" alt="logo">
+                            <div class="nav__link-text nav__link-title">Прокси от Костина.РФ</div>
+                        </a>
+                    </li>
+                    <span class="additional-text">proxy</span>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <img src="../assets/images/icons/trafficPlanIcons/servers.svg" alt="servers">
+                            <div class="nav__link-text">Мои прокси</div>
+                        </a>
+                    </li>
+                    <span class="additional-text">user</span>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
+                            <div class="nav__link-text">Баланс</div>
+                        </a>
+                    </li>
+                    <li class="nav__item show-default">
+                        <a href="#" class="nav__link">
+                            <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
+                            <div class="nav__link-text">Тарифный план</div>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <img src="../assets/images/icons/trafficPlanIcons/profile.svg" alt="profile">
+                            <div class="nav__link-text">Профиль</div>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <img src="../assets/images/icons/trafficPlanIcons/chart.svg" alt="chart">
+                            <div class="nav__link-text">История трафика</div>
+                        </a>
+                    </li>
+                    <span class="additional-text">info</span>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <img src="../assets/images/icons/socials/Mail.svg" alt="Mail">
+                            <div class="nav__link-text">Чат</div> 
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__footer">
+                    <ul class="nav__social-list">
+                        <li class="nav__social-item">
+                            <a href="#" class="nav__social-link">
+                                <img src="../assets/images/icons/socials/vk.svg" alt="vk">
+                            </a>
+                        </li>
+                        <li class="nav__social-item">
+                            <a href="#" class="nav__social-link">
+                                <img src="../assets/images/icons/socials/telegram.svg" alt="telegram">
+                            </a>
+                        </li>
+                        <li class="nav__social-item">
+                            <a href="#" class="nav__social-link">
+                                <img src="../assets/images/icons/socials/Mail.svg" alt="Mail">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav__footer-item">
+                        <a href="#" class="nav__logout">
+                            <img src="../assets/images/icons/trafficPlanIcons/logout.svg" alt="logout">
+                            <p class="nav__footer-text nav__link-text">
+                                Выход
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <header class="header">
+                <div class="header__menu-btn menu-btn">
+                    <span class="menu-btn-line"></span>
+                </div>
+                <nav class="general">
+                    <ul class="general__list">
+                        <li class="general__item">
+                            <img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
+                            Тип канала:  общий
+                        </li>
+                        <li class="general__item">
+                            <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
+                            Тарифный план:  0 дней
+                        </li>
+                        <li class="general__item">
+                            <img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
+                            Баланс: 0,00 р.
+                        </li>
+                        <button class="button button--transparent">Пополнить</button>
+                        <li class="general__item account">
+                            <img src="../assets/images/icons/trafficPlanIcons/account-logo.svg" alt="account-logo">
+                            oooloyren@mail.ru
+                        </li>
+                        <div class="account-block account-block--pos">
+                            <div class="account-block__link">
+                                <img src="../assets/images/icons/trafficPlanIcons/cog.svg" alt="cog">
+                                Профиль
+                            </div>
+                            <div class="account-block__link">
+                                <img src="../assets/images/icons/trafficPlanIcons/account-balance.svg" alt="balance">
+                                Баланс: 0,00 р.
+                            </div>
+                            <div class="line line-white"></div>
+                            <div class="account-block__link">
+                                <img src="../assets/images/icons/trafficPlanIcons/account-logout.svg" alt="account-logout">
+                                Выйти
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <div class="tariff">
+                    <h3 class="tariff__title tariff__title--margin">Тарифный план</h3>
+                    <div class="tariff-page">
+                      <div class="tariff-plan-block"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../assets/JavaScript/tariffPlanScript.js"></script>
+</body>
+</html>
