@@ -71,9 +71,13 @@ checkbox.forEach((item, index) => {
     
 })
 
+
 const progressBar = document.querySelector('.inProgress3');
 let cardCount = 0;
+let cardCountMobile = 0;
 let intervalId;
+
+const screenWidth = window.screen.width
 
 function increaseProgress() {
     const currentWidth = parseInt(progressBar.style.width) || 0;
@@ -85,26 +89,54 @@ function increaseProgress() {
         progressBar.style.width = '0%';
         card.classList.add('width')
         cardCount++;
+        cardCountMobile++;
         
         cardCount > 1 ? 
         cardCount = 0 : 
         cardCount
-        
-        if (cardCount == 0) {
 
-            cardItem[0].classList.remove('hidden')
-            cardItem[1].classList.remove('hidden')
-            cardItem[2].classList.add('hidden')
-            cardItem[3].classList.add('hidden')
-        }
+        cardCountMobile > 3 ? 
+        cardCountMobile = 0 : 
+        cardCountMobile
         
-        if (cardCount == 1) {
-            cardItem[0].classList.add('hidden')
-            cardItem[1].classList.add('hidden')
-            cardItem[2].classList.remove('hidden')
-            cardItem[3].classList.remove('hidden')
+        if (screenWidth > 475) {
+            if (cardCount == 0) {
+                cardItem[0].classList.remove('hidden')
+                cardItem[1].classList.remove('hidden')
+                cardItem[2].classList.add('hidden')
+                cardItem[3].classList.add('hidden')
+            }
+            
+            if (cardCount == 1) {
+                cardItem[0].classList.add('hidden')
+                cardItem[1].classList.add('hidden')
+                cardItem[2].classList.remove('hidden')
+                cardItem[3].classList.remove('hidden')
+            }
         }
 
+        if (screenWidth < 475) {
+            if (cardCountMobile === 0) {
+                cardItem[0].classList.remove('mobile-hidden', 'hidden')
+                cardItem[1].classList.add('mobile-hidden', 'hidden')
+                cardItem[3].classList.add('mobile-hidden', 'hidden')
+            }
+            
+            if (cardCountMobile === 1) {
+                cardItem[0].classList.add('mobile-hidden', 'hidden')
+                cardItem[1].classList.remove('mobile-hidden', 'hidden')
+            }
+            
+            if (cardCountMobile === 2) {
+                cardItem[1].classList.add('mobile-hidden', 'hidden')
+                cardItem[2].classList.remove('mobile-hidden', 'hidden')
+            }
+            
+            if (cardCountMobile === 3) {
+                cardItem[2].classList.add('mobile-hidden', 'hidden')
+                cardItem[3].classList.remove('mobile-hidden', 'hidden')
+            }
+        }
     }
 }
 
