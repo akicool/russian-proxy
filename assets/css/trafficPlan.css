@@ -685,16 +685,33 @@
     .header {
         gap: 5px;
     }
-   .general__list {
-        gap: 10px;
-   } 
-   .tariff {
-        overflow-x: visible;
-   }
-   .tariff__title--margin {
-    margin-bottom: 10px;
-    margin-top: 50px;
+    .general__list {
+         gap: 10px;
+    } 
+    .tariff {
+         overflow-x: visible;
+    }
+    .tariff__title--margin {
+     margin-bottom: 10px;
+     margin-top: 50px;
 }
+}
+@media (max-width: 420px) {
+    .general__list {
+        gap: 50px;
+    } 
+    .general__item-email {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    .account-block {
+        max-width: 100%;
+    }
+    .account-block--pos {
+        top: 50px;
+        right: 0;
+    }
 }
 @media (max-width: 370px) {
     .general__item {
