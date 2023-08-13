@@ -17,6 +17,9 @@
 html {
   font-size: 16px;
 }
+body::-webkit-scrollbar {
+  width: 0;
+}
 h1 {
   font-size: 4rem;
 }
@@ -35,27 +38,17 @@ header {
   background-color: #1878f1;
 }
 
-.nav-menu {
-  margin-left: 10px;
-  display: flex;
+.header {z-index: 1;}
+
+
+.tariff {
+  padding: 10px 20px;
+  text-align: start;
 }
 
-.nav-menu a {
-  text-decoration: none;
-  color: white;
-  size: 16px;
-  line-height: 24px;
-  margin-left: 30px;
-}
+.main {
+  overflow-y: auto;
 
-.nav-menu img {
-  margin-right: 20px;
-  margin-bottom: -3px;
-}
-
-nav {
-  margin-left: 200px;
-  margin-bottom: 10px;
 }
 
 .border {
@@ -106,27 +99,18 @@ nav {
   width: 35px;
 }
 
-.home {
-  margin-top: -70%;
-  margin-left: 7%;
-}
-
 .home-inner {
   padding: 10px 0;
 }
 
-.home-wrapper {
-  margin-left: 24px;
-}
-
 .home-text {
   padding-bottom: 30px;
-  color: #0c0c20;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 30px */
   margin-top: 20px;
+  
+  font-size: 20px;
+  color: #0C0C20;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
 }
 
 .home-text h2 {
@@ -248,10 +232,11 @@ nav {
 .home-sum {
   color: #ff5722;
   font-family: "Montserrat", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
+  font-weight: 400;
   margin-top: 10px;
-  line-height: 150%; /* 18px */
+  line-height: 150%; 
 }
 
 .home-button {
@@ -266,14 +251,6 @@ nav {
   font-size: 16px;
   cursor: pointer;
   border: none;
-}
-
-.pay {
-  margin-left: 5.5%;
-}
-
-.pay-wrapper {
-  margin-left: 45px;
 }
 
 .pay-text p {
@@ -296,11 +273,10 @@ nav {
 
 .pay-text button {
   border: 1px solid #1878f1;
-  background-color: white;
   color: #1878f1;
-  width: 10%;
   height: 40px;
   border-radius: 5px;
+
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -335,18 +311,19 @@ nav {
   padding-right: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  color: #0C0C20;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; 
+  
 }
 
-.history-color {
-  padding: 6px 12px;
-  color: white;
-  border-radius: 5px;
-  background: #26374d;
-}
 
-.history-color2 {
-  padding: 6px 12px;
-  color: white;
-  border-radius: 5px;
-  background: #57f249;
+@media (max-width: 768px) {
+  .history-pay {
+    width: 800px;
+    overflow: auto;
+  }
 }

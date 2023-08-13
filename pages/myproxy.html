@@ -15,12 +15,32 @@
 				<nav class="nav">
 					<div class="nav__lists">
 						<ul class="nav__list">
-							<li class="nav__item padding-none">
+							<li class="nav__item padding-none nav__item--hidden">
 								<a href="#" class="nav__link">
 									<img src="../assets/images/icons/trafficPlanIcons/logo.svg" alt="logo">
-									<div class="nav__link-text nav__link-title">Прокси от Костина.РФ</div>
+									<div class="nav__link-title nav__link-title--more-style">Прокси от Костина.РФ</div>
 								</a>
 							</li>
+							<div class="nav__general-block">
+								<li class="general__item nav__item general__item--pos-none">
+									<a href="#" class="nav__link">
+										<img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
+										<div class="nav__link-text--additional-style">Канал:  общий</div>
+									</a>
+								</li>
+								<li class="general__item nav__item general__item--pos-none">
+									<a href="#" class="nav__link">
+										<img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
+										<div class="nav__link-text">План:  0 дней</div>
+									</a>
+								</li>
+								<li class="general__item nav__item general__item--pos-none">
+									<a href="#" class="nav__link">
+										<img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
+										<div class="nav__link-text">Баланс: 0,00 р.</div>
+									</a>
+								</li>
+							</div>
 							<span class="additional-text">proxy</span>
 							<li class="nav__item">
 								<a href="#" class="nav__link">
@@ -62,6 +82,12 @@
 							</li>
 						</ul>
 						<div class="nav__footer">
+							<li class="padding-none nav__link-title nav__link-title--active">
+								<a href="#" class="nav__link">
+									<img src="../assets/images/icons/trafficPlanIcons/logo.svg" alt="logo">
+									<div class="nav__link-text nav__link-title">Прокси от Костина.РФ</div>
+								</a>
+							</li>
 							<ul class="nav__social-list">
 								<li class="nav__social-item">
 									<a href="#" class="nav__social-link">
@@ -96,22 +122,24 @@
 					</div>
 					<nav class="general">
 						<ul class="general__list">
-							<li class="general__item">
-								<img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
-								Тип канала:  общий
-							</li>
-							<li class="general__item">
-								<img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
-								Тарифный план:  0 дней
-							</li>
-							<li class="general__item">
-								<img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
-								Баланс: 0,00 р.
-							</li>
+							<div class="general__hidden">
+								<li class="general__item">
+									<img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
+									Тип канала:  общий
+								</li>
+								<li class="general__item">
+									<img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
+									Тарифный план:  0 дней
+								</li>
+								<li class="general__item">
+									<img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
+									Баланс: 0,00 р.
+								</li>
+							</div>
 							<button class="button button--transparent">Пополнить</button>
 							<li class="general__item account">
 								<img src="../assets/images/icons/trafficPlanIcons/account-logo.svg" alt="account-logo">
-								oooloyren@mail.ru
+								<div class="general__item-email">oooloyren@mail.ru</div>
 							</li>
 							<div class="account-block account-block--pos">
 								<div class="account-block__link">
@@ -132,7 +160,7 @@
 					</nav>
 				</header>
 			</div>
-			<div class="myproxy__contaner">
+			<div class="myproxy__contaner main">
 				<h3 class="myproxy__title">Мои прокси</h3>
 				<div class="myproxy__up">
 					<div class="myproxy__email">
@@ -204,47 +232,48 @@
 						  	<img src="../assets/images/icons/icons/reload.svg" class="api__key-reload">
 						  	
 						  	<button id="copy" class="api__key-copy"><img src="../assets/images/icons/icons/copy_green.svg"></button>
-						  	<script>
-						  		document.getElementById("copy").onclick = function() {
-							    var copyTextarea = document.createElement("textarea");
-							    copyTextarea.style.position = "fixed";
-							    copyTextarea.style.opacity = "0";
-							    copyTextarea.textContent = document.getElementById("content").value;
-							 
-							    document.body.appendChild(copyTextarea);
-							    copyTextarea.select();
-							    document.execCommand("copy");
-							    document.body.removeChild(copyTextarea);
-								}
-						  	</script>
 					  		
-					  	</div>
-					  	<div class="api__key-text">
-					  		<h3>Зачем мне ключ?</h3>
-					  		<p class="api__key-text-text">С помощью ключа API вы имеете возможность изменять IP-адрес, используя частные каналы прокси, предоставляемые сервисом. Частные каналы прокси обеспечивают высокий уровень безопасности и приватности при обмене данными в интернете. Путем смены IP-адреса вы можете обойти ограничения доступа, получить доступ к контенту, который может быть ограничен в вашем регионе, или обеспечить анонимность в сети.</p>
-					  	</div>
-					  </div>
+						</div>
+						<div class="api__key-text">
+							<h3>Зачем мне ключ?</h3>
+							<p class="api__key-text-text">С помощью ключа API вы имеете возможность изменять IP-адрес, используя частные каналы прокси, предоставляемые сервисом. Частные каналы прокси обеспечивают высокий уровень безопасности и приватности при обмене данными в интернете. Путем смены IP-адреса вы можете обойти ограничения доступа, получить доступ к контенту, который может быть ограничен в вашем регионе, или обеспечить анонимность в сети.</p>
+						</div>
 					</div>
-
-					<script>
-						function openCity(evt, cityName) {
-						    var i, tabcontent, tablinks;
-						    tabcontent = document.getElementsByClassName("tabcontent");
-						    for (i = 0; i < tabcontent.length; i++) {
-						        tabcontent[i].style.display = "none";
-						    }
-						    tablinks = document.getElementsByClassName("tablinks");
-						    for (i = 0; i < tablinks.length; i++) {
-						        tablinks[i].className = tablinks[i].className.replace(" active", "");
-						    }
-						    document.getElementById(cityName).style.display = "block";
-						    evt.currentTarget.className += " active";
-						}
-					</script>
-					<script src="../assets/JavaScript/nav.js"></script>
 				</div>
+				
 			</div>
 		</div>
-	</main>
+	</div>
+</main>
+<script>
+	document.getElementById("copy").onclick = function() {
+var copyTextarea = document.createElement("textarea");
+copyTextarea.style.position = "fixed";
+copyTextarea.style.opacity = "0";
+copyTextarea.textContent = document.getElementById("content").value;
+
+document.body.appendChild(copyTextarea);
+copyTextarea.select();
+document.execCommand("copy");
+document.body.removeChild(copyTextarea);
+}
+</script>
+<script>
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+</script>
+<script src="../assets/JavaScript/nav.js"></script>
+<script src="../assets/JavaScript/tariffPlanScript.js"></script>
 </body>
 </html>

@@ -34,6 +34,11 @@ navLinkText.forEach((item, index) => {
             navLinkText[index].classList.toggle('show');
         }
     })
+    main.addEventListener('click', () => {
+        if (index !== 0) {
+            navLinkText[index].classList.remove('show');
+        }
+    })
 })
 
 
