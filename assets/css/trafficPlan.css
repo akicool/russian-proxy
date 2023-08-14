@@ -4,6 +4,7 @@
     padding: 0;
     height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 .disp-flex {
