@@ -1,279 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="../assets/css/basic.css">
-    <link rel="stylesheet" href="../assets/css/trafficPlan.css">
+  <head>
+    <link rel="stylesheet" href="../assets/css/basic.css" />
+    <link rel="stylesheet" href="../assets/css/trafficPlan.css" />
     <link rel="stylesheet" href="../assets/css/balance.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarrif-Plan</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container disp-flex">
-        <nav class="nav">
-            <div class="nav__lists">
-                <ul class="nav__list">
-                    <li class="nav__item padding-none nav__item--hidden">
-                        <a href="#" class="nav__link">
-                            <img src="../assets/images/icons/trafficPlanIcons/logo.svg" alt="logo">
-                            <div class="nav__link-text nav__link-title">Прокси от Костина.РФ</div>
-                        </a>
-                    </li>
-                    <div class="nav__general-block">
-                        <li class="general__item nav__item general__item--pos-none">
-                            <a href="#" class="nav__link">
-                                <img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
-                                <div class="nav__link-text">Канал:  общий</div>
-                            </a>
-                        </li>
-                        <li class="general__item nav__item general__item--pos-none">
-                            <a href="#" class="nav__link">
-                                <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
-                                <div class="nav__link-text">План:  0 дней</div>
-                            </a>
-                        </li>
-                        <li class="general__item nav__item general__item--pos-none">
-                            <a href="#" class="nav__link">
-                                <img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
-                                <div class="nav__link-text">Баланс: 0,00 р.</div>
-                            </a>
-                        </li>
-                    </div>
-                    <span class="additional-text">proxy</span>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <img src="../assets/images/icons/trafficPlanIcons/servers.svg" alt="servers">
-                            <div class="nav__link-text">Мои прокси</div>
-                        </a>
-                    </li>
-                    <span class="additional-text">user</span>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
-                            <div class="nav__link-text">Баланс</div>
-                        </a>
-                    </li>
-                    <li class="nav__item show-default">
-                        <a href="#" class="nav__link">
-                            <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
-                            <div class="nav__link-text">Тарифный план</div>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <img src="../assets/images/icons/trafficPlanIcons/profile.svg" alt="profile">
-                            <div class="nav__link-text">Профиль</div>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <img src="../assets/images/icons/trafficPlanIcons/chart.svg" alt="chart">
-                            <div class="nav__link-text">История трафика</div>
-                        </a>
-                    </li>
-                    <span class="additional-text">info</span>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <img src="../assets/images/icons/socials/Mail.svg" alt="Mail">
-                            <div class="nav__link-text">Чат</div> 
-                        </a>
-                    </li>
-                </ul>
-                <div class="nav__footer">
-                    <li class="padding-none nav__link-title nav__link-title--active">
-                        <a href="#" class="nav__link">
-                            <img src="../assets/images/icons/trafficPlanIcons/logo.svg" alt="logo">
-                            <div class="nav__link-text nav__link-title">Прокси от Костина.РФ</div>
-                        </a>
-                    </li>
-                    <ul class="nav__social-list">
-                        <li class="nav__social-item">
-                            <a href="#" class="nav__social-link">
-                                <img src="../assets/images/icons/socials/vk.svg" alt="vk">
-                            </a>
-                        </li>
-                        <li class="nav__social-item">
-                            <a href="#" class="nav__social-link">
-                                <img src="../assets/images/icons/socials/telegram.svg" alt="telegram">
-                            </a>
-                        </li>
-                        <li class="nav__social-item">
-                            <a href="#" class="nav__social-link">
-                                <img src="../assets/images/icons/socials/Mail.svg" alt="Mail">
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="nav__footer-item">
-                        <a href="#" class="nav__logout">
-                            <img src="../assets/images/icons/trafficPlanIcons/logout.svg" alt="logout">
-                            <p class="nav__footer-text nav__link-text">
-                                Выход
-                            </p>
-                        </a>
-                    </div>
+      <nav class="nav">
+        <div class="nav__lists">
+          <ul class="nav__list">
+            <li class="nav__item padding-none nav__item--hidden">
+              <a href="#" class="nav__link">
+                <img
+                  src="../assets/images/icons/trafficPlanIcons/logo.svg"
+                  alt="logo"
+                />
+                <div class="nav__link-text nav__link-title">
+                  Прокси от Костина.РФ
                 </div>
+              </a>
+            </li>
+            <div class="nav__general-block">
+              <li class="general__item nav__item general__item--pos-none">
+                <a href="#" class="nav__link">
+                  <img
+                    src="../assets/images/icons/trafficPlanIcons/box.svg"
+                    alt="box"
+                  />
+                  <div class="nav__link-text">Канал: общий</div>
+                </a>
+              </li>
+              <li class="general__item nav__item general__item--pos-none">
+                <a href="#" class="nav__link">
+                  <img
+                    src="../assets/images/icons/trafficPlanIcons/currencies.svg"
+                    alt="currencies"
+                  />
+                  <div class="nav__link-text">План: 0 дней</div>
+                </a>
+              </li>
+              <li class="general__item nav__item general__item--pos-none">
+                <a href="#" class="nav__link">
+                  <img
+                    src="../assets/images/icons/trafficPlanIcons/wallet.svg"
+                    alt="wallet"
+                  />
+                  <div class="nav__link-text">Баланс: 0,00 р.</div>
+                </a>
+              </li>
             </div>
-        </nav>
-        <div class="content">
-            <header class="header">
-                <div class="header__menu-btn menu-btn">
-                    <span class="menu-btn-line"></span>
+            <span class="additional-text">proxy</span>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  src="../assets/images/icons/trafficPlanIcons/servers.svg"
+                  alt="servers"
+                />
+                <div class="nav__link-text">Мои прокси</div>
+              </a>
+            </li>
+            <span class="additional-text">user</span>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  src="../assets/images/icons/trafficPlanIcons/wallet.svg"
+                  alt="wallet"
+                />
+                <div class="nav__link-text">Баланс</div>
+              </a>
+            </li>
+            <li class="nav__item show-default">
+              <a href="#" class="nav__link">
+                <img
+                  src="../assets/images/icons/trafficPlanIcons/currencies.svg"
+                  alt="currencies"
+                />
+                <div class="nav__link-text">Тарифный план</div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  src="../assets/images/icons/trafficPlanIcons/profile.svg"
+                  alt="profile"
+                />
+                <div class="nav__link-text">Профиль</div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  src="../assets/images/icons/trafficPlanIcons/chart.svg"
+                  alt="chart"
+                />
+                <div class="nav__link-text">История трафика</div>
+              </a>
+            </li>
+            <span class="additional-text">info</span>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img src="../assets/images/icons/socials/Mail.svg" alt="Mail" />
+                <div class="nav__link-text">Чат</div>
+              </a>
+            </li>
+          </ul>
+          <div class="nav__footer">
+            <li class="padding-none nav__link-title nav__link-title--active">
+              <a href="#" class="nav__link">
+                <img
+                  src="../assets/images/icons/trafficPlanIcons/logo.svg"
+                  alt="logo"
+                />
+                <div class="nav__link-text nav__link-title">
+                  Прокси от Костина.РФ
                 </div>
-                <nav class="general">
-                    <ul class="general__list">
-                        <div class="general__hidden">
-                            <li class="general__item">
-                                <img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
-                                Тип канала:  общий
-                            </li>
-                            <li class="general__item">
-                                <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
-                                Тарифный план:  0 дней
-                            </li>
-                            <li class="general__item">
-                                <img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
-                                Баланс: 0,00 р.
-                            </li>
-                        </div>
-                        <button class="button button--transparent">Пополнить</button>
-                        <li class="general__item account">
-                            <img src="../assets/images/icons/trafficPlanIcons/account-logo.svg" alt="account-logo">
-                             <div class="general__item-email">oooloyren@mail.ru</div>
-                        </li>
-                        <div class="account-block account-block--pos">
-                            <div class="account-block__link">
-                                <img src="../assets/images/icons/trafficPlanIcons/cog.svg" alt="cog">
-                                Профиль
-                            </div>
-                            <div class="account-block__link">
-                                <img src="../assets/images/icons/trafficPlanIcons/account-balance.svg" alt="balance">
-                                Баланс: 0,00 р.
-                            </div>
-                            <div class="line line-white"></div>
-                            <div class="account-block__link">
-                                <img src="../assets/images/icons/trafficPlanIcons/account-logout.svg" alt="account-logout">
-                                Выйти
-                            </div>
-                        </div>
-                    </ul>
-                </nav>
-            </header>
-            <main class="main">
-                <div class="tariff">
-                    <h3 class="tariff__title tariff__title--margin">Баланс</h3>
-                    <div class="tariff__email-confirm email-confirm">
-                        <div class="email-confirm__title">
-                            <img src="../assets/images/icons/trafficPlanIcons/logo.svg" alt="">
-                            <p class="email-confirm__title-text">Прокси от Костина.РФ</p>
-                        </div>
-                        <div class="line line--margin"></div>
-                        <div class="email-confirm__subtitle">
-                            <div class="email-confirm__subtitle-info">
-                                <p class="email-confirm__subtitle-text email-confirm__subtitle-text--margin">Подтвердите Ваш email адрес</p>
-                                <button class="email-confirm__subtitle-button button button--black">Отправить снова</button>
-                            </div>
-                            <img src="../assets/images/img/email-confirm-icon.svg" alt="email-confirm">
-                        </div>
-                    </div>
-                    <section class="home">
-                        <div class="home-wrapper">
-                          <div class="home-inner">
-                            <div class="home-flex">
-                                <div class="home-text">
-                                    Способ пополнения
-                                </div>
-                                <div class="home-card2">
-                                    <div class="home-qiwi">
-                                        <img src="../assets/images/img/Frame (7).svg" alt="" />
-                                        <p>0,00 р.</p>
-                                    </div>
-                                    <div class="home-input">
-                                        <p>Сумма</p>
-                                        <img src="../assets/images/img/1.svg" alt="" />
-                                        <input
-                                          type="number"
-                                          id="minAmountInput"
-                                          min="0"
-                                          step="0.01"
-                                          placeholder="Минимальная сумма 30,00 р"
-                                        />
-                                    </div>
-                                    <p class="home-sum">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                            <g clip-path="url(#clip0_279_398465)">
-                                              <path d="M11.8454 9.52492L6.92319 1.36182C6.72927 1.04024 6.37553 0.840454 5.99999 0.840454C5.62445 0.840454 5.27071 1.04024 5.07676 1.36184L0.154581 9.52492C-0.0458334 9.85731 -0.0517631 10.2737 0.139088 10.6117C0.329987 10.9497 0.689659 11.1596 1.07778 11.1596H10.9222C11.3103 11.1596 11.67 10.9497 11.8609 10.6117C12.0518 10.2737 12.0458 9.85726 11.8454 9.52492ZM11.1806 10.2275C11.1547 10.2733 11.1172 10.3113 11.0718 10.3378C11.0264 10.3643 10.9748 10.3783 10.9222 10.3784H1.07778C1.02522 10.3783 0.973615 10.3643 0.928221 10.3378C0.882827 10.3114 0.845272 10.2733 0.819385 10.2275C0.793578 10.1818 0.780374 10.1299 0.78112 10.0774C0.781865 10.0248 0.796533 9.97341 0.823628 9.92837L5.74585 1.76527C5.77238 1.72159 5.80968 1.68545 5.85419 1.66031C5.89869 1.63518 5.9489 1.6219 6.00001 1.62174C6.10337 1.62174 6.20075 1.67675 6.25414 1.76527L11.1763 9.92837C11.2034 9.9734 11.2181 10.0248 11.2189 10.0774C11.2196 10.1299 11.2064 10.1817 11.1806 10.2275Z" fill="#FF5722"/>
-                                              <path d="M6.00398 4.05493C5.70679 4.05493 5.47485 4.2144 5.47485 4.4971C5.47485 5.35965 5.57631 6.59912 5.57631 7.46169C5.57634 7.68638 5.77206 7.7806 6.004 7.7806C6.17795 7.7806 6.4244 7.68638 6.4244 7.46169C6.4244 6.59914 6.52586 5.35967 6.52586 4.4971C6.52586 4.21442 6.28668 4.05493 6.00398 4.05493ZM6.01127 8.28074C5.69235 8.28074 5.45312 8.53442 5.45312 8.83888C5.45312 9.13606 5.69233 9.39702 6.01127 9.39702C6.30845 9.39702 6.56216 9.13606 6.56216 8.83888C6.56216 8.53442 6.30843 8.28074 6.01127 8.28074Z" fill="#FF5722"/>
-                                            </g>
-                                            <defs>
-                                              <clipPath id="clip0_279_398465">
-                                                <rect width="12" height="12" fill="white"/>
-                                              </clipPath>
-                                            </defs>
-                                        </svg>
-                                        Минимальная сумма 30,00 р.
-                                    </p>
-                                    <button class="home-button">Продолжить</button>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <section class="pay">
-                        <div class="pay-wrapper">
-                          <div class="pay-text">
-                            <p>Вы будете перенаправлены на платежный сервис</p>
-                            <h4>
-                              Если у вас возникли проблемы с оплатой, свяжитесь с нашим
-                              <button class="button button--transparent">менеджером</button>
-                            </h4>
-                          </div>
-                          <div class="history-pay">
-                            <h3>История платежей</h3>
-                            <div class="history-flex">
-                              <h4>
-                                Дата 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M6.31409 0.800049C6.25801 0.800019 6.20274 0.813386 6.15288 0.839036C6.10302 0.864687 6.06 0.901879 6.02742 0.947516L2.20795 6.29472C2.16485 6.35512 2.13922 6.42623 2.13386 6.50025C2.12851 6.57427 2.14365 6.64832 2.17762 6.7143C2.21159 6.78028 2.26307 6.83563 2.32642 6.87428C2.38977 6.91292 2.46255 6.93337 2.53675 6.93338H4.53275V15.2H6.66609V1.15205C6.66609 1.10582 6.65698 1.06005 6.63929 1.01734C6.6216 0.974638 6.59568 0.935834 6.56299 0.903147C6.5303 0.870461 6.4915 0.844533 6.44879 0.826843C6.40609 0.809154 6.36031 0.800049 6.31409 0.800049ZM9.68475 15.2C9.74083 15.2001 9.7961 15.1867 9.84596 15.1611C9.89583 15.1354 9.93884 15.0982 9.97142 15.0526L13.7909 9.70538C13.834 9.64498 13.8596 9.57386 13.865 9.49985C13.8703 9.42583 13.8552 9.35177 13.8212 9.28579C13.7873 9.21982 13.7358 9.16447 13.6724 9.12582C13.6091 9.08718 13.5363 9.06673 13.4621 9.06672H11.4661V0.800049H9.33276V14.8481C9.33276 15.0424 9.49036 15.2 9.68475 15.2Z" fill="#0C0C20"/>
-                                </svg>
-                              </h4>
-                              <h4>Статус</h4>
-                              <h4>Тип</h4>
-                              <h4>Способ</h4>
-                              <h4>Сумма транзакции</h4>
-                            </div>
-                            <hr />
-                            <div class="history-flex2">
-                              <p>
-                                30.06.2023 <br />
-                                16:23
-                              </p>
-                              <button class="button button--black">ожидание</button>
-                              <p>Пополнение</p>
-                              <p></p>
-                              <p>1700 рублей</p>
-                            </div>
-                            <hr />
-                            <div class="history-flex2">
-                              <p>
-                                30.06.2023 <br />
-                                16:23
-                              </p>
-                              <button class="button button--black button--green">пополнен</button>
-                              <p>Пополнение</p>
-                              <p>Qiwi</p>
-                              <p>1700 рублей</p>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                    <div class="tariff__footer-text tariff__footer-text--margin">
-                        © 2023 Прокси от Костина.РФ
-                    </div>
-                </div>
-            </main>
+              </a>
+            </li>
+            <ul class="nav__social-list">
+              <li class="nav__social-item">
+                <a href="#" class="nav__social-link">
+                  <img src="../assets/images/icons/socials/vk.svg" alt="vk" />
+                </a>
+              </li>
+              <li class="nav__social-item">
+                <a href="#" class="nav__social-link">
+                  <img
+                    src="../assets/images/icons/socials/telegram.svg"
+                    alt="telegram"
+                  />
+                </a>
+              </li>
+              <li class="nav__social-item">
+                <a href="#" class="nav__social-link">
+                  <img
+                    src="../assets/images/icons/socials/Mail.svg"
+                    alt="Mail"
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="nav__footer-item">
+              <a href="#" class="nav__logout">
+                <img
+                  src="../assets/images/icons/trafficPlanIcons/logout.svg"
+                  alt="logout"
+                />
+                <p class="nav__footer-text nav__link-text">Выход</p>
+              </a>
+            </div>
+          </div>
         </div>
+      </nav>
+      <div class="content">
+        <header class="header">
+          <div class="header__menu-btn menu-btn">
+            <span class="menu-btn-line"></span>
+          </div>
+          <nav class="general">
+            <ul class="general__list">
+              <div class="general__hidden">
+                <li class="general__item">
+                  <img
+                    src="../assets/images/icons/trafficPlanIcons/box.svg"
+                    alt="box"
+                  />
+                  Тип канала: общий
+                </li>
+                <li class="general__item">
+                  <img
+                    src="../assets/images/icons/trafficPlanIcons/currencies.svg"
+                    alt="currencies"
+                  />
+                  Тарифный план: 0 дней
+                </li>
+                <li class="general__item">
+                  <img
+                    src="../assets/images/icons/trafficPlanIcons/wallet.svg"
+                    alt="wallet"
+                  />
+                  Баланс: 0,00 р.
+                </li>
+              </div>
+              <button class="button button--transparent">Пополнить</button>
+              <li class="general__item account">
+                <img
+                  src="../assets/images/icons/trafficPlanIcons/account-logo.svg"
+                  alt="account-logo"
+                />
+                <div class="general__item-email">oooloyren@mail.ru</div>
+              </li>
+              <div class="account-block account-block--pos">
+                <div class="account-block__link">
+                  <img
+                    src="../assets/images/icons/trafficPlanIcons/cog.svg"
+                    alt="cog"
+                  />
+                  Профиль
+                </div>
+                <div class="account-block__link">
+                  <img
+                    src="../assets/images/icons/trafficPlanIcons/account-balance.svg"
+                    alt="balance"
+                  />
+                  Баланс: 0,00 р.
+                </div>
+                <div class="line line-white"></div>
+                <div class="account-block__link">
+                  <img
+                    src="../assets/images/icons/trafficPlanIcons/account-logout.svg"
+                    alt="account-logout"
+                  />
+                  Выйти
+                </div>
+              </div>
+            </ul>
+          </nav>
+        </header>
+        <main class="main">
+          <div class="tariff">
+            <h3 class="tariff__title tariff__title--margin">Баланс</h3>
+            <div class="tariff__email-confirm email-confirm">
+              <div class="email-confirm__title">
+                <img
+                  src="../assets/images/icons/trafficPlanIcons/logo.svg"
+                  alt=""
+                />
+                <p class="email-confirm__title-text">Прокси от Костина.РФ</p>
+              </div>
+              <div class="line line--margin"></div>
+              <div class="email-confirm__subtitle">
+                <div class="email-confirm__subtitle-info">
+                  <p
+                    class="email-confirm__subtitle-text email-confirm__subtitle-text--margin"
+                  >
+                    Подтвердите Ваш email адрес
+                  </p>
+                  <button
+                    class="email-confirm__subtitle-button button button--black"
+                  >
+                    Отправить снова
+                  </button>
+                </div>
+                <img
+                  src="../assets/images/img/email-confirm-icon.svg"
+                  alt="email-confirm"
+                />
+              </div>
+            </div>
+            <section class="home">
+              <div class="home-wrapper">
+                <div class="home-inner">
+                  <div class="home-flex">
+                    <div class="home-text">Способ пополнения</div>
+                    <div class="home-card2">
+                      <div class="home-qiwi">
+                        <img src="../assets/images/img/Frame (7).svg" alt="" />
+                        <p>0,00 р.</p>
+                      </div>
+                      <div class="home-input">
+                        <p>Сумма</p>
+                        <img src="../assets/images/img/1.svg" alt="" />
+                        <input
+                          type="number"
+                          id="minAmountInput"
+                          min="0"
+                          step="0.01"
+                          placeholder="Минимальная сумма 30,00 р"
+                        />
+                      </div>
+                      <p class="home-sum">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                        >
+                          <g clip-path="url(#clip0_279_398465)">
+                            <path
+                              d="M11.8454 9.52492L6.92319 1.36182C6.72927 1.04024 6.37553 0.840454 5.99999 0.840454C5.62445 0.840454 5.27071 1.04024 5.07676 1.36184L0.154581 9.52492C-0.0458334 9.85731 -0.0517631 10.2737 0.139088 10.6117C0.329987 10.9497 0.689659 11.1596 1.07778 11.1596H10.9222C11.3103 11.1596 11.67 10.9497 11.8609 10.6117C12.0518 10.2737 12.0458 9.85726 11.8454 9.52492ZM11.1806 10.2275C11.1547 10.2733 11.1172 10.3113 11.0718 10.3378C11.0264 10.3643 10.9748 10.3783 10.9222 10.3784H1.07778C1.02522 10.3783 0.973615 10.3643 0.928221 10.3378C0.882827 10.3114 0.845272 10.2733 0.819385 10.2275C0.793578 10.1818 0.780374 10.1299 0.78112 10.0774C0.781865 10.0248 0.796533 9.97341 0.823628 9.92837L5.74585 1.76527C5.77238 1.72159 5.80968 1.68545 5.85419 1.66031C5.89869 1.63518 5.9489 1.6219 6.00001 1.62174C6.10337 1.62174 6.20075 1.67675 6.25414 1.76527L11.1763 9.92837C11.2034 9.9734 11.2181 10.0248 11.2189 10.0774C11.2196 10.1299 11.2064 10.1817 11.1806 10.2275Z"
+                              fill="#FF5722"
+                            />
+                            <path
+                              d="M6.00398 4.05493C5.70679 4.05493 5.47485 4.2144 5.47485 4.4971C5.47485 5.35965 5.57631 6.59912 5.57631 7.46169C5.57634 7.68638 5.77206 7.7806 6.004 7.7806C6.17795 7.7806 6.4244 7.68638 6.4244 7.46169C6.4244 6.59914 6.52586 5.35967 6.52586 4.4971C6.52586 4.21442 6.28668 4.05493 6.00398 4.05493ZM6.01127 8.28074C5.69235 8.28074 5.45312 8.53442 5.45312 8.83888C5.45312 9.13606 5.69233 9.39702 6.01127 9.39702C6.30845 9.39702 6.56216 9.13606 6.56216 8.83888C6.56216 8.53442 6.30843 8.28074 6.01127 8.28074Z"
+                              fill="#FF5722"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_279_398465">
+                              <rect width="12" height="12" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        Минимальная сумма 30,00 р.
+                      </p>
+                      <button class="home-button">Продолжить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="pay">
+              <div class="pay-wrapper">
+                <div class="pay-text">
+                  <p>Вы будете перенаправлены на платежный сервис</p>
+                  <h4>
+                    Если у вас возникли проблемы с оплатой, свяжитесь с нашим
+                    <button class="button button--transparent">
+                      менеджером
+                    </button>
+                  </h4>
+                </div>
+                <div class="history-pay">
+                  <h3>История платежей</h3>
+                  <div class="history-flex">
+                    <h4>
+                      Дата
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.31409 0.800049C6.25801 0.800019 6.20274 0.813386 6.15288 0.839036C6.10302 0.864687 6.06 0.901879 6.02742 0.947516L2.20795 6.29472C2.16485 6.35512 2.13922 6.42623 2.13386 6.50025C2.12851 6.57427 2.14365 6.64832 2.17762 6.7143C2.21159 6.78028 2.26307 6.83563 2.32642 6.87428C2.38977 6.91292 2.46255 6.93337 2.53675 6.93338H4.53275V15.2H6.66609V1.15205C6.66609 1.10582 6.65698 1.06005 6.63929 1.01734C6.6216 0.974638 6.59568 0.935834 6.56299 0.903147C6.5303 0.870461 6.4915 0.844533 6.44879 0.826843C6.40609 0.809154 6.36031 0.800049 6.31409 0.800049ZM9.68475 15.2C9.74083 15.2001 9.7961 15.1867 9.84596 15.1611C9.89583 15.1354 9.93884 15.0982 9.97142 15.0526L13.7909 9.70538C13.834 9.64498 13.8596 9.57386 13.865 9.49985C13.8703 9.42583 13.8552 9.35177 13.8212 9.28579C13.7873 9.21982 13.7358 9.16447 13.6724 9.12582C13.6091 9.08718 13.5363 9.06673 13.4621 9.06672H11.4661V0.800049H9.33276V14.8481C9.33276 15.0424 9.49036 15.2 9.68475 15.2Z"
+                          fill="#0C0C20"
+                        />
+                      </svg>
+                    </h4>
+                    <h4>
+                      Статус
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.31409 0.800049C6.25801 0.800019 6.20274 0.813386 6.15288 0.839036C6.10302 0.864687 6.06 0.901879 6.02742 0.947516L2.20795 6.29472C2.16485 6.35512 2.13922 6.42623 2.13386 6.50025C2.12851 6.57427 2.14365 6.64832 2.17762 6.7143C2.21159 6.78028 2.26307 6.83563 2.32642 6.87428C2.38977 6.91292 2.46255 6.93337 2.53675 6.93338H4.53275V15.2H6.66609V1.15205C6.66609 1.10582 6.65698 1.06005 6.63929 1.01734C6.6216 0.974638 6.59568 0.935834 6.56299 0.903147C6.5303 0.870461 6.4915 0.844533 6.44879 0.826843C6.40609 0.809154 6.36031 0.800049 6.31409 0.800049ZM9.68475 15.2C9.74083 15.2001 9.7961 15.1867 9.84596 15.1611C9.89583 15.1354 9.93884 15.0982 9.97142 15.0526L13.7909 9.70538C13.834 9.64498 13.8596 9.57386 13.865 9.49985C13.8703 9.42583 13.8552 9.35177 13.8212 9.28579C13.7873 9.21982 13.7358 9.16447 13.6724 9.12582C13.6091 9.08718 13.5363 9.06673 13.4621 9.06672H11.4661V0.800049H9.33276V14.8481C9.33276 15.0424 9.49036 15.2 9.68475 15.2Z"
+                          fill="#0C0C20"
+                        />
+                      </svg>
+                    </h4>
+                    <h4>
+                      Тип
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.31409 0.800049C6.25801 0.800019 6.20274 0.813386 6.15288 0.839036C6.10302 0.864687 6.06 0.901879 6.02742 0.947516L2.20795 6.29472C2.16485 6.35512 2.13922 6.42623 2.13386 6.50025C2.12851 6.57427 2.14365 6.64832 2.17762 6.7143C2.21159 6.78028 2.26307 6.83563 2.32642 6.87428C2.38977 6.91292 2.46255 6.93337 2.53675 6.93338H4.53275V15.2H6.66609V1.15205C6.66609 1.10582 6.65698 1.06005 6.63929 1.01734C6.6216 0.974638 6.59568 0.935834 6.56299 0.903147C6.5303 0.870461 6.4915 0.844533 6.44879 0.826843C6.40609 0.809154 6.36031 0.800049 6.31409 0.800049ZM9.68475 15.2C9.74083 15.2001 9.7961 15.1867 9.84596 15.1611C9.89583 15.1354 9.93884 15.0982 9.97142 15.0526L13.7909 9.70538C13.834 9.64498 13.8596 9.57386 13.865 9.49985C13.8703 9.42583 13.8552 9.35177 13.8212 9.28579C13.7873 9.21982 13.7358 9.16447 13.6724 9.12582C13.6091 9.08718 13.5363 9.06673 13.4621 9.06672H11.4661V0.800049H9.33276V14.8481C9.33276 15.0424 9.49036 15.2 9.68475 15.2Z"
+                          fill="#0C0C20"
+                        />
+                      </svg>
+                    </h4>
+                    <h4>
+                      Способ
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.31409 0.800049C6.25801 0.800019 6.20274 0.813386 6.15288 0.839036C6.10302 0.864687 6.06 0.901879 6.02742 0.947516L2.20795 6.29472C2.16485 6.35512 2.13922 6.42623 2.13386 6.50025C2.12851 6.57427 2.14365 6.64832 2.17762 6.7143C2.21159 6.78028 2.26307 6.83563 2.32642 6.87428C2.38977 6.91292 2.46255 6.93337 2.53675 6.93338H4.53275V15.2H6.66609V1.15205C6.66609 1.10582 6.65698 1.06005 6.63929 1.01734C6.6216 0.974638 6.59568 0.935834 6.56299 0.903147C6.5303 0.870461 6.4915 0.844533 6.44879 0.826843C6.40609 0.809154 6.36031 0.800049 6.31409 0.800049ZM9.68475 15.2C9.74083 15.2001 9.7961 15.1867 9.84596 15.1611C9.89583 15.1354 9.93884 15.0982 9.97142 15.0526L13.7909 9.70538C13.834 9.64498 13.8596 9.57386 13.865 9.49985C13.8703 9.42583 13.8552 9.35177 13.8212 9.28579C13.7873 9.21982 13.7358 9.16447 13.6724 9.12582C13.6091 9.08718 13.5363 9.06673 13.4621 9.06672H11.4661V0.800049H9.33276V14.8481C9.33276 15.0424 9.49036 15.2 9.68475 15.2Z"
+                          fill="#0C0C20"
+                        />
+                      </svg>
+                    </h4>
+                    <h4>
+                      Сумма транзакции
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.31409 0.800049C6.25801 0.800019 6.20274 0.813386 6.15288 0.839036C6.10302 0.864687 6.06 0.901879 6.02742 0.947516L2.20795 6.29472C2.16485 6.35512 2.13922 6.42623 2.13386 6.50025C2.12851 6.57427 2.14365 6.64832 2.17762 6.7143C2.21159 6.78028 2.26307 6.83563 2.32642 6.87428C2.38977 6.91292 2.46255 6.93337 2.53675 6.93338H4.53275V15.2H6.66609V1.15205C6.66609 1.10582 6.65698 1.06005 6.63929 1.01734C6.6216 0.974638 6.59568 0.935834 6.56299 0.903147C6.5303 0.870461 6.4915 0.844533 6.44879 0.826843C6.40609 0.809154 6.36031 0.800049 6.31409 0.800049ZM9.68475 15.2C9.74083 15.2001 9.7961 15.1867 9.84596 15.1611C9.89583 15.1354 9.93884 15.0982 9.97142 15.0526L13.7909 9.70538C13.834 9.64498 13.8596 9.57386 13.865 9.49985C13.8703 9.42583 13.8552 9.35177 13.8212 9.28579C13.7873 9.21982 13.7358 9.16447 13.6724 9.12582C13.6091 9.08718 13.5363 9.06673 13.4621 9.06672H11.4661V0.800049H9.33276V14.8481C9.33276 15.0424 9.49036 15.2 9.68475 15.2Z"
+                          fill="#0C0C20"
+                        />
+                      </svg>
+                    </h4>
+                  </div>
+                  <hr />
+                  <div class="history-flex2">
+                    <p>
+                      30.06.2023 <br />
+                      16:23
+                    </p>
+                    <button class="button button--black">ожидание</button>
+                    <p>Пополнение</p>
+                    <p></p>
+                    <p>1700 рублей</p>
+                  </div>
+                  <hr />
+                  <div class="history-flex2">
+                    <p>
+                      30.06.2023 <br />
+                      16:23
+                    </p>
+                    <button class="button button--black button--green">
+                      пополнен
+                    </button>
+                    <p>Пополнение</p>
+                    <p>Qiwi</p>
+                    <p>1700 рублей</p>
+                  </div>
+                  <hr />
+                </div>
+              </div>
+            </section>
+            <div class="tariff__footer-text tariff__footer-text--margin">
+              © 2023 Прокси от Костина.РФ
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
     <script src="../assets/JavaScript/nav.js"></script>
     <script src="../assets/JavaScript/tariffPlanScript.js"></script>
-</body>
+  </body>
 </html>

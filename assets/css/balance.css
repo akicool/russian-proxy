@@ -38,8 +38,9 @@ header {
   background-color: #1878f1;
 }
 
-.header {z-index: 1;}
-
+.header {
+  z-index: 1;
+}
 
 .tariff {
   padding: 10px 20px;
@@ -48,7 +49,6 @@ header {
 
 .main {
   overflow-y: auto;
-
 }
 
 .border {
@@ -106,9 +106,9 @@ header {
 .home-text {
   padding-bottom: 30px;
   margin-top: 20px;
-  
+
   font-size: 20px;
-  color: #0C0C20;
+  color: #0c0c20;
   font-weight: 500;
   line-height: 150%; /* 30px */
 }
@@ -236,7 +236,7 @@ header {
   font-style: normal;
   font-weight: 400;
   margin-top: 10px;
-  line-height: 150%; 
+  line-height: 150%;
 }
 
 .home-button {
@@ -312,18 +312,50 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
 
-  color: #0C0C20;
+  color: #0c0c20;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; 
-  
+  line-height: 150%;
 }
-
 
 @media (max-width: 768px) {
   .history-pay {
-    width: 800px;
+    width: 100%;
     overflow: auto;
+  }
+
+  .tariff__footer-text--margin {
+    margin-top: 90px;
+  }
+
+  .history-flex {
+    padding-right: 10px;
+  }
+
+  .history-pay h3 {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .home-card2 {
+    width: 100%;
+  }
+
+  .pay-text h4 {
+    display: flex;
+  }
+
+  .button--transparent {
+    margin-top: 15px;
+  }
+
+  .history-pay {
+    width: 700px;
+  }
+
+  .tariff__footer-text--margin {
+    margin-top: 124px;
   }
 }
