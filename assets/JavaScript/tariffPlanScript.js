@@ -7,13 +7,16 @@ const checkboxInput = document.querySelectorAll('.checkbox-input')
 const cardBtn = document.querySelectorAll('.card__btn')
 const cardTariffBtn = document.querySelectorAll('.card__tariff-btn')
 const cardItem = document.querySelectorAll('.card__item')
+const cardItemBg = document.querySelectorAll('.card__item-bg')
 const card = document.querySelector('.card')
+const btnDecoration = document.querySelectorAll('.btn-decoration')
 
 account.addEventListener('click', () => {
     accountBlock.classList.toggle('active');
 });
 
 btnSecond.addEventListener('click', () => {
+
     btnSecond.classList.add('button--green');
     btnFirst.classList.add('button--transparent', 'channels__button-color');
     btnFirst.classList.remove('button--black');
@@ -31,6 +34,12 @@ btnSecond.addEventListener('click', () => {
         item.querySelector('.checkbox-input').classList.add('checked');
         item.classList.add('active');
     })
+    cardItemBg.forEach(item => {
+        item.classList.add('bg-active');
+    })
+    btnDecoration.forEach((decoration) => {
+        decoration.classList.add('decor-active');
+    });
     
 })
 
@@ -52,25 +61,67 @@ btnFirst.addEventListener('click', () => {
         item.querySelector('.checkbox-input').classList.remove('checked');
         item.classList.remove('active');
     })
-})
-
-checkbox.forEach((item, index) => {
-    item.addEventListener('click', () => {
-        checkboxInput[index].classList.remove('checked');
-        item.classList.toggle('active');
-        cardBtn[index].textContent === 'Частный канал' 
-        ?
-        cardBtn[index].textContent = 'Общий канал' 
-        : 
-        cardBtn[index].textContent = 'Частный канал'
-
-        cardBtn[index].classList.toggle('button--green');
-        cardTariffBtn[index].classList.toggle('button--green');
-        
+    cardItemBg.forEach(item => {
+        item.classList.toggle('bg-active');
+    })
+    btnDecoration.forEach((decoration) => {
+        decoration.classList.toggle('decor-active');
     });
-    
 })
 
+cardItem.forEach((item) => {
+    const checkbox = item.querySelector('.checkbox');
+    const checkboxInput = item.querySelector('.checkbox-input');
+    const btnDecoration = item.querySelectorAll('.btn-decoration');
+    const cardBtn = item.querySelector('.card__btn');
+    const cardTariffBtn = item.querySelector('.card__tariff-btn');
+    const cardItemBg = item.querySelector('.card__item-bg');
+
+    checkbox.addEventListener('click', () => {
+        checkboxInput.classList.remove('checked');
+        checkbox.classList.toggle('active');
+        
+        cardBtn.textContent === 'Частный канал' 
+         ?
+         cardBtn.textContent = 'Общий канал' 
+         : 
+         cardBtn.textContent = 'Частный канал'
+
+        cardBtn.classList.toggle('button--green');
+
+        cardTariffBtn.classList.toggle('button--green');
+        cardItemBg.classList.toggle('bg-active');
+
+        btnDecoration.forEach((decoration) => {
+            decoration.classList.toggle('decor-active');
+        });
+    });
+});
+
+//-------------------------------------------------------------//
+
+// checkbox.forEach((item, index) => {
+//     item.addEventListener('click', () => {
+//         checkboxInput[index].classList.remove('checked');
+//         item.classList.toggle('active');
+//         cardBtn[index].textContent === 'Частный канал' 
+//         ?
+//         cardBtn[index].textContent = 'Общий канал' 
+//         : 
+//         cardBtn[index].textContent = 'Частный канал'
+
+//         cardBtn[index].classList.toggle('button--green');
+//         cardTariffBtn[index].classList.toggle('button--green');
+        
+//         cardItemBg[index].classList.toggle('bg-active')
+//         btnDecoration.forEach((itemDecor) => {
+//             itemDecor.classList.toggle('decor-active')
+//         })
+//     });
+
+// })
+
+//-------------------------------------------------------------//
 
 const progressBar = document.querySelector('.inProgress3');
 let cardCount = 0;

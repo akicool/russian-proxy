@@ -5,6 +5,10 @@
     height: 100vh;
     position: relative;
 }
+.zindex2 {
+    position: relative;
+    z-index: 1;
+}
 
 .disp-flex {
     display: flex;
@@ -413,8 +417,8 @@
     border-radius: 35px;
 }
 .channels__button--padding {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 6px 20px;
+    font-size: 13px;
 }
 .channels__button-color {
     color: var(--main-font-color);
@@ -433,6 +437,8 @@
     gap: 10px;
 }
 .card__item {
+    position: relative;
+    overflow: hidden;
     max-width: 330px;
     width: 100%;
     height: 300px;
@@ -441,11 +447,47 @@
     background-color: var(--main-accent-color);
     text-align: center;
 }
+.card__item-bg {
+    width: 247px;
+    scale: 0;
+    position: absolute;
+    transition: .2s ease-out;
+    bottom: -20px;
+}
+
+.card__item-bg.bg-active {
+    scale: 1;
+    position: absolute;
+    transition: .2s ease-out;
+}
 .card__btn-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+.card__btn {
+    position: relative;
+}
+.btn-decoration {
+    top: -5;
+    width: 0;
+    height: 0;
+    z-index: 5;
+    position: absolute;
+    opacity: 0;
+    transition: .2s ease-out;
+}
+.btn-decoration.rotate {
+    transform: rotate(180deg);
+    top: -5px;
+    left: -46px;
+}
+.btn-decoration.decor-active {
+    width: max-content;
+    height: max-content;
+    opacity: 1;
+    transition: .2s ease-out;
 }
 .checkbox-toggler {
     right: 433px;
@@ -594,6 +636,9 @@
     .tariff {
         overflow-x: hidden;
     }
+    .tariff__card {
+        height: 300px;
+    }
     .card.width {
         width: 100%;
         transition: .2s ease-out;
@@ -635,7 +680,7 @@
 @media (max-width: 768px) {
     .nav {
         position: absolute;
-        z-index: 2;
+        z-index: 3;
     }
     .nav__lists {
         gap: 120px;
@@ -656,7 +701,7 @@
         height: 100%;
         position: absolute;
         background-color: #000;
-        z-index: 1;
+        z-index: 2;
         opacity: .7;
     }
     .header {
@@ -671,7 +716,6 @@
 @media (max-width: 475px) {
     .card {
         justify-content: center;
-        height: 300px;
     }
     .card__item.mobile-hidden {
         width: 0;
