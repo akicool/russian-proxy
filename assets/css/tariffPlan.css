@@ -1,3 +1,14 @@
+body::-webkit-scrollbar {
+    width: 0;
+}
+.display-none {
+    display: none !important;
+}
+.bottom25 {
+    position: absolute;
+    bottom: 25px;
+    mix-blend-mode: color-dodge;
+}
 .container {
     width: 100%;
     margin: 0 auto;
@@ -182,7 +193,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
     max-height: 52px;
     height: 100%;
     width: 100%;
@@ -305,6 +315,7 @@
     color: var(--white-link-color);
 }
 .main {
+    overflow-y: auto;
     width: 100%;
     height: 100%;
 }
@@ -384,9 +395,69 @@
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
+    margin-top: 20px;
 }
 .select-panel__button {
     color: var(--main-font-color);
+    transition: .2s ease-out
+}
+.select-panel__manager.active {
+    border-radius: 5px;
+    color: var(--white-link-color);
+    background: #26374D;
+    box-shadow: 0px 3px 0px 0px #1878F1 inset;
+    transition: .2s ease-out
+}
+.select-panel__history.active {
+    border-radius: 5px;
+    color: var(--white-link-color);
+    background: #26374D;
+    box-shadow: 0px 3px 0px 0px #1878F1 inset;
+    transition: .2s ease-out
+}
+.manager {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.manager__panel {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1220px;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--secondary-bg-color);
+    transition: .2s ease-out;
+}
+.manager__panel.active {
+    height: max-content;
+    padding: 30px;
+    margin: 50px 0;
+    opacity: 1;
+    visibility: visible;
+    transition: .2s ease-out;
+}
+.manager__text {
+    font-weight: 500;
+    color: var(--white-link-color);
+}
+.manager__button {
+    padding: 15px 20px;
+    
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+
+    background-color: var(--white-link-color);
+    color: var(--main-font-color);
+    border-radius: 5px;
 }
 
 .channels {
@@ -394,6 +465,7 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+    transition: .2s ease-out;
 }
 .channels--margin {
     margin-top: 10px;
@@ -435,6 +507,7 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    transition: .2s ease-out;
 }
 .card__item {
     position: relative;
@@ -469,18 +542,20 @@
 .card__btn {
     position: relative;
 }
+.button-decor-block {
+    position: relative;
+}
 .btn-decoration {
-    top: -5;
+    position: absolute;
+    top: -5px;
     width: 0;
     height: 0;
-    z-index: 5;
-    position: absolute;
+    z-index: 1;
     opacity: 0;
     transition: .2s ease-out;
 }
 .btn-decoration.rotate {
-    transform: rotate(180deg);
-    top: -5px;
+    transform: rotateY(180deg);
     left: -46px;
 }
 .btn-decoration.decor-active {
@@ -572,6 +647,7 @@
     margin-right: 10px;
 }
 .card__tariff-btn {
+    position: relative;
     background-color: var(--white-link-color);
     color: var(--main-font-color);
     border-radius: 5px;
@@ -602,9 +678,6 @@
     }
 }
 @media (max-width: 1100px) {
-    .header {
-        gap: 30px;
-    }
     .nav__general-block.active {
         height: max-content;
         opacity: 1;
@@ -706,10 +779,20 @@
     }
     .header {
         position: absolute;
+        top: 0;
+        z-index: 1;
     }
     .tariff__title--margin {
         margin-bottom: 10px;
         margin-top: 50px;
+    }
+    .manager__panel {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .manager__button {
+        width: 100%;
+        margin-top: 40px;
     }
 }
 
@@ -738,7 +821,14 @@
     .tariff__title--margin {
      margin-bottom: 10px;
      margin-top: 50px;
-}
+    }
+    .manager__button {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .manager__text {
+        font-size: 18px;
+    }
 }
 @media (max-width: 420px) {
     .general__list {
@@ -763,5 +853,13 @@
 @media (max-width: 370px) {
     .general__item {
         font-size: 13px;
+    }
+}
+@media (max-width: 340px) {
+    .channels__change {
+        gap: 6px;
+    }
+    .channels__change-title {
+        font-size: 18px;
     }
 }

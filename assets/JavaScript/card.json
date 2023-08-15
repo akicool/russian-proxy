@@ -1,0 +1,54 @@
+{
+    "card1": {
+        "time": "1 день",
+        "price-text": "от 50 рублей",
+        "price": 50
+    },
+    "card2": {
+        "time": "7 дней",
+        "price-text": "от 250 рублей",
+        "price": 250
+    },
+    "card3": {
+        "time": "14 дней",
+        "price-text": "от 400 рублей",
+        "price": 400
+    },
+    "card4": {
+        "time": "30 дней",
+        "price-text": "от 600 рублей",
+        "price": 600
+    },
+    "card5": {
+        "time": "90 дней",
+        "price-text": "от 1700 рублей",
+        "price": 1700
+    },
+    
+
+    "privateCard1": {
+        "time": "1 день",
+        "price-text": "от 150 рублей",
+        "price": 150
+    },
+    "privateCard2": {
+        "time": "7 дней",
+        "price-text": "от 700 рублей",
+        "price": 700
+    },
+    "privateCard3": {
+        "time": "14 дней",
+        "price-text": "от 1200 рублей",
+        "price": 1200
+    },
+    "privateCard4": {
+        "time": "30 дней",
+        "price-text": "от 2600 рублей",
+        "price": 2600
+    },
+    "privateCard5": {
+        "time": "90 дней",
+        "price-text": "от 2600 рублей",
+        "price": 2600
+    }
+}

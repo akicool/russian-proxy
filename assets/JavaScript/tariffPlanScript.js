@@ -1,3 +1,5 @@
+import cards from './card.json' assert {type: 'json'}
+
 const account = document.querySelector('.account')
 const accountBlock = document.querySelector('.account-block')
 const btnFirst = document.querySelector('.btn-first')
@@ -10,9 +12,49 @@ const cardItem = document.querySelectorAll('.card__item')
 const cardItemBg = document.querySelectorAll('.card__item-bg')
 const card = document.querySelector('.card')
 const btnDecoration = document.querySelectorAll('.btn-decoration')
+const selectPanelManager = document.querySelector('.select-panel__manager')
+const selectPanelHistory = document.querySelector('.select-panel__history')
+const managerPanel = document.querySelector('.manager__panel')
+const managerButton = document.querySelector('.manager__button')
+const channels = document.querySelector('.channels')
+const inProgress = document.querySelector('.inProgress')
+const tariffFooterText  = document.querySelector('.tariff__footer-text')
+
 
 account.addEventListener('click', () => {
     accountBlock.classList.toggle('active');
+});
+
+selectPanelManager.addEventListener('click', () => {
+    selectPanelManager.classList.toggle('active');
+    selectPanelHistory.classList.remove('active');
+    managerPanel.classList.toggle('active');
+    channels.classList.toggle('display-none');
+    card.classList.toggle('display-none');
+    inProgress.classList.toggle('display-none');
+    tariffFooterText.classList.toggle('bottom25');
+});
+
+selectPanelHistory.addEventListener('click', () => {
+    selectPanelHistory.classList.toggle('active');
+    selectPanelManager.classList.remove('active');
+    managerPanel.classList.remove('active');
+    channels.classList.remove('display-none');
+    card.classList.remove('display-none');
+    inProgress.classList.remove('display-none');
+    tariffFooterText.classList.remove('bottom25');
+});
+
+managerButton.addEventListener('click', () => {
+    managerButton.textContent === 'Отмена' 
+    ? 
+    managerButton.textContent = 'Выбрать тариф'
+    : 
+    managerButton.textContent = 'Отмена' 
+    
+    channels.classList.toggle('display-none');
+    card.classList.toggle('display-none');
+    tariffFooterText.classList.toggle('bottom25');
 });
 
 btnSecond.addEventListener('click', () => {
@@ -76,16 +118,28 @@ cardItem.forEach((item) => {
     const cardBtn = item.querySelector('.card__btn');
     const cardTariffBtn = item.querySelector('.card__tariff-btn');
     const cardItemBg = item.querySelector('.card__item-bg');
+    
+    checkbox.addEventListener('click', e => {
+        // const nearestParent = e.target.closest('.card__item');
+        // const cardTitle = nearestParent.querySelectorAll('.card__price');
 
-    checkbox.addEventListener('click', () => {
         checkboxInput.classList.remove('checked');
         checkbox.classList.toggle('active');
         
         cardBtn.textContent === 'Частный канал' 
-         ?
-         cardBtn.textContent = 'Общий канал' 
-         : 
-         cardBtn.textContent = 'Частный канал'
+           ?
+           cardBtn.textContent = 'Общий канал' 
+           : 
+           cardBtn.textContent = 'Частный канал'
+         
+        // cardTitle.forEach(item => {
+        //     item.textContent === '150' 
+        //        ?
+        //        item.textContent = '50' 
+        //        : 
+        //        item.textContent = '150'
+        // })
+         
 
         cardBtn.classList.toggle('button--green');
 
@@ -98,30 +152,18 @@ cardItem.forEach((item) => {
     });
 });
 
-//-------------------------------------------------------------//
+function getCardTitle(e) {
+    const nearestParent = e.target.closest('.card__item')
+    const cardTitle = nearestParent.querySelectorAll('.card__title');
+    cardTitle.forEach(item => {
+        const cardTitleContent = item.textContent
+        console.log(cardTitleContent);
+    })
+}
 
-// checkbox.forEach((item, index) => {
-//     item.addEventListener('click', () => {
-//         checkboxInput[index].classList.remove('checked');
-//         item.classList.toggle('active');
-//         cardBtn[index].textContent === 'Частный канал' 
-//         ?
-//         cardBtn[index].textContent = 'Общий канал' 
-//         : 
-//         cardBtn[index].textContent = 'Частный канал'
-
-//         cardBtn[index].classList.toggle('button--green');
-//         cardTariffBtn[index].classList.toggle('button--green');
-        
-//         cardItemBg[index].classList.toggle('bg-active')
-//         btnDecoration.forEach((itemDecor) => {
-//             itemDecor.classList.toggle('decor-active')
-//         })
-//     });
-
-// })
-
-//-------------------------------------------------------------//
+cardTariffBtn.forEach(item => {
+    item.addEventListener('click', getCardTitle)
+});
 
 const progressBar = document.querySelector('.inProgress3');
 let cardCount = 0;

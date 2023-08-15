@@ -176,8 +176,16 @@
                         </div>
                     </div>
                     <div class="select-panel">
-                        <button class="select-panel__button button button--transparent">Менеджер плана</button>
-                        <button class="select-panel__button button button--transparent">История покупок</button>
+                        <button class="select-panel__button select-panel__manager button button--transparent">Менеджер плана</button>
+                        <button class="select-panel__button select-panel__history button button--transparent">История покупок</button>
+                    </div>
+                    <div class="manager">
+                        <div class="manager__panel">
+                            <h3 class="manager__text">
+                                Приобретите тарифный план для отображения счетчика плана
+                            </h3>
+                            <button class="manager__button button">Выбрать тариф</button>
+                        </div>
                     </div>
                     <div class="channels channels--margin">
                         <div class="channels__change">
@@ -207,7 +215,7 @@
                             </div>
                             <div class="card__data card__data--margin">
                                 <p class="card__title">1 день</p>
-                                <p class="card__title">от 50 рублей</p>
+                                <p class="card__title">от <span class="card__price">50</span> рублей</p>
                             </div>
                             <div class="card__info card__info--margin ">
                                 <div class="card__info-text">
@@ -375,6 +383,6 @@
         </div>
     </div>
     <script src="../assets/JavaScript/nav.js"></script>
-    <script src="../assets/JavaScript/tariffPlanScript.js"></script>
+    <script type="module" src="../assets/JavaScript/tariffPlanScript.js"></script>
 </body>
 </html>
