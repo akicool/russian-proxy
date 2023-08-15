@@ -104,10 +104,10 @@ btnFirst.addEventListener('click', () => {
         item.classList.remove('active');
     })
     cardItemBg.forEach(item => {
-        item.classList.toggle('bg-active');
+        item.classList.remove('bg-active');
     })
     btnDecoration.forEach((decoration) => {
-        decoration.classList.toggle('decor-active');
+        decoration.classList.remove('decor-active');
     });
 })
 
