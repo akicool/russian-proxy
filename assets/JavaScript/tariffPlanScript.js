@@ -10,6 +10,7 @@ const cardBtn = document.querySelectorAll('.card__btn')
 const cardTariffBtn = document.querySelectorAll('.card__tariff-btn')
 const cardItem = document.querySelectorAll('.card__item')
 const cardItemBg = document.querySelectorAll('.card__item-bg')
+const cardPrice = document.querySelectorAll('.card__price');
 const card = document.querySelector('.card')
 const btnDecoration = document.querySelectorAll('.btn-decoration')
 const selectPanelManager = document.querySelector('.select-panel__manager')
@@ -57,7 +58,19 @@ managerButton.addEventListener('click', () => {
     tariffFooterText.classList.toggle('bottom25');
 });
 
-btnSecond.addEventListener('click', () => {
+let btnSecondCounter = 0;  
+btnSecond.addEventListener('click', (e) => {
+    btnSecondCounter++
+    clicked = true;
+    cardPrice.forEach(item => {
+        if (btnSecondCounter > 1) {
+            item.textContent = item.textContent
+        } else {
+            item.textContent *= 3;
+            btnFirstCounter = 0
+        }
+        console.log(btnSecondCounter);
+    })
 
     btnSecond.classList.add('button--green');
     btnFirst.classList.add('button--transparent', 'channels__button-color');
@@ -85,7 +98,20 @@ btnSecond.addEventListener('click', () => {
     
 })
 
+let btnFirstCounter = 0;  
 btnFirst.addEventListener('click', () => {
+    btnFirstCounter--
+    clicked = false;
+    cardPrice.forEach(item => {
+        if (btnFirstCounter < -1) {
+            item.textContent = item.textContent
+        } else {
+            item.textContent /= 3;
+            btnSecondCounter = 0
+        }
+        console.log(btnFirstCounter);
+    })
+
     btnFirst.classList.add('button--black');
     btnSecond.classList.add('button--transparent', 'channels__button-color');
     btnSecond.classList.remove('button--green');
@@ -111,6 +137,7 @@ btnFirst.addEventListener('click', () => {
     });
 })
 
+let clicked = false;
 cardItem.forEach((item) => {
     const checkbox = item.querySelector('.checkbox');
     const checkboxInput = item.querySelector('.checkbox-input');
@@ -118,29 +145,25 @@ cardItem.forEach((item) => {
     const cardBtn = item.querySelector('.card__btn');
     const cardTariffBtn = item.querySelector('.card__tariff-btn');
     const cardItemBg = item.querySelector('.card__item-bg');
+    const cardPrice = item.querySelector('.card__price');
+    
+    const originalPrice = parseInt(cardPrice.textContent);
     
     checkbox.addEventListener('click', e => {
-        // const nearestParent = e.target.closest('.card__item');
-        // const cardTitle = nearestParent.querySelectorAll('.card__price');
+        clicked = !clicked;
+        if (clicked) {
+            cardPrice.textContent = originalPrice * 3;
+        } else {
+            cardPrice.textContent = originalPrice;
+        }
 
         checkboxInput.classList.remove('checked');
         checkbox.classList.toggle('active');
         
         cardBtn.textContent === 'Частный канал' 
-           ?
-           cardBtn.textContent = 'Общий канал' 
-           : 
-           cardBtn.textContent = 'Частный канал'
-         
-        // cardTitle.forEach(item => {
-        //     item.textContent === '150' 
-        //        ?
-        //        item.textContent = '50' 
-        //        : 
-        //        item.textContent = '150'
-        // })
-         
-
+           ? cardBtn.textContent = 'Общий канал' 
+           : cardBtn.textContent = 'Частный канал'
+                    
         cardBtn.classList.toggle('button--green');
 
         cardTariffBtn.classList.toggle('button--green');
@@ -155,6 +178,7 @@ cardItem.forEach((item) => {
 function getCardTitle(e) {
     const nearestParent = e.target.closest('.card__item')
     const cardTitle = nearestParent.querySelectorAll('.card__title');
+
     cardTitle.forEach(item => {
         const cardTitleContent = item.textContent
         console.log(cardTitleContent);
