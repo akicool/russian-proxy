@@ -146,6 +146,7 @@ cardItem.forEach((item) => {
     const cardTariffBtn = item.querySelector('.card__tariff-btn');
     const cardItemBg = item.querySelector('.card__item-bg');
     const cardPrice = item.querySelector('.card__price');
+    cardPrice.dataset.originalPrice = cardPrice.textContent;
     
     const originalPrice = parseInt(cardPrice.textContent);
     
@@ -174,6 +175,35 @@ cardItem.forEach((item) => {
         });
     });
 });
+
+let multiplier = 1;
+
+const updatePrices = () => {
+    cardPrice.forEach(item => {
+        const originalPrice = parseInt(item.dataset.originalPrice);
+        item.textContent = originalPrice * multiplier;
+    });
+};
+
+const updateButtons = () => {
+    btnSecond.classList.toggle('button--green', multiplier === 3);
+    btnFirst.classList.toggle('button--black', multiplier === 1);
+};
+
+btnSecond.addEventListener('click', () => {
+    multiplier = 3;
+    updatePrices();
+    updateButtons();
+});
+
+btnFirst.addEventListener('click', () => {
+    multiplier = 1;
+    updatePrices();
+    updateButtons();
+});
+
+updatePrices();
+updateButtons();
 
 function getCardTitle(e) {
     const nearestParent = e.target.closest('.card__item')
