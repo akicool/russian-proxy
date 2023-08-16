@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чат с поддержкой</title>
+    <link rel="stylesheet" href="../assets/css/support.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="form">
+            <p class="form-ticket">Тикет по проблеме</p>
+            <p class="form-topic">Тема</p>
+            <input class="input-topic" type="text">
+            <p class="form-message">Сообщение</p>
+            <input class="input-message" type="text">
+            <div class="btn-block">
+              <button class="form-btn_files">Прикрепить файлы</button>
+              <button class="form-btn_message">Отправить сообщение</button>
+            </div>
+        </div>
+        <div class="message-status">
+          <div class="message-status_content">
+            <p class="message-status_desc_date">Дата</p>
+            <p class="message-status_desc_status">Статус</p>
+            <p class="message-status_desc_topic">Тема</p>
+          </div>
+          <div class="message-status_content">
+            <p class="message-status_desc">Ничего не найдено</p>
+          </div>
+          <a href="./chat-messages.html" class="message-status_content">
+            <p class="message-status-desc_date-time">01.07.2023, 12:23</p>
+            <div class="message-status_desc-btn">
+              <button class="message-status_btn">Не обработан</button>
+            </div>
+            <p class="message-status_desc-problem">Проблема с оплатой</p>
+            <div class="message-status_desc-btn">
+              <button class="message-delete_btn">Удалить обращение</button>
+            </div>
+          </a>
+          <a href="./chat-messages.html" class="message-status_content">
+            <p class="message-status-desc_date-time">01.07.2023, 12:23</p>
+            <div class="message-status_desc-btn">
+              <button class="message-resolved">Решен</button>
+            </div>
+            <p class="message-status_desc-problem">Проблема с оплатой</p>
+            <div class="message-status_desc-btn">
+              <button class="message-delete_btn">Удалить обращение</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p class="footer-desc">© 2023 Прокси от Костина.РФ</p>
+      </div>
+    </footer>
+    <script src="../assets/JavaScript/support.js"></script>
+  </body>
+</html>
