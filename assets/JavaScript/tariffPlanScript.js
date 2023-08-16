@@ -137,7 +137,7 @@ btnFirst.addEventListener('click', () => {
     });
 })
 
-let clicked = false;
+let clicked = true;
 cardItem.forEach((item) => {
     const checkbox = item.querySelector('.checkbox');
     const checkboxInput = item.querySelector('.checkbox-input');
@@ -146,13 +146,12 @@ cardItem.forEach((item) => {
     const cardTariffBtn = item.querySelector('.card__tariff-btn');
     const cardItemBg = item.querySelector('.card__item-bg');
     const cardPrice = item.querySelector('.card__price');
-    cardPrice.dataset.originalPrice = cardPrice.textContent;
     
     const originalPrice = parseInt(cardPrice.textContent);
     
     checkbox.addEventListener('click', e => {
-        clicked = !clicked;
-        if (clicked) {
+        originalPrice;
+        if (cardPrice.textContent != originalPrice * 3) {
             cardPrice.textContent = originalPrice * 3;
         } else {
             cardPrice.textContent = originalPrice;
@@ -200,6 +199,11 @@ btnFirst.addEventListener('click', () => {
     multiplier = 1;
     updatePrices();
     updateButtons();
+});
+
+cardItem.forEach(item => {
+    const cardPrice = item.querySelector('.card__price');
+    cardPrice.dataset.originalPrice = cardPrice.textContent;
 });
 
 updatePrices();
