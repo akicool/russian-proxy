@@ -179,204 +179,210 @@
                         <button class="select-panel__button select-panel__manager button button--transparent">Менеджер плана</button>
                         <button class="select-panel__button select-panel__history button button--transparent">История покупок</button>
                     </div>
-                    <div class="manager">
-                        <div class="manager__panel">
-                            <h3 class="manager__text">
-                                Приобретите тарифный план для отображения счетчика плана
-                            </h3>
-                            <button class="manager__button manager__select-tariff button">Выбрать тариф</button>
-                            <button class="manager__button manager__cancel button display-none">Отмена</button>
-                            <button class="manager__button manager__change-plan button display-none">Изменить план</button>
+                    <div class="interactive">
+                        <div class="manager">
+                            <div class="manager__panel">
+                                <h3 class="manager__text">
+                                    Приобретите тарифный план для отображения счетчика плана
+                                </h3>
+                                <button class="manager__button manager__select-tariff button">Выбрать тариф</button>
+                                <button class="manager__button manager__cancel button display-none">Отмена</button>
+                                <button class="manager__button manager__change-plan button display-none">Изменить план</button>
+                            </div>
                         </div>
+                        <div class="channels channels--margin">
+                            <div class="channels__change">
+                                <h2 class="channels__change-title">Канал:</h2>
+                                <button class="channels__button channels__button--padding button button--black btn-first">
+                                    Общий
+                                </button>
+                                <button class="channels__button channels__button-color channels__button--padding button button--transparent btn-second">
+                                    Частный
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tariff__card tariff__card--margin card">
+                            <div class="card__item">
+                                <div class="card__btn-wrap ">
+                                    <div class="button-decor-block">
+                                        <img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+                                        <button class="card__btn button button--black">
+                                            Общий канал
+                                        </button>
+                                        <img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" class="checkbox__change checkbox-input">
+                                        <div class="checkbox__circle"></div>
+                                    </div>
+                                </div>
+                                <div class="card__data card__data--margin">
+                                    <p class="card__title">1 день</p>
+                                    <p class="card__title">от <span class="card__price">50</span> рублей</p>
+                                </div>
+                                <div class="card__info card__info--margin ">
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        Высокая скорость
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        24/7 поддержку
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        До 2-5 пользователей на канале
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        Безлимитный трафик
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
+                                        Нет смены IP по API
+                                    </div>
+                                </div>
+                                <img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
+                                <a href="/pages/tariffSelection.html" class="card__tariff-link">
+                                    <button class="card__tariff-btn card__tariff-btn--margin button button--transparent ">
+                                        Выбрать тариф
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="card__item mobile-hidden">
+                                <div class="card__btn-wrap ">
+                                    <div class="button-decor-block">
+                                        <img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+                                        <button class="card__btn button button--black">
+                                            Общий канал
+                                        </button>
+                                        <img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" class="checkbox__change checkbox-input">
+                                        <div class="checkbox__circle"></div>
+                                    </div>
+                                </div>
+                                <div class="card__data card__data--margin">
+                                    <p class="card__title">7 дней</p>
+                                    <p class="card__title">от <span class="card__price">250</span> рублей</p>
+                                </div>
+                                <div class="card__info card__info--margin ">
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        Высокая скорость
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        24/7 поддержку
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        До 2-5 пользователей на канале
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        Безлимитный трафик
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
+                                        Нет смены IP по API
+                                    </div>
+                                </div>
+                                <img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
+                                <button class="card__tariff-btn card__tariff-btn--margin button button--transparent ">Выбрать тариф</button>
+                            </div>
+                            <div class="card__item hidden mobile-hidden">
+                                <div class="card__btn-wrap ">
+                                    <div class="button-decor-block">
+                                        <img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+                                        <button class="card__btn button button--black">
+                                            Общий канал
+                                        </button>
+                                        <img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" class="checkbox__change checkbox-input">
+                                        <div class="checkbox__circle"></div>
+                                    </div>
+                                </div>
+                                <div class="card__data card__data--margin">
+                                    <p class="card__title">14 дней</p>
+                                    <p class="card__title">от <span class="card__price">400</span> рублей</p>
+                                </div>
+                                <div class="card__info card__info--margin ">
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        Высокая скорость
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        24/7 поддержку
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        До 2-5 пользователей на канале
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        Безлимитный трафик
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
+                                        Нет смены IP по API
+                                    </div>
+                                </div>
+                                <img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
+                                <button class="card__tariff-btn card__tariff-btn--margin button button--transparent ">Выбрать тариф</button>
+                            </div>
+                            <div class="card__item hidden mobile-hidden">
+                                <div class="card__btn-wrap ">
+                                    <div class="button-decor-block">
+                                        <img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+                                        <button class="card__btn button button--black">
+                                            Общий канал
+                                        </button>
+                                        <img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" class="checkbox__change checkbox-input">
+                                        <div class="checkbox__circle"></div>
+                                    </div>
+                                </div>
+                                <div class="card__data card__data--margin">
+                                    <p class="card__title">30 дней</p>
+                                    <p class="card__title">от <span class="card__price">600</span> рублей</p>
+                                </div>
+                                <div class="card__info card__info--margin ">
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        Высокая скорость
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        24/7 поддержку
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        До 2-5 пользователей на канале
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+                                        Безлимитный трафик
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
+                                        Нет смены IP по API
+                                    </div>
+                                </div>
+                                <img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
+                                <button class="card__tariff-btn card__tariff-btn--margin button button--transparent ">Выбрать тариф</button>
+                            </div>
+                        </div>
+                        <span data-slick-index="3" class="progressBar progressBar--margin">
+                            <div class="inProgress inProgress3" style="width: 0%;"></div>
+                        </span>
                     </div>
-                    <div class="channels channels--margin">
-                        <div class="channels__change">
-                            <h2 class="channels__change-title">Канал:</h2>
-                            <button class="channels__button channels__button--padding button button--black btn-first">
-                                Общий
-                            </button>
-                            <button class="channels__button channels__button-color channels__button--padding button button--transparent btn-second">
-                                Частный
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tariff__card tariff__card--margin card">
-                        <div class="card__item">
-                            <div class="card__btn-wrap ">
-                                <div class="button-decor-block">
-                                    <img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
-                                    <button class="card__btn button button--black">
-                                        Общий канал
-                                    </button>
-                                    <img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" name="" class="checkbox__change checkbox-input">
-                                    <div class="checkbox__circle"></div>
-                                </div>
-                            </div>
-                            <div class="card__data card__data--margin">
-                                <p class="card__title">1 день</p>
-                                <p class="card__title">от <span class="card__price">50</span> рублей</p>
-                            </div>
-                            <div class="card__info card__info--margin ">
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    Высокая скорость
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    24/7 поддержку
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    До 2-5 пользователей на канале
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    Безлимитный трафик
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
-                                    Нет смены IP по API
-                                </div>
-                            </div>
-                            <img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
-                            <button class="card__tariff-btn card__tariff-btn--margin button button--transparent ">Выбрать тариф</button>
-                        </div>
-                        <div class="card__item mobile-hidden">
-                            <div class="card__btn-wrap ">
-                                <div class="button-decor-block">
-                                    <img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
-                                    <button class="card__btn button button--black">
-                                        Общий канал
-                                    </button>
-                                    <img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" name="" class="checkbox__change checkbox-input">
-                                    <div class="checkbox__circle"></div>
-                                </div>
-                            </div>
-                            <div class="card__data card__data--margin">
-                                <p class="card__title">7 дней</p>
-                                <p class="card__title">от <span class="card__price">250</span> рублей</p>
-                            </div>
-                            <div class="card__info card__info--margin ">
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    Высокая скорость
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    24/7 поддержку
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    До 2-5 пользователей на канале
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    Безлимитный трафик
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
-                                    Нет смены IP по API
-                                </div>
-                            </div>
-                            <img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
-                            <button class="card__tariff-btn card__tariff-btn--margin button button--transparent ">Выбрать тариф</button>
-                        </div>
-                        <div class="card__item hidden mobile-hidden">
-                            <div class="card__btn-wrap ">
-                                <div class="button-decor-block">
-                                    <img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
-                                    <button class="card__btn button button--black">
-                                        Общий канал
-                                    </button>
-                                    <img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" name="" class="checkbox__change checkbox-input">
-                                    <div class="checkbox__circle"></div>
-                                </div>
-                            </div>
-                            <div class="card__data card__data--margin">
-                                <p class="card__title">14 дней</p>
-                                <p class="card__title">от <span class="card__price">400</span> рублей</p>
-                            </div>
-                            <div class="card__info card__info--margin ">
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    Высокая скорость
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    24/7 поддержку
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    До 2-5 пользователей на канале
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    Безлимитный трафик
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
-                                    Нет смены IP по API
-                                </div>
-                            </div>
-                            <img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
-                            <button class="card__tariff-btn card__tariff-btn--margin button button--transparent ">Выбрать тариф</button>
-                        </div>
-                        <div class="card__item hidden mobile-hidden">
-                            <div class="card__btn-wrap ">
-                                <div class="button-decor-block">
-                                    <img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
-                                    <button class="card__btn button button--black">
-                                        Общий канал
-                                    </button>
-                                    <img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" name="" class="checkbox__change checkbox-input">
-                                    <div class="checkbox__circle"></div>
-                                </div>
-                            </div>
-                            <div class="card__data card__data--margin">
-                                <p class="card__title">30 дней</p>
-                                <p class="card__title">от <span class="card__price">600</span> рублей</p>
-                            </div>
-                            <div class="card__info card__info--margin ">
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    Высокая скорость
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    24/7 поддержку
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    До 2-5 пользователей на канале
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
-                                    Безлимитный трафик
-                                </div>
-                                <div class="card__info-text">
-                                    <img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
-                                    Нет смены IP по API
-                                </div>
-                            </div>
-                            <img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
-                            <button class="card__tariff-btn card__tariff-btn--margin button button--transparent ">Выбрать тариф</button>
-                        </div>
-                    </div>
-                    <span data-slick-index="3" class="progressBar progressBar--margin">
-                        <div class="inProgress inProgress3" style="width: 0%;"></div>
-                    </span>
                     <div class="tariff__footer-text tariff__footer-text--margin">
                         © 2023 Прокси от Костина.РФ
                     </div>

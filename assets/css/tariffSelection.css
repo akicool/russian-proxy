@@ -1,0 +1,106 @@
+.bottom25 {
+    bottom: 5px;
+}
+.button--blue {
+    background: var(--main-accent-color);
+    color: var(--white-link-color) !important;
+    border: none !important;
+}
+.changes {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1220px;
+    width: 100%;
+}
+.select-change__button {
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+.select-change__button--transparent {
+    color: var(--secondary-btn-color);
+    border: 1px solid #202B40;
+}
+.manager {
+    flex-direction: column;
+    align-items: center;
+}
+.manager__time,
+.manager__type,
+.manager__text {
+    color: var(--white-link-color);
+}
+.manager__text span {
+    font-size: 14px;
+}
+.selects {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.select-change {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.select-change__tariffs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.select-change__title {
+    color: var(--main-font-color);
+}
+.select-change__button {
+}
+.select-change__channels {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.changes__text-alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FF5722;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: start;
+}
+.panel-change {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 570px;
+    width: 100%;
+    height: 170px;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--main-accent-color);
+    color: var(--white-link-color);
+}
+.panel-change__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: start;
+}
+.panel-change__title {
+    font-weight: 500;
+    line-height: 150%;
+}
+.panel-change__price {
+    font-weight: 500;
+    line-height: 150%;
+}
+.panel-change__text {
+    font-weight: 500;
+    max-width: 280px;
+    width: 100%;
+    line-height: 150%;
+}
+.panel-change__button {
+    font-size: 18px;
+}

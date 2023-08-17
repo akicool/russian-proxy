@@ -1,5 +1,3 @@
-import cards from './card.json' assert {type: 'json'}
-
 const account = document.querySelector('.account')
 const accountBlock = document.querySelector('.account-block')
 const btnFirst = document.querySelector('.btn-first')
@@ -16,30 +14,19 @@ const btnDecoration = document.querySelectorAll('.btn-decoration')
 const selectPanelManager = document.querySelector('.select-panel__manager')
 const selectPanelHistory = document.querySelector('.select-panel__history')
 const managerPanel = document.querySelector('.manager__panel')
-const managerButton = document.querySelector('.manager__button')
+const managerTime = document.querySelector('.manager__time')
 const managerSelectTariff = document.querySelector('.manager__select-tariff')
 const managerCancel = document.querySelector('.manager__cancel')
-const managerChangePlan = document.querySelector('.manager__change-plan')
 const channels = document.querySelector('.channels')
 const inProgress = document.querySelector('.inProgress')
 const tariffFooterText  = document.querySelector('.tariff__footer-text')
-
+const interactive  = document.querySelector('.interactive')
 
 account.addEventListener('click', () => {
     accountBlock.classList.toggle('active');
 });
 
-selectPanelManager.addEventListener('click', () => {
-
-    // cardItem.forEach((item) => {
-    //     const checkbox = item.querySelector('.checkbox');
-    //     const checkboxInput = item.querySelector('.checkbox-input');
-    //     const btnDecoration = item.querySelectorAll('.btn-decoration');
-    //     const cardBtn = item.querySelector('.card__btn');
-    //     const cardTariffBtn = item.querySelector('.card__tariff-btn');
-    //     const cardItemBg = item.querySelector('.card__item-bg');
-    //     const cardPrice = item.querySelector('.card__price');
-    // такая же аналогия ----------------------------------------------------
+selectPanelManager.addEventListener('click', (e) => {
 
     selectPanelManager.classList.toggle('active');
     selectPanelHistory.classList.remove('active');
@@ -47,7 +34,8 @@ selectPanelManager.addEventListener('click', () => {
     channels.classList.toggle('display-none');
     card.classList.toggle('display-none');
     inProgress.classList.toggle('display-none');
-    tariffFooterText.classList.toggle('bottom25');
+    tariffFooterText.classList.add('bottom25');
+    interactive.classList.remove('display-none');
     
     if (!managerCancel.classList.contains('display-none')) {
         channels.classList.remove('display-none');
@@ -60,12 +48,9 @@ selectPanelManager.addEventListener('click', () => {
 selectPanelHistory.addEventListener('click', () => {
     selectPanelManager.classList.remove('active');
     selectPanelHistory.classList.toggle('active');
-    
-    managerPanel.classList.remove('active');
-    channels.classList.add('display-none');
-    card.classList.add('display-none');
-    inProgress.classList.add('display-none');
+    interactive.classList.add('display-none');
     tariffFooterText.classList.add('bottom25');
+    
 });
 
 managerSelectTariff.addEventListener('click', () => {
@@ -85,6 +70,7 @@ managerCancel.addEventListener('click', () => {
     inProgress.classList.add('display-none');
     tariffFooterText.classList.add('bottom25');
 });
+
 
 let btnSecondCounter = 0;  
 btnSecond.addEventListener('click', (e) => {
@@ -241,15 +227,9 @@ function getCardTitle(e) {
     cardTitle.forEach(item => {
         let cardTitleContent = []
         cardTitleContent.push(item.textContent)
+        managerTime.textContent = item.textContent
         console.log(cardTitleContent);
     })
-
-    // managerChangePlan.classList.remove('display-none')
-    // managerSelectTariff.classList.add('display-none')
-
-    // let eventManager = new Event('click')
-
-    // selectPanelManager.dispatchEvent(eventManager)
 }
 
 cardTariffBtn.forEach(item => {
