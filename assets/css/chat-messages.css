@@ -71,6 +71,11 @@ main .btn-top .btn_back {
   border: 1px solid var(--main-accent-color);
 }
 
+main .btn-top .btn_back:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
 main .btn-top .btn_resolved-ticket {
   display: flex;
   width: 209px;
@@ -83,6 +88,12 @@ main .btn-top .btn_resolved-ticket {
   background: #51ff35;
   border: 0;
 }
+
+main .btn-top .btn_resolved-ticket:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
 main .modal{
   position: fixed;
   left: 0;
@@ -204,16 +215,31 @@ main .btn-modal{
   margin-bottom: 20px;
 }
 
+main .btn-modal:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
 main .ticket-modal .close::after{
   content: url(../images/icons/close.svg);
   display: inline-block;
   background-color: var(--secondary-btn-color);
 }
 
+main .ticket-modal .close::after:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
 main .btn-top .btn_resolved-ticket::before {
   content: url(../images/icons/check-mark.svg);
   position: absolute;
   left: 30px;
+}
+
+main .btn-top .btn_resolved-ticket::before:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
 main .block-message_top {
@@ -262,6 +288,11 @@ main .message-btn {
   color: #D7E2FE;
   font-weight: 600;
   line-height: 150%;
+}
+
+main .message-btn:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
 main .block-message_top .message-top_desc-right {
@@ -395,6 +426,11 @@ main .btn-down{
     border-radius: 5px;
 }
 
+main .btn-down:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
 main .btn-down::after{
     content: url(../images/icons/icons-down.svg);
     display: block;
@@ -425,6 +461,12 @@ main .btn-file{
     background: #395170;
     border: 0;
     border-radius: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+main .btn-file:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
 main .btn-file::after{
@@ -463,6 +505,12 @@ main .btn-send{
     background: #4EE136;
     border: 0;
     border-radius: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+main .btn-send:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
 main .btn-send::before{
@@ -475,7 +523,7 @@ footer .footer-desc {
 
 @media screen and (max-width:1440px){
   .container{
-    width: 1400px;
+    width: 1380px;
   }
 }
 @media screen and (max-width:1280px){
@@ -485,7 +533,7 @@ footer .footer-desc {
 }
 @media screen and (max-width:1024px){
   .container{
-    width: 980px;
+    width: 930px;
   }
 }
 

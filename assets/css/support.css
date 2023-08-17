@@ -111,6 +111,11 @@ main .form .form-btn_files {
   color: #d7e2fe;
 }
 
+main .form .form-btn_files:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
 main .form .form-btn_files:before {
   content: url("../images/icons/icon.svg");
   display: inline-block;
@@ -129,6 +134,11 @@ main .form .form-btn_message {
   font-weight: 500;
   line-height: 150%;
   color: var(--main-font-color);
+}
+
+main .form .form-btn_message:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
 main .message-status {
@@ -203,6 +213,11 @@ main .message-status_desc-btn {
   flex: 1 0 0;
 }
 
+main .message-status_desc-btn:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
 main .message-status_btn {
   padding: 10px;
   margin-right: 179px;
@@ -214,6 +229,11 @@ main .message-status_btn {
   border: none;
   font-weight: 500;
   line-height: 150%;
+}
+
+main .message-status_btn:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
 main .message-resolved{
@@ -228,6 +248,11 @@ main .message-resolved{
   color: var(--secondary-btn-color);
 }
 
+main .message-resolved:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
 main .message-delete_btn{
   padding: 10px;
   border-radius: 5px;
@@ -238,6 +263,11 @@ main .message-delete_btn{
   line-height: 150%;
   background: var(--secondary-btn-color);
   color: #d7e2fe;
+}
+
+main .message-delete_btn:hover{
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
 footer .footer-desc {
@@ -253,6 +283,28 @@ footer .footer-desc {
   }
   main .form .input-message{
     width: 1400px;
+  }
+}
+@media screen and (max-width:1280px){
+  .container{
+    width: 1200px;
+  }
+  main .form .input-topic{
+    width: 1100px;
+  }
+  main .form .input-message{
+    width: 1100px;
+  }
+}
+@media screen and (max-width:1024px){
+  .container{
+    width: 930px;
+  }
+  main .form .input-topic{
+    width: 930px;
+  }
+  main .form .input-message{
+    width: 930px;
   }
 }
 
