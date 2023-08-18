@@ -10,6 +10,8 @@ const cardItem = document.querySelectorAll('.card__item')
 const cardItemBg = document.querySelectorAll('.card__item-bg')
 const cardPrice = document.querySelectorAll('.card__price');
 const card = document.querySelector('.card')
+const Delete = document.querySelectorAll('.delete')
+const infoTextBlock = document.querySelectorAll('.info-text-block')
 const btnDecoration = document.querySelectorAll('.btn-decoration')
 const selectPanelManager = document.querySelector('.select-panel__manager')
 const selectPanelHistory = document.querySelector('.select-panel__history')
@@ -21,13 +23,13 @@ const channels = document.querySelector('.channels')
 const inProgress = document.querySelector('.inProgress')
 const tariffFooterText  = document.querySelector('.tariff__footer-text')
 const interactive  = document.querySelector('.interactive')
+const parameterHistory = document.querySelector('.parameter-history')
 
 account.addEventListener('click', () => {
     accountBlock.classList.toggle('active');
 });
 
 selectPanelManager.addEventListener('click', (e) => {
-
     selectPanelManager.classList.toggle('active');
     selectPanelHistory.classList.remove('active');
     managerPanel.classList.toggle('active');
@@ -36,6 +38,7 @@ selectPanelManager.addEventListener('click', (e) => {
     inProgress.classList.toggle('display-none');
     tariffFooterText.classList.add('bottom25');
     interactive.classList.remove('display-none');
+    parameterHistory.classList.add('display-none');
     
     if (!managerCancel.classList.contains('display-none')) {
         channels.classList.remove('display-none');
@@ -49,6 +52,7 @@ selectPanelHistory.addEventListener('click', () => {
     selectPanelManager.classList.remove('active');
     selectPanelHistory.classList.toggle('active');
     interactive.classList.add('display-none');
+    parameterHistory.classList.remove('display-none');
     tariffFooterText.classList.add('bottom25');
     
 });
@@ -108,6 +112,13 @@ btnSecond.addEventListener('click', (e) => {
     btnDecoration.forEach((decoration) => {
         decoration.classList.add('decor-active');
     });
+    infoTextBlock.forEach(item => {
+        item.classList.remove('display-none');
+    });
+
+    Delete.forEach(item => {
+        item.classList.add('display-none');
+    });
 })
 
 let btnFirstCounter = 0;  
@@ -146,6 +157,13 @@ btnFirst.addEventListener('click', () => {
     btnDecoration.forEach((decoration) => {
         decoration.classList.remove('decor-active');
     });
+    infoTextBlock.forEach(item => {
+        item.classList.add('display-none');
+    });
+
+    Delete.forEach(item => {
+        item.classList.remove('display-none');
+    });
 })
 
 let clicked = true;
@@ -157,10 +175,22 @@ cardItem.forEach((item) => {
     const cardTariffBtn = item.querySelector('.card__tariff-btn');
     const cardItemBg = item.querySelector('.card__item-bg');
     const cardPrice = item.querySelector('.card__price');
+    const Delete = item.querySelectorAll('.delete')
+    const infoTextBlock = item.querySelectorAll('.info-text-block')
+
     
     const originalPrice = parseInt(cardPrice.textContent);
     
     checkbox.addEventListener('click', e => {
+
+        infoTextBlock.forEach(item => {
+            item.classList.toggle('display-none');
+        });
+
+        Delete.forEach(item => {
+            item.classList.toggle('display-none');
+        });
+
         originalPrice;
         if (cardPrice.textContent != originalPrice * 3) {
             cardPrice.textContent = originalPrice * 3;
