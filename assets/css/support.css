@@ -323,9 +323,6 @@ footer .footer-desc {
 }
 
 @media screen and (max-width:390px){
-  .container{
-    width: 342px;
-  }
   main .form{
     margin-bottom: 56px;
   }

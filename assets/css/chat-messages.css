@@ -149,7 +149,7 @@ main .modal-ticket_desc{
 main .rating{
   display: inline-flex;
   flex-direction: row-reverse;
-  margin-left: 140px;
+  margin-left: 5px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -346,6 +346,7 @@ main .message .message-content-top{
 
 main .message .message-content-top .message-date-top{
     flex: 1 0 0;
+    text-align: left;
     padding-top: 5px;
     font-size: 10px;
     font-weight: 500;
