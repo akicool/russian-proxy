@@ -44,6 +44,7 @@ p {
 
 main .btn-top {
   display: flex;
+  margin-top: 14px;
   padding: 16px;
   justify-content: space-between;
   align-items: center;
@@ -254,10 +255,8 @@ main .block-message_top {
 }
 
 main .block-message_top .message-top_desc-left {
-  min-width: 517px;
   align-items: flex-start;
   gap: 10px;
-  flex: 1 0 0;
 }
 
 main .message-description {
@@ -519,6 +518,7 @@ main .btn-send::before{
 
 footer .footer-desc {
   margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 @media screen and (max-width:1440px){

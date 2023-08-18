@@ -17,7 +17,7 @@ function getCurrentDateTime() {
 function addMessageBlock(topic, message) {
   const messageBlock = document.createElement('a');
   messageBlock.classList.add('message-status_content');
-  messageBlock.href = "./chat-messages.html";
+  messageBlock.href = "./chat-messages.html"
 
   const dateTimeElement = document.createElement('p');
   dateTimeElement.classList.add('message-status-desc_date-time');

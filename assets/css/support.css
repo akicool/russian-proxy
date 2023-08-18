@@ -43,6 +43,8 @@ p {
 }
 
 main .form {
+  margin-top: 20px;
+  text-align: left;
   margin-bottom: 67px;
 }
 
@@ -298,13 +300,13 @@ footer .footer-desc {
 }
 @media screen and (max-width:1024px){
   .container{
-    width: 930px;
+    width: 900px;
   }
   main .form .input-topic{
-    width: 930px;
+    width: 850px;
   }
   main .form .input-message{
-    width: 930px;
+    width: 850px;
   }
 }
 
