@@ -38,7 +38,7 @@ p {
 }
 
 .container {
-  width: 1800px;
+  width: 1920px;
   margin: auto;
 }
 
@@ -222,7 +222,8 @@ main .message-status_desc-btn:hover{
 
 main .message-status_btn {
   padding: 10px;
-  margin-right: 179px;
+  margin-right: 106px;
+  margin-left: 67px;
   border-radius: 5px;
   background: var(--secondary-btn-color);
   color: #d7e2fe;
@@ -278,13 +279,17 @@ footer .footer-desc {
 
 @media screen and (max-width:1440px){
   .container{
-    width: 1400px;
+    width: 1310px;
   }
   main .form .input-topic{
-    width: 1400px;
+    width: 1170px;
   }
   main .form .input-message{
-    width: 1400px;
+    width: 1170px;
+  }
+  main .message-status_btn{
+    margin-right: 78px;
+    margin-left: 67px;
   }
 }
 @media screen and (max-width:1280px){
@@ -297,22 +302,30 @@ footer .footer-desc {
   main .form .input-message{
     width: 1100px;
   }
+  main .message-status_btn{
+    margin-right: 12px;
+    margin-left: 67px;
+  }
 }
 @media screen and (max-width:1024px){
   .container{
-    width: 900px;
+    width: 980px;
   }
   main .form .input-topic{
-    width: 850px;
+    width: 900px;
   }
   main .form .input-message{
-    width: 850px;
+    width: 900px;
+  }
+  main .message-status_btn{
+    margin-right: 30px;
+    margin-left: 50px;
   }
 }
 
 @media screen and (max-width:744px){
   .container{
-    width: 696px;
+    width: 744px;
   }
   main .form .input-topic{
     width: 696px;
@@ -320,9 +333,13 @@ footer .footer-desc {
   main .form .input-message{
     width: 696px;
   }
+
 }
 
 @media screen and (max-width:390px){
+  .container{
+    width: 390px;
+  }
   main .form{
     margin-bottom: 56px;
   }

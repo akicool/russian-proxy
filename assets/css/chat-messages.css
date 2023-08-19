@@ -38,7 +38,7 @@ p {
 }
 
 .container {
-  width: 1800px;
+  width: 1920px;
   margin: auto;
 }
 
@@ -534,13 +534,13 @@ footer .footer-desc {
 }
 @media screen and (max-width:1024px){
   .container{
-    width: 930px;
+    width: 987px;
   }
 }
 
 @media screen and (max-width:744px){
   .container{
-    width: 664px;
+    width: 744px;
   }
   main .block-message_top .message-top_desc-left{
     min-width: 200px;
@@ -551,11 +551,17 @@ footer .footer-desc {
 }
 @media screen and (max-width:390px){
   .container{
-    width: 342px;
+    width: 390px;
   }
   main .block-message_top{
     padding: 16px;
     gap: 15px;
+  }
+  main .btn-top{
+    display: block;
+  }
+  main .btn-top .btn_back{
+    margin-bottom: 16px;
   }
   main .block-message_top .message-top_desc-right{
     justify-content: start;
