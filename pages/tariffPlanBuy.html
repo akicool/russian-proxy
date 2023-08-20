@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../assets/css/tariffPlan.css">
     <link rel="stylesheet" href="../assets/css/tariffPlanBuy.css">
     <link rel="stylesheet" href="../assets/css/profile.css">
+    <link rel="stylesheet" href="../assets/css/tariffSelection.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarrif-Plan</title>
@@ -14,12 +15,32 @@
         <nav class="nav">
             <div class="nav__lists">
                 <ul class="nav__list">
-                    <li class="nav__item padding-none">
-                        <a href="#" class="nav__link">
+                    <li class="nav__item padding-none nav__item--hidden">
+                        <a href="/russian-proxy/pages/main.html" class="nav__link">
                             <img src="../assets/images/icons/trafficPlanIcons/logo.svg" alt="logo">
                             <div class="nav__link-text nav__link-title">Прокси от Костина.РФ</div>
                         </a>
                     </li>
+                    <div class="nav__general-block">
+                        <li class="general__item nav__item general__item--pos-none">
+                            <a href="#" class="nav__link">
+                                <img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
+                                <div class="nav__link-text">Канал:  общий</div>
+                            </a>
+                        </li>
+                        <li class="general__item nav__item general__item--pos-none">
+                            <a href="#" class="nav__link">
+                                <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
+                                <div class="nav__link-text">План:  0 дней</div>
+                            </a>
+                        </li>
+                        <li class="general__item nav__item general__item--pos-none">
+                            <a href="#" class="nav__link">
+                                <img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
+                                <div class="nav__link-text">Баланс: 0,00 р.</div>
+                            </a>
+                        </li>
+                    </div>
                     <span class="additional-text">proxy</span>
                     <li class="nav__item">
                         <a href="#" class="nav__link">
@@ -35,7 +56,7 @@
                         </a>
                     </li>
                     <li class="nav__item show-default">
-                        <a href="#" class="nav__link">
+                        <a href="/pages/tariffPlan.html" class="nav__link">
                             <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
                             <div class="nav__link-text">Тарифный план</div>
                         </a>
@@ -61,6 +82,12 @@
                     </li>
                 </ul>
                 <div class="nav__footer">
+                    <li class="padding-none nav__link-title nav__link-title--active">
+                        <a href="#" class="nav__link">
+                            <img src="../assets/images/icons/trafficPlanIcons/logo.svg" alt="logo">
+                            <div class="nav__link-text nav__link-title">Прокси от Костина.РФ</div>
+                        </a>
+                    </li>
                     <ul class="nav__social-list">
                         <li class="nav__social-item">
                             <a href="#" class="nav__social-link">
@@ -96,22 +123,24 @@
                 </div>
                 <nav class="general">
                     <ul class="general__list">
-                        <li class="general__item">
-                            <img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
-                            Тип канала:  общий
-                        </li>
-                        <li class="general__item">
-                            <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
-                            Тарифный план:  0 дней
-                        </li>
-                        <li class="general__item">
-                            <img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
-                            Баланс: 0,00 р.
-                        </li>
+                        <div class="general__hidden">
+                            <li class="general__item">
+                                <img src="../assets/images/icons/trafficPlanIcons/box.svg" alt="box">
+                                Тип канала:  общий
+                            </li>
+                            <li class="general__item">
+                                <img src="../assets/images/icons/trafficPlanIcons/currencies.svg" alt="currencies">
+                                Тарифный план:  0 дней
+                            </li>
+                            <li class="general__item">
+                                <img src="../assets/images/icons/trafficPlanIcons/wallet.svg" alt="wallet">
+                                Баланс: 0,00 р.
+                            </li>
+                        </div>
                         <button class="button button--transparent">Пополнить</button>
                         <li class="general__item account">
                             <img src="../assets/images/icons/trafficPlanIcons/account-logo.svg" alt="account-logo">
-                            oooloyren@mail.ru
+                             <div class="general__item-email">oooloyren@mail.ru</div>
                         </li>
                         <div class="account-block account-block--pos">
                             <div class="account-block__link">
@@ -134,14 +163,117 @@
             <main class="main">
                 <div class="tariff">
                     <h3 class="tariff__title tariff__title--margin">Тарифный план</h3>
+                    <div class="tariff__email-confirm email-confirm">
+                        <div class="email-confirm__title">
+                            <img src="../assets/images/icons/trafficPlanIcons/logo.svg" alt="">
+                            <p class="email-confirm__title-text">Прокси от Костина.РФ</p>
+                        </div>
+                        <div class="line line--margin"></div>
+                        <div class="email-confirm__subtitle">
+                            <div class="email-confirm__subtitle-info">
+                                <p class="email-confirm__subtitle-text email-confirm__subtitle-text--margin">Подтвердите Ваш email адрес</p>
+                                <button class="email-confirm__subtitle-button button button--black">Отправить снова</button>
+                            </div>
+                            <img src="../assets/images/img/email-confirm-icon.svg" alt="email-confirm">
+                        </div>
+                    </div>
                     <div class="tariff-page">
-                      <div class="tariff-plan-block"></div>
+                        <div class="tariff-page__content">
+                            <div class="tariff-page__lists">
+                                <ul class="tariff-page__list">
+                                    <li class="tariff-page__item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                            <circle cx="7.5" cy="7.5" r="7.5" fill="#57F249"/>
+                                            <path d="M4.84375 7.5002L6.6125 9.26894L10.1562 5.73145" stroke="#030D25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Высокая скорость
+                                    </li>
+                                    <li class="tariff-page__item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                            <circle cx="7.5" cy="7.5" r="7.5" fill="#57F249"/>
+                                            <path d="M4.84375 7.5002L6.6125 9.26894L10.1562 5.73145" stroke="#030D25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        24/7 поддержку
+                                    </li>
+                                    <li class="tariff-page__item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                            <circle cx="7.5" cy="7.5" r="7.5" fill="#57F249"/>
+                                            <path d="M4.84375 7.5002L6.6125 9.26894L10.1562 5.73145" stroke="#030D25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        До 2-5 пользователей на канале
+                                    </li>
+                                </ul>
+                                <ul class="tariff-page__list">
+                                    <li class="tariff-page__item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                            <circle cx="7.5" cy="7.5" r="7.5" fill="#57F249"/>
+                                            <path d="M4.84375 7.5002L6.6125 9.26894L10.1562 5.73145" stroke="#030D25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Безлимитный трафик
+                                    </li>
+                                    <li class="tariff-page__item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                            <circle cx="8.5" cy="8" r="8" fill="#FF2C2C"/>
+                                        </svg>
+                                        Нет смены IP по API
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div class="price-content">
+                                <h1 class="price-text"><span class="price">1700</span>р.</h1>
+                                <p class="type-channel">
+                                    Общий канал
+                                </p>
+                                <div class="price-content__button button">
+                                    Купить тариф
+                                </div>
+                                <p class="term">
+                                    Тариф действует <span class="time">90 дней</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tariff-page__selects">
+                            <div class="select-change">
+                                <div class="selects">
+                                    <div class="select-change__tariffs">
+                                        <div class="select-change__title">Тариф</div>
+                                        <div class="select-change__tariff-button select-change__button select-change__button--transparent button button--transparent">1 день</div>
+                                        <div class="select-change__tariff-button select-change__button select-change__button--transparent button button--transparent">7 дней</div>
+                                        <div class="select-change__tariff-button select-change__button select-change__button--transparent button button--transparent">14 дней</div>
+                                        <div class="select-change__tariff-button select-change__button select-change__button--transparent button button--transparent">30 дней</div>
+                                        <div class="select-change__tariff-button select-change__button select-change__button--transparent button button--transparent button--blue">90 дней</div>
+                                    </div>
+                                    <div class="select-change__channels">
+                                        <div class="select-change__title">Канал</div>
+                                        <div class="select-change__button button button--black common">Общий</div>
+                                        <div class="select-change__button select-change__button--transparent button button--transparent private">Частный</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="opacity-text">
+                                Вы будете перенаправлены на платежный сервис
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariff__footer-text tariff__footer-text--margin bottom25">
+                        © 2023 Прокси от Костина.РФ
                     </div>
                 </div>
             </main>
         </div>
     </div>
+    <div class="modal-overlay">
+        <div class="modal-overlay__content">
+            Чтобы купить выбранный тариф, 
+            Вам необходимо подтвердить 
+            свою электронную почту!
+        </div>
+    </div>
+    <script src="../assets/JavaScript/tariffPlanBuy.js"></script>
     <script src="../assets/JavaScript/tariffPlanScript.js"></script>
     <script src="../assets/JavaScript/nav.js"></script>
+
 </body>
 </html>
