@@ -37,13 +37,9 @@ p {
   font-size: 1rem;
 }
 
-.container {
-  width: 1920px;
-  margin: auto;
-}
-
 main .btn-top {
   display: flex;
+  width: 97%;
   margin-top: 14px;
   padding: 16px;
   justify-content: space-between;
@@ -245,6 +241,7 @@ main .btn-top .btn_resolved-ticket::before:hover{
 
 main .block-message_top {
   display: flex;
+  width: 97%;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -315,7 +312,7 @@ main .message {
     ),
     url(../images/bg-message.png),
     lightgray 0% 0% / 30.98958432674408px 30.98958432674408px repeat;
-  width: 100%;
+  width: 97%;
   padding: 40px 16px 0px 16px;
   height: 377px;
   margin-bottom: 16px;
@@ -474,7 +471,7 @@ main .btn-file::after{
 }
 
 main .input-message{
-    width: 1660px;
+    width: 84%;
     padding: 8px 14px;
     font-size: 14px;
     font-weight: 500;
@@ -522,25 +519,13 @@ footer .footer-desc {
   margin-left: 15px;
 }
 
-@media screen and (max-width:1440px){
-  .container{
-    width: 1380px;
-  }
-}
-@media screen and (max-width:1280px){
-  .container{
-    width: 1200px;
-  }
-}
-@media screen and (max-width:1024px){
-  .container{
-    width: 987px;
-  }
-}
 
 @media screen and (max-width:744px){
-  .container{
-    width: 744px;
+  main .block-message_top{
+    width: 100%;
+  }
+  main .message {
+    width: 100%;
   }
   main .block-message_top .message-top_desc-left{
     min-width: 200px;
@@ -550,8 +535,11 @@ footer .footer-desc {
   }
 }
 @media screen and (max-width:390px){
-  .container{
-    width: 390px;
+  main .message {
+    width: 100%;
+  }
+  main .block-message_top{
+    width: 100%;
   }
   main .block-message_top{
     padding: 16px;
@@ -574,7 +562,8 @@ footer .footer-desc {
   }
 
   main .modal-input{
-    width: 238px;
+    min-width: 238px;
+    width: 100%;
   }
 
   main .btn-modal{
