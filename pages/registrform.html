@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма регестрации</title>
+  <link rel="stylesheet"  href="../assets/css/basic.css">
+  <link rel="stylesheet"  href="../assets/css/registrform.css">
+</head>
+<body>
+    <div class="container">
+      
+    <nav class="nav">
+    <div class="nav__logo">
+   	<img src="../assets/images/icons/icons/Logo.svg"> 
+  </div>
+  </nav>
+  <div class="container__inner">
+  <section class="about__form">
+    <h1 class="about__title"> Зарегистрировать аккаунт </h1>
+   <div class="about__form-group">
+    
+    <input type="email" name="email" class="about__forms" placeholder="Эл. адрес" > 
+   <label  class="password">
+    <input type="password" name="password" pattern=".{8,}"   required title="8 символов минимум" id="password-input" placeholder="Пароль"  class="about__forms-1">
+    <a href="#" class="password-control" onclick="return show_hide_password(this);"> <img src="../assets/images/icons/icons/view.svg" alt=""></a>
+  </label>
+  </div>
+ <p class="about__title-1">Продолжая регистрацию, вы соглашаетесь с <a class="about__title-3" href="#">Публичной офертой</a> и <a class="about__title-3" href="#">Политикой конфиденциальности.</a></p>
+ <a class="about__button" href="#"><p class="about__button-1">Зарегистировать</p></a>
+ <div class="about__li">
+ <p class="about__tit">Или войдите с помощью </p>
+ <ul class="about__list">
+  <li class="about__item">
+      <a href="#" class="about__link">
+          <img src="../assets/images/icons/socials/mail-1.svg">
+      </a>
+  </li>
+  <li class="about__item">
+    <a href="#" class="about__link">
+      <img src="../assets/images/icons/socials/telegram-2.svg">
+  </a>
+  </li>
+  <li class="about__item">
+    <a href="#" class="about__link">
+      <img src="../assets/images/icons/socials/vk-3.svg">
+  </a>
+  </li>
+  <li class="about__item">
+    <a href="#" class="about__link">
+      <img src="../assets/images/icons/socials/google.svg">
+  </a>
+  </li>
+ </ul>
+</div>
+ <p1 class="about__hi">Уже зарегистрированы? <a class="about__hit" href="#">Войти</a></p1>
+</section>
+  </div>
+</div>
+  <script src="../assets/JavaScript/form.js"></script>
+</body>
+</html>
