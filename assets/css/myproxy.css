@@ -212,7 +212,8 @@
 	border-radius: 5px;
 }
 .api__key-text{
-	width: 390px;
+	max-width: 390px;
+	width: 100%;
 	background: var(--secondary-bg-color);
 	border-radius: 15px;
 }
@@ -233,20 +234,20 @@
 	.api__key {
 		gap: 20px;
 	}
-	.api__key-contaner-title {
-		text-wrap: nowrap;
-	}
 }
 @media (max-width: 1340px) {
-
+	.api__key {
+		flex-direction:column-reverse;
+		gap: 20px;
+	}
 	.api__key-text-text {
+		width: 100%;
 		font-size: 14px;
 		
 	}
 }
 @media (max-width: 1260px) {
 	.api__key-contaner {
-		width: 60%;
 		height: 50px;
 	}
 }
@@ -271,7 +272,7 @@
 		text-overflow: ellipsis;
 	}
 }
-@media (max-width: 630px) {
+@media (max-width: 744px) {
 	.myproxy {
 		padding: 0;
 		padding-left: 30px;
@@ -279,7 +280,8 @@
 	.myproxy__title {
 		padding-top: 60px;
 	}
-	.main {
+	.api__key-text{
+		max-width: 696px;
 	}
 	.tabcontent {
 		position: relative;
@@ -300,7 +302,7 @@
 		margin-bottom: 20px;
 	}
 }
-@media (max-width: 420px) {
+@media (max-width: 390px) {
 	.nav-block {
 		overflow: hidden;
 	}
