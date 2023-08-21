@@ -17,7 +17,8 @@
 	margin-bottom: 30px;
 }
 .profile__email{
-	width: 476px;
+	max-width: 476px;
+	width: 100%;
 	margin-right: 25px;
 	background: var(--main-accent-color);
 	border-radius: 5px;
@@ -49,7 +50,7 @@
 
 }
 .profile__trafic{
-
+	display: block;
 	background: var(--secondary-bg-color);
 	border-radius: 5px;
 	padding: 15px 12px;
@@ -82,12 +83,15 @@
 
 }
 .profile__down{
+	max-width: 1800px;
+	width: 100%;
 	background: var(--secondary-bg-color);
 	border-radius: 10px;
 	padding: 30px 20px;
 	color: white;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	position: relative;
 }
 .profile__down-item{
