@@ -17,7 +17,8 @@
 	margin-bottom: 30px;
 }
 .profile__email{
-	width: 476px;
+	max-width: 476px;
+	width: 100%;
 	margin-right: 25px;
 	background: var(--main-accent-color);
 	border-radius: 5px;
@@ -49,7 +50,7 @@
 
 }
 .profile__trafic{
-
+	display: block;
 	background: var(--secondary-bg-color);
 	border-radius: 5px;
 	padding: 15px 12px;
@@ -58,7 +59,6 @@
 .profile__trafic-contaner{
 	display: flex;
 	align-items: center;
-	height: 100%;
 }
 .profile__trafic-btn{
 	text-decoration: none;
@@ -82,16 +82,20 @@
 
 }
 .profile__down{
+	max-width: 1800px;
+	width: 100%;
 	background: var(--secondary-bg-color);
 	border-radius: 10px;
 	padding: 30px 20px;
 	color: white;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	position: relative;
 }
 .profile__down-item{
-	width: 450px;
+	max-width: 450px;
+	width: 100%;
 }
 .news-toggle, .prolong-toggle{
 	position: absolute;
@@ -217,7 +221,8 @@
 .profile__email-notif{
 	display: flex;
 	position: absolute;
-	width: 478px;
+	max-width: 478px;
+	width: 100%;
 	padding: 24px;
 	background: var(--secondary-bg-color);
 	border-radius: 5px;
@@ -227,4 +232,63 @@
 }
 .profile__email-notif img{
 	margin-right: 20px;
+}
+
+@media (max-width: 744px){
+	.profile__up{
+		flex-direction: column;
+	}
+	.profile__email{
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	.profile__trafic{
+		padding: 46px 16px;
+	}
+	.profile__private-info{
+		width: 100%;
+		margin-bottom: 80px;
+	}
+	.profile__password-new{
+		flex-direction: column;
+	}
+	.profile__password-newpassword{
+		width: 100%;
+	}
+	.profile__password-confirmpassword{
+		width: 100%;
+	}
+	.profile__email-card{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 23px;
+		flex: 1 0 0;
+	}
+	.profile__email-contaner img{
+		margin-left: 20px;
+	}
+	.profile__email-notif{
+		display: none;
+	}
+	.profile__trafic-contaner{
+		flex-direction: column-reverse;
+	}
+	.profile__down-btn{
+		margin-bottom: 80px;
+	}
+	.profile__trafic-kb{
+		margin-left: 0;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.profile__trafic-text{
+		margin-bottom: 23px;
+		font-size: 14px;
+		width: 100%;
+	}
+	.profile__trafic-btn{
+		display: block;
+		width: 100%;
+	}
 }
