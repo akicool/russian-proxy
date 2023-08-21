@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Главная страница</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/basic.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
@@ -90,6 +91,331 @@
 </div>
 		</section>
 
+		<div class="container">
+			<div class="channels channels--margin">
+				<h2 class="channels__title">Тарифные планы</h2>
+				<div class="channels__change">
+					<h2 class="channels__change-title">Канал:</h2>
+					<button class="channels__button channels__button--padding button button--black btn-first">
+						Общий
+					</button>
+					<button class="channels__button channels__button-color channels__button--padding button button--transparent btn-second">
+						Частный
+					</button>
+				</div>
+			</div>
+			<div class="tariff__card tariff__card--margin card">
+				<div class="card__item-first-block">
+					<div class="card__item">
+						<div class="card__btn-wrap ">
+							<div class="button-decor-block">
+								<img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+								<button class="card__btn button button--black">
+									Общий канал
+								</button>
+								<img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" name="" class="checkbox__change checkbox-input">
+								<div class="checkbox__circle"></div>
+							</div>
+						</div>
+						<div class="card__data card__data--margin">
+							<p class="card__title">1 день</p>
+							<p class="card__title">от <span class="card__price">50</span> рублей</p>
+						</div>
+						<div class="card__info card__info--margin ">
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								Высокая скорость
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								24/7 поддержку
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								До 2-5 пользователей на канале
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								Безлимитный трафик
+							</div>
+							<div class="card__info-text delete">
+								<img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
+								Нет смены IP по API
+							</div>
+							<div class="info-text-block display-none">
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Анонимность
+								</div>
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Соединения без ограничений
+								</div>
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Смена IP по API
+								</div>
+							</div>
+						</div>
+						<img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
+						<a href="/pages/tariffSelection.html" class="card__tariff-link">
+							<button class="card__tariff-btn card__tariff-btn--margin button button--transparent ">
+								Выбрать тариф
+							</button>
+						</a>
+					</div>
+					<div class="card__item">
+						<div class="card__btn-wrap ">
+							<div class="button-decor-block">
+								<img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+								<button class="card__btn button button--black">
+									Общий канал
+								</button>
+								<img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" name="" class="checkbox__change checkbox-input">
+								<div class="checkbox__circle"></div>
+							</div>
+						</div>
+						<div class="card__data card__data--margin">
+							<p class="card__title">7 дней</p>
+							<p class="card__title">от <span class="card__price">250</span> рублей</p>
+						</div>
+						<div class="card__info card__info--margin ">
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								Высокая скорость
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								24/7 поддержку
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								До 2-5 пользователей на канале
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								Безлимитный трафик
+							</div>
+							<div class="card__info-text delete">
+								<img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
+								Нет смены IP по API
+							</div>
+							<div class="info-text-block display-none">
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Анонимность
+								</div>
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Соединения без ограничений
+								</div>
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Смена IP по API
+								</div>
+							</div>
+						</div>
+						<img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
+						<a href="/pages/tariffSelectionSecond.html" class="card__tariff-link">
+							<button class="card__tariff-btn card__tariff-btn--margin button button--transparent">
+								Выбрать тариф
+							</button>
+						</a>
+					</div>
+					<div class="card__item">
+						<div class="card__btn-wrap ">
+							<div class="button-decor-block">
+								<img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+								<button class="card__btn button button--black">
+									Общий канал
+								</button>
+								<img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" name="" class="checkbox__change checkbox-input">
+								<div class="checkbox__circle"></div>
+							</div>
+						</div>
+						<div class="card__data card__data--margin">
+							<p class="card__title">14 дней</p>
+							<p class="card__title">от <span class="card__price">400</span> рублей</p>
+						</div>
+						<div class="card__info card__info--margin ">
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								Высокая скорость
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								24/7 поддержку
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								До 2-5 пользователей на канале
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								Безлимитный трафик
+							</div>
+							<div class="card__info-text delete">
+								<img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
+								Нет смены IP по API
+							</div>
+							<div class="info-text-block display-none">
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Анонимность
+								</div>
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Соединения без ограничений
+								</div>
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Смена IP по API
+								</div>
+							</div>
+						</div>
+						<img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
+						<a href="/pages/tariffSelectionThird.html" class="card__tariff-link">
+							<button class="card__tariff-btn card__tariff-btn--margin button button--transparent">
+								Выбрать тариф
+							</button>
+						</a>
+					</div>
+				</div>
+				<div class="card__item-second-block">
+					<div class="card__item">
+						<div class="card__btn-wrap ">
+							<div class="button-decor-block">
+								<img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+								<button class="card__btn button button--black">
+									Общий канал
+								</button>
+								<img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" name="" class="checkbox__change checkbox-input">
+								<div class="checkbox__circle"></div>
+							</div>
+						</div>
+						<div class="card__data card__data--margin">
+							<p class="card__title">30 дней</p>
+							<p class="card__title">от <span class="card__price">600</span> рублей</p>
+						</div>
+						<div class="card__info card__info--margin ">
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								Высокая скорость
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								24/7 поддержку
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								До 2-5 пользователей на канале
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								Безлимитный трафик
+							</div>
+							<div class="card__info-text delete">
+								<img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
+								Нет смены IP по API
+							</div>
+							<div class="info-text-block display-none">
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Анонимность
+								</div>
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Соединения без ограничений
+								</div>
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Смена IP по API
+								</div>
+							</div>
+						</div>
+						<img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
+						<a href="/pages/tariffSelectionFourth.html" class="card__tariff-link">
+							<button class="card__tariff-btn card__tariff-btn--margin button button--transparent">
+								Выбрать тариф
+							</button>
+						</a>
+					</div>
+					<div class="card__item">
+						<div class="card__btn-wrap ">
+							<div class="button-decor-block">
+								<img class="btn-decoration rotate" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+								<button class="card__btn button button--black">
+									Общий канал
+								</button>
+								<img class="btn-decoration" src="/assets/images/icons/trafficPlanIcons/buttonDecor.svg" alt="">
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" name="" class="checkbox__change checkbox-input">
+								<div class="checkbox__circle"></div>
+							</div>
+						</div>
+						<div class="card__data card__data--margin">
+							<p class="card__title">90 дней</p>
+							<p class="card__title">от <span class="card__price">1700</span> рублей</p>
+						</div>
+						<div class="card__info card__info--margin ">
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								Высокая скорость
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								24/7 поддержку
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								До 2-5 пользователей на канале
+							</div>
+							<div class="card__info-text">
+								<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+								Безлимитный трафик
+							</div>
+							<div class="card__info-text delete">
+								<img src="../assets/images/icons/trafficPlanIcons/red-check-mark.svg" alt="mark">
+								Нет смены IP по API
+							</div>
+							<div class="info-text-block display-none">
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Анонимность
+								</div>
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Соединения без ограничений
+								</div>
+								<div class="card__info-text">
+									<img src="../assets/images/icons/trafficPlanIcons/green-check-mark.svg" alt="mark">
+									Смена IP по API
+								</div>
+							</div>
+						</div>
+						<img class="card__item-bg" src="/assets/images/icons/trafficPlanIcons/chip.svg" alt="chip">
+						<a href="/pages/tariffSelectionFifth.html" class="card__tariff-link">
+							<button class="card__tariff-btn card__tariff-btn--margin button button--transparent">
+								Выбрать тариф
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<section class="forwhat">
 			<h1 class="header__title">Для чего нужен прокси и для <br>кого подходит?</h1>
 			<div class="forwhat__cards">
@@ -249,30 +575,30 @@
 				</div>
 				<hr>
 				<ul class="footer__items">
-						<li>Публичная оферта</li>
-						<li>Персональные данные</li>
-						<li>Политика возвратов</li>
+					<li>Публичная оферта</li>
+					<li>Персональные данные</li>
+					<li>Политика возвратов</li>
 				</ul>
 			</div>
 		</div>
 	</footer>
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script>
     $(document).ready(() => {
-     $(".slider").slick({
-  infinite: true,
-  arrows: false,
-  dots: false,
-  autoplay: false,
-  speed: 800,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-});
-
- //ticking machine
-    var percentTime;
-    var tick;
-    var time = 3.1;
+		$(".slider").slick({
+			infinite: true,
+			arrows: false,
+			dots: false,
+			autoplay: false,
+			speed: 800,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+		});
+		
+		//ticking machine
+		var percentTime;
+		var tick;
+		var time = 3.1;
     var progressBarIndex = 0;
 
     $('.progressBarContainer .progressBar').each(function(index) {
@@ -285,24 +611,24 @@
         percentTime = 0;
         tick = setInterval(interval, 10);
     }
-
+	
     function interval() {
         if (($('.slider .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
-            progressBarIndex = $('.slider .slick-track div[aria-hidden="false"]').data("slickIndex");
+			progressBarIndex = $('.slider .slick-track div[aria-hidden="false"]').data("slickIndex");
             startProgressbar();
             $('.item').removeClass('active')
-                $('.progressBarContainer .progressBar[data-slick-index="' + progressBarIndex + '"]').parent().addClass('active')
+			$('.progressBarContainer .progressBar[data-slick-index="' + progressBarIndex + '"]').parent().addClass('active')
             
         } else {
-            percentTime += 1 / (time + 5);
+			percentTime += 1 / (time + 5);
             $('.inProgress' + progressBarIndex).css({
                 width: percentTime + "%"
             });
             if (percentTime >= 100) {
-                $('.single-item').slick('slickNext');
+				$('.single-item').slick('slickNext');
                 progressBarIndex++;
                 if (progressBarIndex > 3) {
-                    progressBarIndex = 0;
+					progressBarIndex = 0;
                 }
                 startProgressbar();
                 $('.item').removeClass('active')
@@ -319,7 +645,7 @@
     }
     startProgressbar();
     // End ticking machine
-
+	
     $('.item').click(function () {
     	clearInterval(tick);
     	var goToThisIndex = $(this).find("span").data("slickIndex");
@@ -327,9 +653,10 @@
     	startProgressbar();
     });
 });
-   
-  </script>
+
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  
+<script src="/assets/JavaScript/main.js"></script>
+
 </body>
 </html>
