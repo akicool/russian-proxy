@@ -1,3 +1,5 @@
+
+
 .date-range{
     margin-top: 30px;
     font-size: 20px;
@@ -7,8 +9,9 @@
     margin-bottom: 16px;
 }
 
-.calendar{
+.calendar-btn{
     display: flex;
+    position: relative;
     justify-content: start;
     max-width: 513px;
     width: 100%;
@@ -21,50 +24,183 @@
     margin-bottom: 40px;
 }
 
-.calendar-block{
-    max-width: 300px;
-    width: 487px;
-    margin: 0 auto;
+.calendars{
+  display: flex;
+  justify-content: start;
+  position: absolute;
+  top: 419px;
+  left: 125px;
+  z-index: 5;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
 }
+
+.calendars.open{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.calendar-block{
+    max-width: 427px;
+    background: #FFF;
+    padding-right: 20px;
+    width: 100%;
+}
+
 
 .calendar-header {
     display: flex;
+    padding-top: 10px;
+    position: relative;
     align-items: center;
+    padding-right: 0px;
     justify-content: space-between;
     margin-bottom: 10px;
   }
 
-.month-year {
-    font-weight: bold;
+  .month-year {
+    color: #D0D4DA;
+    font-size: 16px;
+    max-width: 177px;
+    width: 100%;
+    margin-left: 100px;
+    font-weight: 700;
+    line-height: 150%;
+    display: inline-block;
+  }
+
+  .month-year-2{
+    color: #D0D4DA;
+    font-size: 16px;
+    max-width: 177px;
+    width: 100%;
+    margin-left: 100px;
+    font-weight: 700;
+    line-height: 150%;
+    display: inline-block;
   }
   
-.prev,
-.next {
+  .prev{
+    display: flex;
     border: none;
     background: none;
-    font-size: 20px;
+    padding: 1px;
     cursor: pointer;
-}
+  }
+  .next {
+    display: flex;
+    border: none;
+    background: none;
+    padding: 1px;
+    cursor: pointer;
+  }
 
-.days {
+  .prev::before{
+    content: url(../images/icons/socials/Left.svg);
+    display: inline-flex;
+    position: absolute;
+    top: 0px;
+    padding-top: 10px;
+    left: 0;
+    gap: 10px;
+
+
+  }
+
+  .prev::after{
+    content: url(../images/icons/socials/Right.svg);
+    display: inline-flex;
+    position: absolute;
+    top: 4px;
+    padding-top: 10px;
+    right: 0;
+    gap: 10px;
+
+  }
+  
+  .days {
     width: 100%;
-}
-
-.days th,
-.days td {
+  }
+  
+  .days th,
+  .days td {
     padding: 10px;
     text-align: center;
-    border: 1px solid #ddd;
-}
+  }
 
-.days th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
+  .days td{
+    font-size: 13px;
+    color: #68676A;
+    font-weight: 400;
+    line-height: 24px; 
+  }
 
-.days td:hover {
+  .days td.active{
+    color: #FFF;
+    background: #1878F1;
+  }
+  
+  .days th {
+    color: #D0D4DA;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 24px; 
+  }
+  
+  .days td:hover {
     background-color: #f2f2f2;
     cursor: pointer;
+  }
+
+  .calendar-date{
+    border-top: 1px solid #C9C8CC;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px 0px;
+    display: flex;
+    flex: 1 0 0;
+    color: #1878F1;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+
+.calendar-btn_modal{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #C9C8CC;
+  padding: 10px 0px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.calendar-button-left{
+  border: 1px solid #1878F1;
+  border-radius: 4px;
+  font-family: Inter;
+  font-size: 12px;
+  color: #696F8C;
+  font-weight: 600;
+  padding: 0px 24px;
+  line-height: 24px; 
+}
+
+.calendar-button-left:hover{
+  cursor: pointer;
+}
+
+.calendar-button-right{
+  border-radius: 4px;
+  background: #51FF35;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0px 24px;
+  border: 0;
+  line-height: 24px; 
+}
+
+.calendar-button-right:hover{
+  cursor: pointer;
 }
 
 .history_content{

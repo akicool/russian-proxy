@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../assets/css/tariffPlan.css">
     <link rel="stylesheet" href="../assets/css/profile.css">
     <link rel="stylesheet" href="../assets/css/history.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>История трафика</title>
@@ -177,30 +178,60 @@
                         </div>
                     </div>
                     <p class="date-range">Диапазон дат</p>
-                    <button class="calendar">11.07.2023 - 11.07.2023</button>
-                    <div class="calendar-block">
-                      <div class="calendar-header">
-                        <button class="prev" onclick="prevMonth()">&lt;</button>
-                        <div class="month-year"></div>
-                        <button class="next" onclick="nextMonth()">&gt;</button>
-                      </div>
-                    
-                      <table class="days">
-                        <thead>
-                          <tr>
-                            <th>Пн</th>
-                            <th>Вт</th>
-                            <th>Ср</th>
-                            <th>Чт</th>
-                            <th>Пт</th>
-                            <th>Сб</th>
-                            <th>Вс</th>
-                          </tr>
-                        </thead>
-                        <tbody id="calendar-body"></tbody>
-  
-                      </table>
+                    <button class="calendar-btn">11.07.2023 - 11.07.2023</button>
+                    <div class="calendars">
+                        <div class="calendar-block">
+                            <div class="calendar-header">
+                              <button class="prev" onclick="prevMonth()"&lt;</button>
+                              <div class="month-year"></div>
+                              <button class="next" onclick="nextMonth()"&gt;</button>
+                            </div>
+                          
+                            <table class="days">
+                              <thead>
+                                <tr>
+                                  <th>Пн</th>
+                                  <th>Вт</th>
+                                  <th>Ср</th>
+                                  <th>Чт</th>
+                                  <th>Пт</th>
+                                  <th>Сб</th>
+                                  <th>Вс</th>
+                                </tr>
+                              </thead>
+                              <tbody id="calendar-body"></tbody>
+                            </table>
+                            
+                            <div class="calendar-date">11.07.2023 - 11.07.2023</div>
+                          </div>
+                          <div class="calendar-block">
+                              <div class="calendar-header">
+                                <button class="prev" onclick="prevMonth()"&lt;</button>
+                                <div class="month-year-2"></div>
+                                <button class="next" onclick="nextMonth()"&gt;</button>
+                              </div>
+                            
+                              <table class="days">
+                                <thead>
+                                  <tr>
+                                    <th>Пн</th>
+                                    <th>Вт</th>
+                                    <th>Ср</th>
+                                    <th>Чт</th>
+                                    <th>Пт</th>
+                                    <th>Сб</th>
+                                    <th>Вс</th>
+                                  </tr>
+                                </thead>
+                                <tbody id="calendar2"></tbody>
+                              </table>
+                              <div class="calendar-btn_modal">
+                                <button class="calendar-button-left">Отменить</button>
+                                <button class="calendar-button-right">Применить</button>
+                              </div>
+                            </div>
                     </div>
+                    
                     <div class="history_content">
                       <p class="history-desc_item">Дата</p>
                       <p class="history-desc_item">IP</p>
@@ -218,8 +249,8 @@
         </div>
     </div>
     <script src="../assets/JavaScript/nav.js"></script>
-    <script src="../assets/JavaScript/history.js"></script>
     <script src="../assets/JavaScript/tariffPlanScript.js"></script>
+    <script src="../assets/JavaScript/history.js"></script>
     
 </body>
 </html>
