@@ -44,8 +44,8 @@ p{
 .nav{
 	background: white;
 	width: 100%;
-	position: fixed;
-  z-index: 10;
+	/* position: fixed; */
+  /* z-index: 10; */
 }
 .nav__content{
 	display: flex;
