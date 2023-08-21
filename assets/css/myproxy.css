@@ -1,319 +1,318 @@
 .nav-block {
-	display: flex;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .nav {
-	position: relative;
-	z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 .header {
-	position: relative;
-	z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 .nav__link-text {
-	visibility: hidden;
-	opacity: 0;
-	transition: .2s ease-out;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-out;
 }
 .nav__link-text.show {
-	visibility: visible;
-	opacity: 1;
-	transition: .2s ease-out;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s ease-out;
 }
 .nav__link-text.active {
-	visibility: visible;
-	opacity: 1;
-	transition: .2s ease-out;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s ease-out;
 }
 .nav__link-text--additional-style {
-    overflow: hidden;
-    margin-left: 20px;
-    width: max-content;
-    pointer-events: none;
-    color: var(--white-link-color);
+  overflow: hidden;
+  margin-left: 20px;
+  width: max-content;
+  pointer-events: none;
+  color: var(--white-link-color);
 }
 .nav__link-title--more-style {
-	overflow: hidden;
-    margin-left: 20px;
-    width: max-content;
-    pointer-events: none;
-    color: var(--white-link-color);
+  overflow: hidden;
+  margin-left: 20px;
+  width: max-content;
+  pointer-events: none;
+  color: var(--white-link-color);
 }
-.myproxy{
-	width: 100%;
-	height: 100vh;
-	padding: 72px 0px 20px 75px;
-	background: var(--main-bg-color);
-
+.myproxy {
+  width: 100%;
+  height: 100vh;
+  padding: 72px 0px 20px 75px;
+  background: var(--main-bg-color);
 }
-.myproxy__contaner{
-	position: relative;
+.myproxy__contaner {
+  position: relative;
 }
-.myproxy__title{
-	margin-bottom: 30px;
-	color: var(--main-font-color);
+.myproxy__title {
+  margin-bottom: 30px;
+  color: var(--main-font-color);
 }
-.myproxy__up{
-	display: flex;
-	margin-bottom: 30px;
+.myproxy__up {
+  display: flex;
+  margin-bottom: 30px;
 }
-.myproxy__email{
-	width: 476px;
-	margin-right: 25px;
-	background: var(--main-accent-color);
-	border-radius: 5px;
-	padding: 15px 12px;
+.myproxy__email {
+  width: 476px;
+  margin-right: 25px;
+  background: var(--main-accent-color);
+  border-radius: 5px;
+  padding: 15px 12px;
 }
-.myproxy__email img{
-	margin-bottom: 17px;
+.myproxy__email img {
+  margin-bottom: 17px;
 }
-.myproxy__email-hr{
-	border:1px solid var(--secondary-btn-color);
-	margin-bottom: 17px;
+.myproxy__email-hr {
+  border: 1px solid var(--secondary-btn-color);
+  margin-bottom: 17px;
 }
-.myproxy__email p{
-	margin-bottom: 33px;
+.myproxy__email p {
+  margin-bottom: 33px;
 }
-.myproxy__email-contaner img{
-	margin-left: 62px;
+.myproxy__email-contaner img {
+  margin-left: 62px;
 }
-.myproxy__email-contaner{
-	display: flex;
-	color: white;
+.myproxy__email-contaner {
+  display: flex;
+  color: white;
 }
-.myproxy__email-btn{
-	text-decoration: none;
-	color: white;
-	background: var(--secondary-btn-color);
-	padding: 10px;
-	border-radius: 5px;
-
+.myproxy__email-btn {
+  text-decoration: none;
+  color: white;
+  background: var(--secondary-btn-color);
+  padding: 10px;
+  border-radius: 5px;
 }
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
+  overflow: hidden;
+  border: 1px solid #ccc;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    border-bottom: 1px solid;
+  border-bottom: 1px solid;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    width: 100%;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 100%;
 }
-.tabcontent table{
-	width: 100%;
+.tabcontent table {
+  width: 100%;
 }
-.tabcontent table td{
-	text-align: center;
-	padding: 32px 10px;
-	border-top: 1px solid #AEB9CF;
+.tabcontent table td {
+  text-align: center;
+  padding: 32px 10px;
+  border-top: 1px solid #aeb9cf;
 }
-.tabcontent table th{
-	padding: 15px 10px;
+.tabcontent table th {
+  padding: 15px 10px;
 }
-.tabcontent table input{
-	width: 16px;
-	height: 16px;
+.tabcontent table input {
+  width: 16px;
+  height: 16px;
 }
-.api__key{
-	display: flex;
-	margin-top: 40px;
-	width: 100%;
-	justify-content: space-between;
+.api__key {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  justify-content: space-between;
 }
-.api__key-contaner-title{
-	font-weight: 600;
-	padding: 10px;
-	background: var(--secondary-bg-color);
-	color: white;
-	margin-right: 3px;
-	border-radius: 5px 0 0 5px;
+.api__key-contaner-title {
+  font-weight: 600;
+  padding: 10px;
+  background: var(--secondary-bg-color);
+  color: white;
+  margin-right: 3px;
+  border-radius: 5px 0 0 5px;
 }
-.api__key-key{
-	color: white;
-	background: var(--secondary-bg-color);
-	padding: 12px;
-	width: 700px;
-	font-weight: 400;
-	resize: none;
-	outline: none;
-	font-size: 14px;
+.api__key-key {
+  color: white;
+  background: var(--secondary-bg-color);
+  padding: 12px;
+  width: 700px;
+  font-weight: 400;
+  resize: none;
+  outline: none;
+  font-size: 14px;
 }
-.api__key-contaner{
-	display: flex;
-	height: 45px;
-}
-
-.api__key img{
-	padding: 14px 20px;
-}
-.api__key-reload{
-	background: var(--main-accent-color);
-}
-.api__key-copy{
-	background: #426694;
-	border-radius: 0 5px 5px 0;
-	outline: none;
-	border-radius: none;
-    cursor: pointer;
-    position: relative;
-}
-.api__key-copy:active::before{
-	content: "API скопирован в буфер обмена";
-	padding: 10px;
-	background: var(--secondary-bg-color);
-	position: absolute;
-	transform: translateY(100px);
-	color: white;
-	width: 100px;
+.api__key-contaner {
+  display: flex;
+  height: 45px;
 }
 
-.myproxy__choosetarif{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-	align-items: center;
-	margin-top: 30px;
+.api__key img {
+  padding: 14px 20px;
 }
-.myproxy__choosetarif p{
-	margin-bottom: 40px;
+.api__key-reload {
+  background: var(--main-accent-color);
 }
-.myproxy__choosetarif a{
-	text-decoration: none;
-	color: white;
-	padding: 10px 30px ;
-	background: var(--main-accent-color);
-	border-radius: 5px;
+.api__key-copy {
+  background: #426694;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  border-radius: none;
+  cursor: pointer;
+  position: relative;
 }
-.api__key-text{
-	max-width: 390px;
-	width: 100%;
-	background: var(--secondary-bg-color);
-	border-radius: 15px;
+.api__key-copy:active::before {
+  content: "API скопирован в буфер обмена";
+  padding: 10px;
+  background: var(--secondary-bg-color);
+  position: absolute;
+  transform: translateY(100px);
+  color: white;
+  width: 100px;
 }
-.api__key-text-text{
-	font-weight: 400;
-	padding: 16px;
-	color: white;
+
+.myproxy__choosetarif {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
 }
-.api__key-text h3{
-	padding: 16px;
-	color: white;
-	background: #395170;
-	border-radius: 15px 15px 0 0;
-	font-weight: 500;
+.myproxy__choosetarif p {
+  margin-bottom: 40px;
+}
+.myproxy__choosetarif a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  background: var(--main-accent-color);
+  border-radius: 5px;
+}
+.api__key-text {
+  max-width: 390px;
+  width: 100%;
+  background: var(--secondary-bg-color);
+  border-radius: 15px;
+}
+.api__key-text-text {
+  font-weight: 400;
+  padding: 16px;
+  color: white;
+}
+.api__key-text h3 {
+  padding: 16px;
+  color: white;
+  background: #395170;
+  border-radius: 15px 15px 0 0;
+  font-weight: 500;
 }
 
 @media (max-width: 1420px) {
-	.api__key {
-		gap: 20px;
-	}
+  .api__key {
+    gap: 20px;
+  }
 }
 @media (max-width: 1340px) {
-	.api__key {
-		flex-direction:column-reverse;
-		gap: 20px;
-	}
-	.api__key-text-text {
-		width: 100%;
-		font-size: 14px;
-		
-	}
+  .api__key {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .api__key-text-text {
+    width: 100%;
+    font-size: 14px;
+  }
 }
 @media (max-width: 1260px) {
-	.api__key-contaner {
-		height: 50px;
-	}
+  .api__key-contaner {
+    height: 50px;
+  }
 }
 @media (max-width: 990px) {
-
-	.tabcontent table td {
-		padding: 10px;
-	}
+  .tabcontent table td {
+    padding: 10px;
+  }
 }
 @media (max-width: 930px) {
-	.tabcontent {
-		overflow: auto;
-	}
-	.api__key-key {
-		text-wrap: nowrap;
-		display: -webkit-box;
-		max-width: 400px;
-		font-size: 16px;
-		-webkit-line-clamp: 4; /* количество строк */
-		-webkit-box-orient: vertical;
-		overflow: auto;
-		text-overflow: ellipsis;
-	}
+  .tabcontent {
+    overflow: auto;
+  }
+  .api__key-key {
+    /* text-wrap: nowrap;
+    display: -webkit-box; */
+    max-width: 400px;
+    font-size: 16px;
+    -webkit-line-clamp: 4; /* количество строк */
+    -webkit-box-orient: vertical;
+    overflow: auto;
+    text-overflow: ellipsis;
+  }
 }
 @media (max-width: 744px) {
-	.myproxy {
-		padding: 0;
-		padding-left: 30px;
-	}
-	.myproxy__title {
-		padding-top: 60px;
-	}
-	.api__key-text{
-		max-width: 696px;
-	}
-	.tabcontent {
-		position: relative;
-	}
-	.myproxy__choosetarif {
-		margin-top: 0px;
-		position: relative;
-	}
-	.myproxy__choosetarif p {
-		position: fixed;
-		bottom: 50px;
-	}
-	.myproxy__choosetarif a{
-		position: fixed;
-		bottom: 20px;
-	}
-	.myproxy__choosetarif p {
-		margin-bottom: 20px;
-	}
+  .myproxy {
+    padding: 0;
+    padding-left: 30px;
+  }
+  .myproxy__title {
+    padding-top: 60px;
+  }
+  .api__key-text {
+    max-width: 696px;
+  }
+  .tabcontent {
+    position: relative;
+  }
+  .myproxy__choosetarif {
+    margin-top: 0px;
+    position: relative;
+  }
+  .myproxy__choosetarif p {
+    bottom: 50px;
+  }
+  .myproxy__choosetarif a {
+    bottom: 20px;
+  }
+  .myproxy__choosetarif p {
+    margin-bottom: 20px;
+  }
 }
-@media (max-width: 390px) {
-	.nav-block {
-		overflow: hidden;
-	}
-	.myproxy {
-		padding: 0;
-		padding-left: 20px;
-	}
-	.myproxy__email{
-		max-width: 350px;
-	}
-	.myproxy__email-contaner img {
-		margin: 0;
-	}
+@media (max-width: 400px) {
+  .nav-block {
+    overflow: hidden;
+  }
+  .myproxy {
+    padding: 0;
+    padding-left: 20px;
+  }
+  .myproxy__email {
+    max-width: 350px;
+  }
+
+  .myproxy__email-btn {
+    padding: 5px;
+  }
+
+  .myproxy__email-contaner img {
+    margin: 0;
+  }
 }
