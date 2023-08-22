@@ -1,16 +1,22 @@
 
 
 
-.container{
-padding: 40px 195px 40px 195px;
-}
-.container__inner{
-  margin-left: 352px;
+.container {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
 
-.nav__logo {
-  position: relative;
- padding-bottom: 150px;
+.nav {
+  position: absolute;
+  top: 20px;
+  left: 0;
 }
 
 .about__form{
@@ -163,22 +169,9 @@ text-decoration-line: none;
 }
 
 
-@media (max-width: 1195px) {
-  .container__inner{
-    margin-left:135px;
-  }
-  .container{
-    padding: 40px 20px 40px 20px;
-    }
-}
 
 @media (max-width: 448px){
-    .container__inner{
-    margin-left:0px;
-  }
-  .container{
-    padding: 40px 12px 40px 12px;
-    }
+
   .about__item{
     padding-left: 10px;
     list-style: none;
