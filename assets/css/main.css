@@ -7,6 +7,9 @@
 	--secondary-bg-color: #26374D;
 	--secondary-btn-color:#202B40;
 }
+html{
+  scroll-behavior: smooth;
+}
 .display-none {
   display: none !important;
 }
