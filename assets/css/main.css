@@ -639,7 +639,8 @@ text-decoration-line: none;
 
   .menu-list{
     display: flex;
-    min-width: 704px;
+    max-width: 704px;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     padding: 21px 28px;
