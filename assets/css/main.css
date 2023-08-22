@@ -748,7 +748,7 @@ p{
   }
   .header__title{
     font-size: 24px;
-    margin-top: 400px;
+    margin-top: 200px;
     margin-bottom: 30px;
   }
   .channels{
@@ -1285,6 +1285,79 @@ h3 {
   }
   .progressBarContainer div{
     gap: 8px;
+  }
+
+  .footer {
+    border-radius: 50px 50px 0 0;
+    padding: 50px 15px;
+  }
+
+  .faq {
+    padding: 0 10px;
+  }
+
+  
+  .forwhat {
+    padding: 0px 10px;
+  }
+  
+  .forwhat__advantages-left {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .forwhat__advantages-right {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .channels {
+    flex-wrap: wrap;
+  }
+
+  .channels__title {
+    margin-bottom: 20px;
+  }
+
+  .header__title-forwhat {
+    margin-top: 170px;
+    font-size: 24px;
+    margin-bottom: 80px;
+  }
+
+  .forwhat__card1 .main-card-background,
+  .forwhat__card2 .main-card-background,
+  .forwhat__card3 .main-card-background,
+  .forwhat__card4 .main-card-background,
+  .forwhat__card5 .main-card-background,
+  .forwhat__card6 .main-card-background{
+    opacity: 1;
+  }
+  .forwhat__card1,
+  .forwhat__card2,
+  .forwhat__card3,
+  .forwhat__card4,
+  .forwhat__card5,
+  .forwhat__card6{
+    color: #fff;
+  }
+  .forwhat__card{
+    background: transparent;
+  }
+
+  .slide1, .slide2, .slide3, .slide4 {
+  }
+
+  main {
+    overflow: hidden;
+  }
+
+  .slick-slide div {
+    border-radius: 25px;
+    width: 95%;
+  }
+
+  .slick-list, .slick-slider .slick-list, .slick-slider .slick-track, .slick-initialized .slick-slide {
+    height: 100%;
   }
 }
 
