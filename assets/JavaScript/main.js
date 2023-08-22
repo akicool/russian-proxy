@@ -1,17 +1,3 @@
-
-const burgerMenu = document.querySelector('.burger');
-const close = document.querySelector('.close');
-const navContent = document.querySelector('.nav__content');
-
-close.addEventListener('click', function(){ 
-    navContent.classList.toggle('open');
-});
-burgerMenu.addEventListener('click', function(){ 
-    navContent.classList.toggle('open');
-});
-
-
-
 const btnFirst = document.querySelector('.btn-first')
 const btnSecond = document.querySelector('.btn-second')
 const checkbox = document.querySelectorAll('.checkbox')
@@ -26,7 +12,16 @@ const Delete = document.querySelectorAll('.delete')
 const infoTextBlock = document.querySelectorAll('.info-text-block')
 const btnDecoration = document.querySelectorAll('.btn-decoration')
 const channels = document.querySelector('.channels')
+const navBurgerr = document.querySelector('.nav__burgerr')
+const burgerElement = document.querySelector('.burger-element')
+const containerOpacity = document.querySelector('.container-opacity')
 
+
+burgerElement.addEventListener('click', () => {
+    burgerElement.classList.toggle('active')
+    navBurgerr.classList.toggle('active')
+    containerOpacity.classList.toggle('active')
+});
 
 let btnSecondCounter = 0;  
 btnSecond.addEventListener('click', (e) => {

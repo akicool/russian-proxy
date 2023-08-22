@@ -71,3 +71,7 @@ a {
   color: var(--main-font-color) !important;
   border: none !important;
 }
+
+.nav__buttons {
+  display: flex; justify-content: center; align-items: center; gap: 30px;
+}

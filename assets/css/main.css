@@ -55,6 +55,7 @@ p{
   max-width:1500px;
 	align-items: center;
 }
+
 .burger{
   display: none;
 }
@@ -63,6 +64,7 @@ p{
 }
 .nav__items ul{
 	display: flex;
+  align-items: center;
 	list-style: none;
 }
 .nav__item{
@@ -77,19 +79,16 @@ p{
   display: flex;
 }
 .nav__signup-btn{
-  display: inline-block;
 	background: var(--main-accent-color);
 	outline: none;
 	border: none;
 	padding: 10px;
 	color: white;
-	margin-right: 30px;
 	border-radius: 5px;
 	text-decoration: none;
 	color: white;
 }
 .nav__signin-btn{
-  display: inline-block;
 	outline: none;
 	padding: 10px;
 	text-decoration: none;
@@ -98,6 +97,60 @@ p{
 	border-radius: 5px;
 
 }
+.burger-element {
+  display: none;
+  height: 40px;
+  width: 40px;
+}
+
+.burger-line {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--menu-line-color);
+  transition: .2s ease-out;
+}
+.burger-line::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 40px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--menu-line-color);
+  transition: .2s ease-out;
+}
+.burger-line::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 23px;
+  width: 18px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--menu-line-color);
+  transition: .2s ease-out;
+}
+
+.burger-element.active .burger-line {
+  transform: rotate(45deg);
+  width: 40px;
+  top: 20px;
+}
+.burger-element.active .burger-line::before {
+  transform: rotate(-90deg);
+  top: 0;
+}
+.burger-element.active .burger-line::after {
+  scale: 0;
+}
+
 
 .header{
 	width: 100%;
@@ -460,17 +513,18 @@ p{
 	margin-right: 55px;
 
 }
+.nav__buttons-list {
+  display: none !important;
+}
+.nav__burgerr {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 1220px){
-  .menu-list{
-    margin-bottom: 15px;
-  }
-  .nav__items{
-    display: block;
-  }
   .nav__logo{
-    margin-bottom: 15px;
-  }
-  .nav__items{
     margin-bottom: 15px;
   }
   .about{
@@ -493,8 +547,6 @@ p{
     text-align: center;
   }
   .nav__signup-btn{
-    margin-right: 0;
-    margin-bottom: 5px;
   }
   .header__buy-btn{
     display: block;
@@ -535,6 +587,89 @@ p{
     flex-direction: column;
   }
 }
+
+@media (max-width: 940px){
+
+  .menu-list{
+    display: flex;
+    min-width: 704px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 21px 28px;
+    gap: 10px;
+    height: 406px;
+  }
+  .nav__burgerr {
+    width: 95%;
+    top: 100px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    height: 0px;
+    visibility: hidden;
+    transition: .2s ease-out;
+    border-radius: 0px 0px 20px 20px;
+    background: var(--bg-main-background, #F3F6FB);
+  }
+  .nav__item {
+    display: flex;
+    width: 100%;
+  }
+  .nav__burgerr.active {
+    height: 310px;
+    visibility: visible;
+    transition: .2s ease-out;
+  }
+  .container-opacity {
+    opacity: 1;
+    transition: .2s ease-out;
+  }
+  .container-opacity.active::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: .6;
+    transition: .2s ease-out;
+  }
+  .burger-element {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+  }
+  .nav__logo {
+    display: flex;
+    width: 100%;
+  }
+  .burger{
+    margin-top: -20px;
+    display: none;
+  }
+  .media-display {
+    display: none !important;
+  }
+  .nav__buttons-list {
+    display: flex !important;
+  }
+
+  .close{
+    position: absolute;
+    right: 15px;
+  }
+  .nav__buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px !important;
+  }
+  .nav__signup-btn {
+    width: 100%;
+  }
+  .nav__signin-btn {
+    width: 100%;
+  }
+}
 @media (max-width: 820px){
   .faq__card{
     max-width: 915px;
@@ -557,57 +692,12 @@ p{
   }
 }
 @media (max-width: 744px){
-  .nav__content{
-    flex-direction: row;
-    padding: 40px 78px;
-    
-  }
-  .nav__items{
-    position: absolute;
-    left: 30px;
-    top: 95px;
-    background-color: #fff;
-    transition: transform .5s;
-  }
 
-  .nav__content.open .nav__items {
-    transform: translateY(100%);
-  }
-  .menu-list{
-    display: block;
-    min-width: 704px;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 21px 28px;
-    gap: 10px;
-    height: 406px;
-  }
-  .burger{
-    margin-top: -20px;
-    display: none;
-  }
-  .nav__content.open .burger{
-    display: block;
-  }
-  .close{
-    display: block;
-  }
-  .nav__content.open .close{
-    display: none;
-  }
-  .close{
-    margin-top: -20px;
-  }
+
   .nav__buttons{
-    position: absolute;
-    top: 205px;
-    left: 50px;
+    gap: 20px;
   }
 
-  .nav__signup-btn{
-    padding: 10px 20px;
-    min-width: 608px;
-  }
   .header__title{
     margin-top: 200px;
     max-width: 721px;
@@ -645,19 +735,13 @@ p{
 }
 
 @media (max-width: 366px){
-  .nav__content{
-    padding: 40px 28px;
-  }
   .menu-list{
     min-width: 366px;
   }
-  .nav__items{
-    left: 10px;
-    top: 95px;
-  }
+
   .nav__buttons{
-    top: 205px;
-    left: 26px;
+    display: flex;
+    justify-content: center;
   }
   .nav__signup-btn{
     min-width: 310px;
@@ -1125,6 +1209,11 @@ h3 {
     padding: 35px;
   }
 }
+@media screen and (max-width:980px) {
+  .nav__content {
+    padding: 20px 10px;
+  }
+}
 @media screen and (max-width:880px) {
   .card__item-second-block {
     flex-wrap: wrap;
@@ -1132,7 +1221,11 @@ h3 {
   .card__item-first-block {
     flex-wrap: wrap;
   }
+  .nav__buttons {
+    flex-direction: column;
+  }
 }
+
 @media screen and (max-width:768px) {
   .slick-slider{
     width: 400px;
