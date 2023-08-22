@@ -871,7 +871,7 @@ h3 {
 }
 
 .slider {
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
   margin: 30px 50px 50px;
 }
@@ -1387,10 +1387,6 @@ h3 {
   .forwhat__card{
     background: transparent;
   }
-
-  .slide1, .slide2, .slide3, .slide4 {
-  }
-
   main {
     overflow: hidden;
   }
