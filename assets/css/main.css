@@ -55,6 +55,12 @@ p{
   max-width:1500px;
 	align-items: center;
 }
+.burger{
+  display: none;
+}
+.close{
+  display: none;
+}
 .nav__items ul{
 	display: flex;
 	list-style: none;
@@ -544,12 +550,56 @@ p{
 @media (max-width: 744px){
   .nav__content{
     flex-direction: row;
+    padding: 40px 78px;
+    
   }
   .nav__items{
+    position: absolute;
+    left: 30px;
+    top: 95px;
+    background-color: #fff;
+    transition: transform .5s;
+  }
+
+  .nav__content.open .nav__items {
+    transform: translateY(100%);
+  }
+  .menu-list{
+    display: block;
+    min-width: 704px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 21px 28px;
+    gap: 10px;
+    height: 406px;
+  }
+  .burger{
+    margin-top: -20px;
     display: none;
   }
-  .nav__buttons{
+  .nav__content.open .burger{
+    display: block;
+  }
+  .close{
+    display: block;
+  }
+  .nav__content.open .close{
     display: none;
+  }
+  .close{
+    position: absolute;
+    top: 40px;
+    right: 70px;
+  }
+  .nav__buttons{
+    position: absolute;
+    top: 205px;
+    left: 50px;
+  }
+
+  .nav__signup-btn{
+    padding: 10px 20px;
+    min-width: 608px;
   }
   .header__title{
     margin-top: 200px;
@@ -588,6 +638,26 @@ p{
 }
 
 @media (max-width: 366px){
+  .nav__content{
+    padding: 40px 28px;
+  }
+  .menu-list{
+    min-width: 366px;
+  }
+  .nav__items{
+    left: 10px;
+    top: 95px;
+  }
+  .close{
+    right: 24px;
+  }
+  .nav__buttons{
+    top: 205px;
+    left: 26px;
+  }
+  .nav__signup-btn{
+    min-width: 310px;
+  }
   .header__title{
     font-size: 24px;
     margin-top: 400px;

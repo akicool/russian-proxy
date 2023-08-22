@@ -1,3 +1,17 @@
+
+const burgerMenu = document.querySelector('.burger');
+const close = document.querySelector('.close');
+const navContent = document.querySelector('.nav__content');
+
+close.addEventListener('click', function(){ 
+    navContent.classList.toggle('open');
+});
+burgerMenu.addEventListener('click', function(){ 
+    navContent.classList.toggle('open');
+});
+
+
+
 const btnFirst = document.querySelector('.btn-first')
 const btnSecond = document.querySelector('.btn-second')
 const checkbox = document.querySelectorAll('.checkbox')
