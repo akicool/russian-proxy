@@ -276,6 +276,50 @@ p{
   z-index: 3;
 }
 
+.forwhatgroup-1{
+  display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 30px;
+align-self: stretch;
+flex-wrap: wrap;
+margin-top: 70px;
+text-decoration-line: none;
+}
+.forwhatbutton-1{
+  display: flex;
+padding: 12px 40px;
+align-items: flex-start;
+border-radius: 5px;
+background: #1878F1;
+text-decoration-line: none;
+}
+.forwhatbutto{
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration-line: none;
+}
+.forwhatbutton-2{
+  display: flex;
+padding: 12px 40px;
+align-items: flex-start;
+border-radius: 5px;
+border: 1px solid #1878F1;
+text-decoration-line: none;
+}
+.forwhat__butto-2{
+  color: #0C0C20;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration-line: none;
+}
+
 .main-card-background{
 
 }
@@ -1362,6 +1406,19 @@ h3 {
 
   .about {
     padding: 0 10px;
+  }
+  .forwhatgroup-1 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .forwhatbutton-1 {
+    width: 100%;
+    justify-content: center;
+    
+  }
+  .forwhatbutton-2 {
+    width: 100%;
+    justify-content: center;
   }
 }
 
