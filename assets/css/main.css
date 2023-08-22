@@ -73,8 +73,11 @@ p{
 	color: var(--main-font-color);
 
 }
+.nav__items{
+  display: flex;
+}
 .nav__signup-btn{
-  display: block;
+  display: inline-block;
 	background: var(--main-accent-color);
 	outline: none;
 	border: none;
@@ -86,7 +89,7 @@ p{
 	color: white;
 }
 .nav__signin-btn{
-  display: block;
+  display: inline-block;
 	outline: none;
 	padding: 10px;
 	text-decoration: none;
@@ -458,6 +461,12 @@ p{
 
 }
 @media (max-width: 1220px){
+  .menu-list{
+    margin-bottom: 15px;
+  }
+  .nav__items{
+    display: block;
+  }
   .nav__logo{
     margin-bottom: 15px;
   }
@@ -587,9 +596,7 @@ p{
     display: none;
   }
   .close{
-    position: absolute;
-    top: 40px;
-    right: 70px;
+    margin-top: -20px;
   }
   .nav__buttons{
     position: absolute;
@@ -647,9 +654,6 @@ p{
   .nav__items{
     left: 10px;
     top: 95px;
-  }
-  .close{
-    right: 24px;
   }
   .nav__buttons{
     top: 205px;
