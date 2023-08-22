@@ -1359,5 +1359,9 @@ h3 {
   .slick-list, .slick-slider .slick-list, .slick-slider .slick-track, .slick-initialized .slick-slide {
     height: 100%;
   }
+
+  .about {
+    padding: 0 10px;
+  }
 }
 
