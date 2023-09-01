@@ -2,6 +2,9 @@ const calendarBtn = document.querySelector('.calendar-btn');
 const calendars = document.querySelector('.calendars');
 const calendarButtonLeft = document.querySelector('.calendar-button-left');
 
+const hideCalendars = () => {
+  calendars.classList.remove('open');
+};
 
 calendarBtn.addEventListener('click', () => {
   calendars.classList.add('open');
@@ -11,6 +14,11 @@ calendarButtonLeft.addEventListener('click', () => {
   calendars.classList.remove('open');
 });
 
+window.addEventListener('click', (event) => {
+  if (!event.target.closest('.calendars') && !event.target.closest('.calendar-btn') && calendars.classList.contains('open')) {
+    hideCalendars();
+  }
+});
 
 function createCalendar(calendarId) {
   var calendar = document.querySelector("#" + calendarId);

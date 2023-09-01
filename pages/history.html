@@ -5,8 +5,6 @@
     <link rel="stylesheet" href="../assets/css/tariffPlan.css">
     <link rel="stylesheet" href="../assets/css/profile.css">
     <link rel="stylesheet" href="../assets/css/history.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.webix.com/edge/webix.css">
-    <script src="https://cdn.webix.com/edge/webix.js"></script>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -205,7 +203,7 @@
             </header>
             <main class="main">
                 <div class="tariff">
-                    <h3 class="tariff__title tariff__title--margin">Тарифный план</h3>
+                    <h3 class="tariff__title tariff__title--margin">История трафика</h3>
                     <div class="tariff__email-confirm email-confirm">
                         <div class="email-confirm__title">
                             <img src="../assets/images/icons/trafficPlanIcons/logo.svg" alt="">
@@ -222,7 +220,8 @@
                     </div>
                     <p class="date-range">Диапазон дат</p>
                     <button class="calendar-btn">11.07.2023 - 11.07.2023</button>
-                    <div class="calendars">
+                    <div class="position-calendars">
+                      <div class="calendars">
                         <div class="calendar-block">
                             <div class="calendar-header">
                               <button class="prev" onclick="prevMonth()"&lt;</button>
@@ -247,23 +246,6 @@
                             
                             <div class="calendar-date">11.07.2023 - 11.07.2023</div>
                             <div id="calendar"></div>
-                            <script>
-                                webix.ready(function(){
-                                webix.ui({
-                                    view: "calendar",
-                                    id: "myCalendar",
-                                    date: new Date(),
-                                    width: 300,
-                                    height: 300,
-                                    select: true,
-                                    on: {
-                                    onChange: function(newDate) {
-                                        webix.message(`Выбранная дата: ${newDate}`);
-                                    }
-                                    }
-                                });
-                                });
-                              </script>
                           </div>
                           <div class="calendar-block">
                               <div class="calendar-header">
@@ -291,6 +273,7 @@
                                 <button class="calendar-button-right">Применить</button>
                               </div>
                             </div>
+                    </div>
                     </div>
                     
                     <div class="history_content">

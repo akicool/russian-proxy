@@ -1,5 +1,3 @@
-
-
 .date-range{
     margin-top: 30px;
     font-size: 20px;
@@ -11,7 +9,6 @@
 
 .calendar-btn{
     display: flex;
-    position: relative;
     justify-content: start;
     max-width: 513px;
     width: 100%;
@@ -24,13 +21,17 @@
     margin-bottom: 40px;
 }
 
+.position-calendars{
+  position: relative;
+}
+
 .calendars{
   display: flex;
   justify-content: start;
   position: absolute;
-  top: 419px;
-  left: 125px;
-  z-index: 5;
+  top: -40px;
+  left: 54px;
+  z-index: 2;
   overflow-y: auto;
   visibility: hidden;
   opacity: 0;
@@ -56,30 +57,26 @@
     position: relative;
     align-items: center;
     padding-right: 0px;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 10px;
   }
 
   .month-year {
     color: #D0D4DA;
     font-size: 16px;
-    max-width: 177px;
+    display: flex;
     width: 100%;
-    margin-left: 100px;
     font-weight: 700;
     line-height: 150%;
-    display: inline-block;
   }
 
   .month-year-2{
     color: #D0D4DA;
     font-size: 16px;
-    max-width: 177px;
     width: 100%;
-    margin-left: 100px;
     font-weight: 700;
     line-height: 150%;
-    display: inline-block;
+    display: block;
   }
   
   .prev{
@@ -235,4 +232,15 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 150%;
+}
+@media (max-width: 744px){
+  .calendars{
+    left: 0;
+  }
+}
+
+@media (max-width: 598px){
+  .calendars{
+    flex-wrap: wrap;
+  }
 }
