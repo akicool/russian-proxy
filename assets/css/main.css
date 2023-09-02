@@ -446,7 +446,7 @@ p {
   margin-bottom: 300px;
 }
 .faq__title {
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 .faq__toggle {
   position: absolute;
@@ -744,7 +744,7 @@ p {
     gap: 20px;
   }
 
-  .header{
+  .header {
     margin-top: 0;
   }
 
