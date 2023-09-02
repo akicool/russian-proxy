@@ -1,36 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root{
-  --main-bg-color: #F3F6FB;
-  --main-font-color: #0C0C20;
-  --main-accent-color: #1878F1;
-  --secondary-bg-color: #26374D;
-  --secondary-btn-color:#202B40;
-  --menu-line-color: #3F3F46;
-  --white-link-color: #FFF;
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --main-bg-color: #f3f6fb;
+  --main-font-color: #0c0c20;
+  --main-accent-color: #1878f1;
+  --secondary-bg-color: #26374d;
+  --secondary-btn-color: #202b40;
+  --menu-line-color: #3f3f46;
+  --white-link-color: #fff;
   --channels-color-title: #090909;
-  --green-btn-color:#51FF35;
-  --checkbox-black-color: #030D25;
+  --green-btn-color: #51ff35;
+  --checkbox-black-color: #030d25;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Merriweather', serif;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
 }
-html{
+html {
   font-size: 16px;
 }
-h1{
+h1 {
   font-size: 4rem;
 }
-h2{
+h2 {
   font-size: 2.25rem;
 }
-h3{
+h3 {
   font-size: 1.5rem;
 }
-p{
+p {
   font-size: 1rem;
 }
 li {
@@ -47,10 +47,10 @@ a {
 .button--transparent {
   border: 1px solid var(--white-link-color);
   background-color: transparent;
-  padding: 5px 15px;
+  padding: 10px 30px;
   border-radius: 35px;
   color: var(--white-link-color);
-  
+
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
@@ -64,7 +64,7 @@ a {
 
   font-size: 14px;
   font-weight: 500;
-  line-height: 150%
+  line-height: 150%;
 }
 .button--green {
   background-color: var(--green-btn-color) !important;
@@ -73,5 +73,7 @@ a {
 }
 
 .nav__buttons {
-  display: flex; justify-content: center; align-items: center; gap: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }

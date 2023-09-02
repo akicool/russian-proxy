@@ -90,6 +90,7 @@ p {
   border-radius: 5px;
   text-decoration: none;
   color: white;
+  margin-right: 30px;
 }
 .nav__signin-btn {
   outline: none;
