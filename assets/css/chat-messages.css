@@ -37,6 +37,7 @@ p {
   font-size: 1rem;
 }
 
+
 main .btn-top {
   display: flex;
   width: 97%;
@@ -366,6 +367,7 @@ main .message-desc-user::after{
 
 main .message-description_user{
   color: #FFF;
+  text-align: left;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
@@ -404,6 +406,7 @@ main .message-date-bottom{
 
 main .message-description-agent{
   color: #FFF;
+  text-align: left;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
@@ -457,7 +460,7 @@ main .btn-file{
     align-items: center;
     background: #395170;
     border: 0;
-    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
     transition: all 300ms ease-in-out;
 }
 
@@ -501,7 +504,7 @@ main .btn-send{
     align-items: center;
     background: #4EE136;
     border: 0;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
     transition: all 300ms ease-in-out;
 }
 
@@ -514,9 +517,12 @@ main .btn-send::before{
   content: url(../images/icons/send.svg);
 }
 
-footer .footer-desc {
+
+
+.footer-desc {
+  margin-top: 88px;
+  text-align: left;
   margin-bottom: 20px;
-  margin-left: 15px;
 }
 
 
