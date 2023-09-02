@@ -70,12 +70,12 @@ body::-webkit-scrollbar {
   padding: 8px;
   padding: 8px 10px;
   border-radius: 0px;
-  transition: 0.2s ease-out;
+  transition: 0.2s ease-in;
 }
 .nav__item.show {
   background-color: var(--secondary-btn-color);
   border-radius: 5px;
-  transition: 0.2s ease-out;
+  transition: 0.2s ease-in-out;
 }
 .nav__item.show-default {
   background-color: var(--secondary-btn-color);
@@ -84,7 +84,6 @@ body::-webkit-scrollbar {
 }
 .nav__item.item-pos {
   position: relative;
-  width: 200px;
   z-index: 2;
 }
 .nav__link {
