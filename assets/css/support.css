@@ -153,7 +153,8 @@ main .message-status_content {
 }
 
 main .message-status_desc_date{
-  max-width: 317px;
+  display: flex;
+  max-width: 291px;
   color: var(--main-font-color);
   padding: 12px 10px;
   flex-direction: column;
@@ -173,7 +174,8 @@ main .message-status_desc-problem{
 }
 
 main .message-status-desc_date-time{
-  max-width: 317px;
+  display: flex;
+  max-width: 291px;
   color: var(--main-font-color);
   padding: 12px 10px;
   flex-direction: column;
@@ -183,6 +185,7 @@ main .message-status-desc_date-time{
 }
 
 main  .message-status_desc_status {
+  display: flex;
   max-width: 317px;
   color: var(--main-font-color);
   padding: 12px 10px;
@@ -193,6 +196,7 @@ main  .message-status_desc_status {
 }
 
 main  .message-status_desc_topic{
+  display: flex;
   max-width: 317px;
   color: var(--main-font-color);
   padding: 12px 10px;
@@ -202,71 +206,76 @@ main  .message-status_desc_topic{
   flex: 1 0 0;
 }
 
+.block-status{
+  display: flex;
+  max-width: 492px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
 main .message-status_desc-btn {
-  max-width: 317px;
+  display: flex;
+  max-width: 133px;
+  background: var(--secondary-btn-color);
+  color: #d7e2fe;
+  border-radius: 5px;
+  font-size: 14px;
   padding: 10px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  font-weight: 500;
+  line-height: 150%;
   gap: 10px;
   flex: 1 0 0;
 }
 
-main .message-status_desc-btn:hover{
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-}
-
-main .message-status_btn {
-  padding: 10px;
-  margin-right: 106px;
-  margin-left: 67px;
-  border-radius: 5px;
+.message-status_desc-delete{
+  display: flex;
+  max-width: 171px;
   background: var(--secondary-btn-color);
   color: #d7e2fe;
-  justify-content: center;
-  align-items: flex-start;
-  border: none;
-  font-weight: 500;
-  line-height: 150%;
-}
-
-main .message-status_btn:hover{
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-}
-
-main .message-resolved{
-  padding: 10px;
   border-radius: 5px;
-  justify-content: center;
-  align-items: flex-start;
-  border: none;
+  font-size: 14px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
   font-weight: 500;
   line-height: 150%;
+  gap: 10px;
+  flex: 1 0 0;
+}
+
+.block-resolved{
+  display: flex;
+  max-width: 492px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.block-delete{
+  display: flex;
+  max-width: 492px;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.message-status_desc-resolved{
+  display: flex;
+  max-width: 71px;
   background: #51FF35;
-  color: var(--secondary-btn-color);
-}
-
-main .message-resolved:hover{
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-}
-
-main .message-delete_btn{
-  padding: 10px;
+  color: var(--main-font-color);
   border-radius: 5px;
-  justify-content: center;
-  align-items: flex-start;
-  border: none;
+  font-size: 14px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
   font-weight: 500;
   line-height: 150%;
-  background: var(--secondary-btn-color);
-  color: #d7e2fe;
-}
-
-main .message-delete_btn:hover{
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
+  gap: 10px;
+  flex: 1 0 0;
 }
 
 footer .footer-desc {

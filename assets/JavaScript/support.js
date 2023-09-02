@@ -23,22 +23,35 @@ function addMessageBlock(topic, message) {
   dateTimeElement.classList.add('message-status-desc_date-time');
   dateTimeElement.textContent = getCurrentDateTime();
 
-  const topicElement = document.createElement('button');
-  topicElement.classList.add('message-status_btn');
-  topicElement.textContent = "Не обработано";
+  const blockStatus = document.createElement('div');
+  blockStatus.classList.add('block-status');
 
+  const messageStatusDescBtn = document.createElement('div');
+  messageStatusDescBtn.classList.add('message-status_desc-btn');
+  messageStatusDescBtn.textContent = "Не обработано";
+
+  blockStatus.appendChild(messageStatusDescBtn);
+  messageBlock.appendChild(blockStatus);
+  
+  
   const messageElement = document.createElement('p');
   messageElement.classList.add('message-status_desc-problem');
   messageElement.textContent = topic;
 
-  const deleteButton = document.createElement('button');
-  deleteButton.classList.add('message-delete_btn');
+  const blockDelete = document.createElement('div');
+  blockDelete.classList.add('block-delete');
+
+  const deleteButton = document.createElement('div');
+  deleteButton.classList.add('message-status_desc-delete');
   deleteButton.textContent = "Удалить обращение";
 
+  
+
   messageBlock.appendChild(dateTimeElement);
-  messageBlock.appendChild(topicElement);
+  messageBlock.appendChild(blockStatus);
   messageBlock.appendChild(messageElement);
-  messageBlock.appendChild(deleteButton);
+  blockDelete.appendChild(deleteButton);
+  messageBlock.appendChild(blockDelete);
 
   messageStatusContainer.appendChild(messageBlock);
 
