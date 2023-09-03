@@ -180,6 +180,11 @@ header {
   font-weight: 500;
 }
 
+.account-block__link a {
+  text-decoration: none;
+  color: white;
+}
+
 .home-text h4 {
   font-family: "Montserrat", sans-serif;
 }

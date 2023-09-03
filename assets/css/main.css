@@ -186,35 +186,38 @@ p {
 .points-container {
   position: absolute;
   width: 50%;
-  height: 146px;
+  height: 150px;
   border-radius: 945px;
   margin-top: 300px;
   background: rgba(24, 120, 241, 0.3);
-  filter: blur(134.5px);
+  filter: blur(100.5px);
 }
 
 .header__buttons {
   display: flex;
 }
 .header__buy-btn {
-  margin-right: 20px;
+  position: absolute;
+
   background: var(--main-accent-color);
   outline: none;
   border: none;
   padding: 15px;
   color: white;
-  margin-right: 30px;
+  margin-left: -140px;
   border-radius: 5px;
   text-decoration: none;
   color: white;
 }
 .header__start-btn {
+  position: absolute;
   border: 1px solid var(--main-accent-color);
   outline: none;
   border-radius: 5px;
   padding: 15px;
   text-decoration: none;
   color: black;
+  margin-left: 40px;
 }
 
 .about {
