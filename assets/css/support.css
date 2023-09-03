@@ -159,11 +159,14 @@ main .message-status_desc_date{
   padding: 12px 10px;
   flex-direction: column;
   align-items: flex-start;
+  font-weight: 600;
+  line-height: 150%;
   gap: 10px;
   flex: 1 0 0;
 }
 
 main .message-status_desc-problem{
+  display: flex;
   max-width: 317px;
   color: var(--main-font-color);
   padding: 12px 10px;
@@ -186,9 +189,11 @@ main .message-status-desc_date-time{
 
 main  .message-status_desc_status {
   display: flex;
-  max-width: 317px;
+  max-width: 492px;
   color: var(--main-font-color);
   padding: 12px 10px;
+  font-weight: 600;
+  line-height: 150%;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
@@ -200,6 +205,8 @@ main  .message-status_desc_topic{
   max-width: 317px;
   color: var(--main-font-color);
   padding: 12px 10px;
+  font-weight: 600;
+  line-height: 150%;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;

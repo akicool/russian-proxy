@@ -279,9 +279,7 @@ header {
 .pay-text button {
   border: 1px solid #1878f1;
   color: #1878f1;
-  height: 40px;
   border-radius: 5px;
-
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -303,25 +301,70 @@ header {
 
 .history-flex {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 12px;
-  padding-right: 80px;
+  padding: 15px 0px;
 }
 
 .history-flex2 {
   display: flex;
-  justify-content: space-between;
   margin-top: 15px;
+  padding: 15px 0px;
   margin-bottom: 15px;
-  padding-right: 100px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
   color: #0c0c20;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+}
+
+.balance-desc-date{
+  display: flex;
+  max-width: 338px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px 10px;
+  flex: 1 0 0;
+}
+
+.balance-btn-block{
+  display: flex;
+  max-width: 338px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px 10px;
+  flex: 1 0 0;
+}
+
+.balance-desc-replenish{
+  display: flex;
+  max-width: 338px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px 10px;
+  flex: 1 0 0;
+}
+
+.balance-block{
+  display: flex;
+  max-width: 338px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px 10px;
+  flex: 1 0 0;
+}
+
+.balance-cost{
+  display: flex;
+  max-width: 338px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px 10px;
+  flex: 1 0 0;
 }
 
 @media (max-width: 768px) {
