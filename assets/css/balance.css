@@ -258,6 +258,10 @@ header {
   border: none;
 }
 
+.pay{
+  margin-bottom: 80px;
+}
+
 .pay-text p {
   color: #b6b9c4;
   font-family: "Montserrat", sans-serif;
@@ -303,6 +307,7 @@ header {
   display: flex;
   margin-bottom: 12px;
   padding: 15px 0px;
+
 }
 
 .history-flex2 {

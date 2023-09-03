@@ -25,8 +25,18 @@ const tariffFooterText  = document.querySelector('.tariff__footer-text')
 const interactive  = document.querySelector('.interactive')
 const parameterHistory = document.querySelector('.parameter-history')
 
+
 account.addEventListener('click', () => {
     accountBlock.classList.toggle('active');
+});
+
+document.addEventListener('click', (event) => {
+    const isClickInsideAccount = account.contains(event.target);
+    const isClickInsideAccountBlock = accountBlock.contains(event.target);
+  
+    if (!isClickInsideAccount && !isClickInsideAccountBlock) {
+      accountBlock.classList.remove('active');
+    }
 });
 
 selectPanelManager.addEventListener('click', (e) => {

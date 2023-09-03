@@ -1,48 +1,10 @@
-.nav-block {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+
+.myproxy__contaner{
+  margin-top: 20px;
+  padding: 0 20px;
 }
-.nav {
-  position: relative;
-  z-index: 1;
-}
-.header {
-  position: relative;
-  z-index: 1;
-}
-.nav__link-text {
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.2s ease-out;
-}
-.nav__link-text.show {
-  visibility: visible;
-  opacity: 1;
-  transition: 0.2s ease-out;
-}
-.nav__link-text.active {
-  visibility: visible;
-  opacity: 1;
-  transition: 0.2s ease-out;
-}
-.nav__link-text--additional-style {
-  overflow: hidden;
-  margin-left: 20px;
-  width: max-content;
-  pointer-events: none;
-  color: var(--white-link-color);
-}
-.nav__link-title--more-style {
-  overflow: hidden;
-  margin-left: 20px;
-  width: max-content;
-  pointer-events: none;
-  color: var(--white-link-color);
-}
+
 .myproxy {
   width: 100%;
   height: 100vh;
