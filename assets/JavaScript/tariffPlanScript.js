@@ -1,5 +1,3 @@
-const account = document.querySelector('.account')
-const accountBlock = document.querySelector('.account-block')
 const btnFirst = document.querySelector('.btn-first')
 const btnSecond = document.querySelector('.btn-second')
 const checkbox = document.querySelectorAll('.checkbox')
@@ -25,19 +23,6 @@ const tariffFooterText  = document.querySelector('.tariff__footer-text')
 const interactive  = document.querySelector('.interactive')
 const parameterHistory = document.querySelector('.parameter-history')
 
-
-account.addEventListener('click', () => {
-    accountBlock.classList.toggle('active');
-});
-
-document.addEventListener('click', (event) => {
-    const isClickInsideAccount = account.contains(event.target);
-    const isClickInsideAccountBlock = accountBlock.contains(event.target);
-  
-    if (!isClickInsideAccount && !isClickInsideAccountBlock) {
-      accountBlock.classList.remove('active');
-    }
-});
 
 selectPanelManager.addEventListener('click', (e) => {
     selectPanelManager.classList.toggle('active');

@@ -6,6 +6,22 @@ const navItem = document.querySelectorAll('.nav__item')
 const additionalText = document.querySelectorAll('.additional-text')
 const navGeneralBlock = document.querySelector('.nav__general-block')
 
+const account = document.querySelector('.account')
+const accountBlock = document.querySelector('.account-block')
+
+account.addEventListener('click', () => {
+    accountBlock.classList.toggle('active');
+});
+
+document.addEventListener('click', (event) => {
+    const isClickInsideAccount = account.contains(event.target);
+    const isClickInsideAccountBlock = accountBlock.contains(event.target);
+  
+    if (!isClickInsideAccount && !isClickInsideAccountBlock) {
+      accountBlock.classList.remove('active');
+    }
+});
+
 const main = document.querySelector('.main')
 
 const pointingToMenu = (event) => {
