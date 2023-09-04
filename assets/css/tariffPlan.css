@@ -5,7 +5,7 @@ body::-webkit-scrollbar {
   display: none !important;
 }
 .bottom25 {
-  position: absolute;
+  margin-left: 25px;
   bottom: 25px;
   mix-blend-mode: color-dodge;
 }
