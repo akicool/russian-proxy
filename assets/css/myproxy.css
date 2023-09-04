@@ -151,6 +151,11 @@
   color: white;
   width: 100px;
 }
+.copy{
+  margin-left: 5px;
+  width: 9.167px;
+  height: 9.165px;
+}
 
 .myproxy__choosetarif {
   width: 100%;
@@ -244,9 +249,15 @@
   .tabcontent {
     position: relative;
   }
+  .copy{
+    margin-top: 5px;
+  }
   .myproxy__choosetarif {
-    margin-top: 0px;
-    position: relative;
+    margin-top: 5px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 30px;
   }
   .myproxy__choosetarif p {
     bottom: 50px;
