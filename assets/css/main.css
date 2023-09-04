@@ -31,10 +31,12 @@ html {
 }
 h1 {
   font-size: 4rem;
+  font-family: Merriweather;
 }
 span {
 }
 h2 {
+  font-family: Merriweather;
   font-size: 2.25rem;
 }
 h3 {
@@ -175,6 +177,7 @@ p {
   background: linear-gradient(90deg, #0c0c20 0%, #1879f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
+  font-family: Merriweather;
   -webkit-text-fill-color: transparent;
 }
 .header__subtitle {
@@ -539,7 +542,7 @@ p {
   font-size: 16px;
 }
 .faq__card p {
-  font-weight: 500;
+  font-weight: 700;
   display: none;
 }
 .footer__content-down {
@@ -1299,6 +1302,15 @@ h3 {
   }
 }
 @media screen and (max-width: 480px) {
+  .header__title{
+    font-size: 24px;
+  }
+  .header__subtitle{
+    font-size: 16px;
+  }
+  .header__title-about{
+    font-size: 24px;
+  }
   .progressBarContainer {
     height: 330px;
     margin-top: -10px;
