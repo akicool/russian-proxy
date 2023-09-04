@@ -159,7 +159,8 @@ p {
 .header {
   width: 100%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 300px;
+  margin-bottom: 250px;
   padding: 0 35px;
   max-width: 1500px;
   display: flex;
@@ -228,7 +229,7 @@ p {
   margin: 0 auto;
   max-width: 1500px;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 250px;
 }
 
 .forwhat {
