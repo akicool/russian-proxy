@@ -224,6 +224,7 @@ p {
   margin-left: 40px;
 }
 
+
 .about {
   padding: 0 100px;
   margin: 0 auto;
@@ -370,6 +371,15 @@ p {
   font-weight: 700;
   line-height: 150%;
   margin-bottom: 60px;
+}
+.slider__title {
+  font-size: 64px;
+  text-align: center;
+  margin-top: 150px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 250px;
+  margin-top: 250px;
 }
 
 .main-card-background {
@@ -614,6 +624,9 @@ p {
   .header__title-about {
     font-size: 37px;
   }
+  .slider__title{
+    font-size: 37px;
+  }
   .header__title-forwhat {
     font-size: 37px;
   }
@@ -838,6 +851,9 @@ p {
   }
   .header__title-about {
     margin-top: 400px;
+    font-size: 24px;
+  }
+  .slider__title {
     font-size: 24px;
   }
   .header__title-forwhat {
