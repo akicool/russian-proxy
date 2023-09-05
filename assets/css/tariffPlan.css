@@ -88,6 +88,7 @@ body::-webkit-scrollbar {
 }
 .nav__link {
   display: flex;
+  min-width: 188px;
   align-items: center;
 }
 .padding-none {
@@ -698,6 +699,27 @@ body::-webkit-scrollbar {
   width: 0%;
   height: 4px;
   transition: 0.1s linear;
+}
+
+@media (max-width: 1465px){
+  .header {
+    gap: 30px;
+  }
+  .nav__general-block.active {
+    height: max-content;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.2s ease-out;
+  }
+  .general__hidden {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .general__list {
+    justify-content: end;
+    gap: 50px;
+  }
 }
 
 @media (max-width: 1265px) {
