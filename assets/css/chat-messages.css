@@ -38,6 +38,10 @@ p {
 }
 
 
+.tariff__title{
+  text-transform: uppercase;
+}
+
 main .btn-top {
   display: flex;
   width: 97%;

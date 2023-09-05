@@ -49,6 +49,14 @@
 	border-radius: 5px;
 
 }
+.profile__email-desc{
+	max-width: 154px;
+}
+
+.profile__title{
+	text-transform: uppercase;
+}
+
 .profile__trafic{
 	display: block;
 	background: var(--secondary-bg-color);
@@ -239,7 +247,10 @@
 	margin-right: 20px;
 }
 
-@media (max-width: 744px){
+@media (max-width: 764px){
+	.profile__title{
+		margin-top: 60px;
+	}
 	.profile__up{
 		flex-direction: column;
 	}

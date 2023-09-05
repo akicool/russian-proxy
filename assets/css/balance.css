@@ -154,6 +154,10 @@ header {
   font-family: "Merriweather", serif;
 }
 
+.tariff__title{
+  text-transform: uppercase;
+}
+
 .home-email {
   display: flex;
   margin-left: 12px;

@@ -15,7 +15,7 @@
         <div class="nav__lists">
           <ul class="nav__list">
             <li class="nav__item padding-none nav__item--hidden">
-              <a href="/russian-proxy/pages/main.html" class="nav__link">
+              <a href="../pages/main.html" class="nav__link">
                 <img
                   src="../assets/images/icons/trafficPlanIcons/logo.svg"
                   alt="logo"
@@ -45,7 +45,7 @@
                 </a>
               </li>
               <li class="general__item nav__item general__item--pos-none">
-                <a href="/russian-proxy/pages/balance.html" class="nav__link">
+                <a href="../pages/balance.html" class="nav__link">
                   <img
                     src="../assets/images/icons/trafficPlanIcons/wallet.svg"
                     alt="wallet"
@@ -56,7 +56,7 @@
             </div>
             <span class="additional-text">proxy</span>
             <li class="nav__item show-default">
-              <a href="/russian-proxy/pages/myproxy.html" class="nav__link">
+              <a href="../pages/myproxy.html" class="nav__link">
                 <img
                   src="../assets/images/icons/trafficPlanIcons/servers.svg"
                   alt="servers"
@@ -66,7 +66,7 @@
             </li>
             <span class="additional-text">user</span>
             <li class="nav__item">
-              <a href="/russian-proxy/pages/balance.html" class="nav__link">
+              <a href="../pages/balance.html" class="nav__link">
                 <img
                   src="../assets/images/icons/trafficPlanIcons/wallet.svg"
                   alt="wallet"
@@ -75,7 +75,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="/russian-proxy/pages/tariffPlan.html" class="nav__link">
+              <a href="../pages/tariffPlan.html" class="nav__link">
                 <img
                   src="../assets/images/icons/trafficPlanIcons/currencies.svg"
                   alt="currencies"
@@ -84,7 +84,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="/russian-proxy/pages/profile.html" class="nav__link">
+              <a href="../pages/profile.html" class="nav__link">
                 <img
                   src="../assets/images/icons/trafficPlanIcons/profile.svg"
                   alt="profile"
@@ -93,7 +93,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="/russian-proxy/pages/history.html" class="nav__link">
+              <a href="../pages/history.html" class="nav__link">
                 <img
                   src="../assets/images/icons/trafficPlanIcons/chart.svg"
                   alt="chart"
@@ -111,7 +111,7 @@
           </ul>
           <div class="nav__footer">
             <li class="padding-none nav__link-title nav__link-title--active">
-              <a href="/russian-proxy/pages/main.html" class="nav__link">
+              <a href="../pages/main.html" class="nav__link">
                 <img
                   src="../assets/images/icons/trafficPlanIcons/logo.svg"
                   alt="logo"
@@ -236,7 +236,7 @@
 						<hr class="myproxy__email-hr">
 						<div class="myproxy__email-contaner">
 							<div>
-								<p>Подтвердите Ваш email адрес</p>
+								<p class="email-confirm__subtitle-text">Подтвердите Ваш email адрес</p>
 								<a href="#" class="myproxy__email-btn">Отправить снова</a>
 							</div>
 							<img src="../assets/images/icons/icons/letters.svg">
@@ -245,7 +245,7 @@
 				</div>
 				<div class="myproxy__down">
 					<div class="tab">
-					  <button class="tablinks" onclick="openCity(event, 'proxylist')">Список прокси</button>
+					  <button class="tablinks active" onclick="openCity(event, 'proxylist')">Список прокси</button>
 					  <button class="tablinks" onclick="openCity(event, 'API')">API</button>
 					</div>
 
@@ -260,7 +260,7 @@
 					  		<th>Протокол</th>
 					  		<th>Скорость</th>
 					  		<th>Канал</th>
-					  		<th>Действует до</th>
+					  		<th class="th-wrap">Действует до</th>
 					  	</tr>
 					  	<tr>
 					  		<td><input type="checkbox" name="proxylist__checkbox"></td>
