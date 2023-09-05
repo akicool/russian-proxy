@@ -181,6 +181,9 @@ p {
   font-family: Merriweather;
   -webkit-text-fill-color: transparent;
 }
+.channels__change-title{
+  font-weight: 500;
+}
 .header__subtitle {
   font-weight: 400;
   text-align: center;

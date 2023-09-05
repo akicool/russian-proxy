@@ -13,10 +13,10 @@
   position: relative;
 }
 
-.nav {
+.nav__logo{
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: 40px;
+  left: 100px;
 }
 
 .about__form{
@@ -178,10 +178,20 @@ text-decoration-line: none;
   text-decoration-line: none;
 }
 
-
+@media (max-width: 1069px){
+  .nav__logo{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+  }
+}
 
 @media (max-width: 448px){
-    
+  .nav__logo{
+    position: absolute;
+    top: 40px;
+    left: 12px;
+  }
   .about__item{
     padding-left: 10px;
     list-style: none;

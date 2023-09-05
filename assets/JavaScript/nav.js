@@ -33,11 +33,13 @@ const pointingToMenu = (event) => {
 }
 
 const unPointingToMenu = (event) => {
-    nav.classList.remove('active');
-    main.classList.remove('active');
-    menuBtn.classList.remove('active');
-    navGeneralBlock.classList.remove('active');
-    additionalText.forEach(item => item.classList.remove('active'));
+    if (window.innerWidth <= 744) {
+        nav.classList.remove('active');
+        main.classList.remove('active');
+        menuBtn.classList.remove('active');
+        navGeneralBlock.classList.remove('active');
+        additionalText.forEach(item => item.classList.remove('active'));
+    }
 }
 
 menuBtn.addEventListener('click', pointingToMenu);
