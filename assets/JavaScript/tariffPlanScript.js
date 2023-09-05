@@ -19,8 +19,8 @@ const managerSelectTariff = document.querySelector('.manager__select-tariff')
 const managerCancel = document.querySelector('.manager__cancel')
 const channels = document.querySelector('.channels')
 const inProgress = document.querySelector('.inProgress')
-const tariffFooterText  = document.querySelector('.tariff__footer-text')
-const interactive  = document.querySelector('.interactive')
+const tariffFooterText = document.querySelector('.tariff__footer-text')
+const interactive = document.querySelector('.interactive')
 const parameterHistory = document.querySelector('.parameter-history')
 
 
@@ -34,7 +34,7 @@ selectPanelManager.addEventListener('click', (e) => {
     tariffFooterText.classList.add('bottom25');
     interactive.classList.remove('display-none');
     parameterHistory.classList.add('display-none');
-    
+
     if (!managerCancel.classList.contains('display-none')) {
         channels.classList.remove('display-none');
         card.classList.remove('display-none');
@@ -49,7 +49,7 @@ selectPanelHistory.addEventListener('click', () => {
     interactive.classList.add('display-none');
     parameterHistory.classList.remove('display-none');
     tariffFooterText.classList.add('bottom25');
-    
+
 });
 
 managerSelectTariff.addEventListener('click', () => {
@@ -71,7 +71,7 @@ managerCancel.addEventListener('click', () => {
 });
 
 
-let btnSecondCounter = 0;  
+let btnSecondCounter = 0;
 btnSecond.addEventListener('click', (e) => {
     btnSecondCounter++
     clicked = true;
@@ -116,7 +116,7 @@ btnSecond.addEventListener('click', (e) => {
     });
 })
 
-let btnFirstCounter = 0;  
+let btnFirstCounter = 0;
 btnFirst.addEventListener('click', () => {
     btnFirstCounter--
     clicked = false;
@@ -173,9 +173,9 @@ cardItem.forEach((item) => {
     const Delete = item.querySelectorAll('.delete')
     const infoTextBlock = item.querySelectorAll('.info-text-block')
 
-    
+
     const originalPrice = parseInt(cardPrice.textContent);
-    
+
     checkbox.addEventListener('click', e => {
 
         infoTextBlock.forEach(item => {
@@ -195,11 +195,11 @@ cardItem.forEach((item) => {
 
         checkboxInput.classList.remove('checked');
         checkbox.classList.toggle('active');
-        
-        cardBtn.textContent === 'Частный канал' 
-           ? cardBtn.textContent = 'Общий канал' 
-           : cardBtn.textContent = 'Частный канал'
-                    
+
+        cardBtn.textContent === 'Частный канал'
+            ? cardBtn.textContent = 'Общий канал'
+            : cardBtn.textContent = 'Частный канал'
+
         cardBtn.classList.toggle('button--green');
 
         cardTariffBtn.classList.toggle('button--green');
@@ -261,85 +261,10 @@ cardTariffBtn.forEach(item => {
     item.addEventListener('click', getCardTitle)
 });
 
-const progressBar = document.querySelector('.inProgress3');
-let cardCount = 0;
-let cardCountMobile = 0;
-let intervalId;
+const progress = document.querySelector("progress")
+const cardContent = document.querySelector(".card-content")
 
-const screenWidth = window.screen.width
-
-function increaseProgress() {
-    const currentWidth = parseInt(progressBar.style.width) || 0;
-    const newWidth = currentWidth + 1; 
-    
-    if (newWidth <= 100) {
-        progressBar.style.width = newWidth + '%';
-    } else {
-        progressBar.style.width = '0%';
-        card.classList.add('width')
-        cardCount++;
-        cardCountMobile++;
-        
-        cardCount > 1 ? 
-        cardCount = 0 : 
-        cardCount
-
-        cardCountMobile > 3 ? 
-        cardCountMobile = 0 : 
-        cardCountMobile
-        
-        if (screenWidth > 475) {
-            if (cardCount == 0) {
-                cardItem[0].classList.remove('hidden')
-                cardItem[1].classList.remove('hidden')
-                cardItem[2].classList.add('hidden')
-                cardItem[3].classList.add('hidden')
-            }
-            
-            if (cardCount == 1) {
-                cardItem[0].classList.add('hidden')
-                cardItem[1].classList.add('hidden')
-                cardItem[2].classList.remove('hidden')
-                cardItem[3].classList.remove('hidden')
-            }
-        }
-
-        if (screenWidth < 475) {
-            if (cardCountMobile === 0) {
-                cardItem[0].classList.remove('mobile-hidden', 'hidden')
-                cardItem[1].classList.add('mobile-hidden', 'hidden')
-                cardItem[3].classList.add('mobile-hidden', 'hidden')
-            }
-            
-            if (cardCountMobile === 1) {
-                cardItem[0].classList.add('mobile-hidden', 'hidden')
-                cardItem[1].classList.remove('mobile-hidden', 'hidden')
-            }
-            
-            if (cardCountMobile === 2) {
-                cardItem[1].classList.add('mobile-hidden', 'hidden')
-                cardItem[2].classList.remove('mobile-hidden', 'hidden')
-            }
-            
-            if (cardCountMobile === 3) {
-                cardItem[2].classList.add('mobile-hidden', 'hidden')
-                cardItem[3].classList.remove('mobile-hidden', 'hidden')
-            }
-        }
-    }
-}
-
-function startAnimation() {
-    clearInterval(intervalId);
-    intervalId = setInterval(increaseProgress, 100);
-}
-
-startAnimation()
-
-progressBar.addEventListener('transitionend', function() {
-    if (parseInt(progressBar.style.width) === 0) {
-        startAnimation();
-    }
-});
-
-intervalId = setInterval(increaseProgress, 100);
+cardContent.addEventListener("scroll", e => {
+    const windowScroll = cardContent.scrollLeft
+    progress.value = windowScroll / 770
+})
