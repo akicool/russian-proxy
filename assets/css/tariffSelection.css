@@ -122,16 +122,13 @@
 
 @media (max-width: 1140px) {
     .select-change {
-        gap: 20px;
+        gap: 16px;
     }
     .changes {
         flex-direction: column;
         flex-wrap: wrap;
-        align-items: center;
-        gap: 20px;
-    }
-    .panel-change {
-        margin-bottom: 40px;
+        align-items: left;
+        gap: 16px;
     }
     .changes__text-alert--hidden {
         display: none;

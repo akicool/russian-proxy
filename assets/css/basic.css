@@ -56,7 +56,7 @@ a {
   line-height: 150%;
 }
 .button--black {
-  padding: 5px 15px;
+  padding: 10px 30px;
   border-radius: 8px;
   background-color: var(--secondary-btn-color);
   color: var(--white-link-color) !important;
