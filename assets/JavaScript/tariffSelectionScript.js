@@ -71,7 +71,7 @@ commonChannelButton.addEventListener('click', () => {
         item.textContent = selectedChannel
     })
     commonChannelButton.classList.add('button--black');
-    privateChannelButton.classList.remove('button--black');
+    privateChannelButton.classList.remove('button--green');
     updatePrice(selectedBtn);
 });
 
@@ -80,7 +80,7 @@ privateChannelButton.addEventListener('click', () => {
     typeChannel.forEach(item => {
         item.textContent = selectedChannel
     })
-    privateChannelButton.classList.add('button--black');
+    privateChannelButton.classList.add('button--green');
     commonChannelButton.classList.remove('button--black');
     commonChannelButton.classList.add('select-change__button--transparent');
     commonChannelButton.classList.add('button--transparent');
