@@ -523,7 +523,7 @@ body::-webkit-scrollbar {
 
 .manager__button {
   padding: 15px 20px;
-
+  border: none;
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
@@ -876,7 +876,6 @@ progress::-webkit-progress-value {
 
 @media (max-width: 1010px) {
   .button--transparent {
-    padding: 5px 15px;
     font-size: 13px;
   }
 }

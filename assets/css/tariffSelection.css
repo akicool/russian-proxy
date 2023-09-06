@@ -46,6 +46,7 @@
 }
 .select-change__tariffs {
     display: flex;
+    font-weight: 500;
     align-items: center;
     gap: 15px;
 }
@@ -56,6 +57,7 @@
 }
 .select-change__channels {
     display: flex;
+    font-weight: 500;
     align-items: center;
     gap: 20px;
 }
